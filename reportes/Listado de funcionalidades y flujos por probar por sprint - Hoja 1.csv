@@ -1,0 +1,96 @@
+,#,Opción de menú (ruta / ubicación) Sprint 1,Qué debe probar QA / usuario
+,1,[TABLAS] Compras > Maestro Proveedores> Ficha de Proveedores,"Alta, edición, baja lógica y consulta de proveedor"
+,2,[OPERACIONES] Compras > Orden de Compra > Edición General,"Crear OC, grabar líneas, numeración y consulta
+Generar PDF"
+,3,[OPERACIONES] Compras > Aprobación de OC y OS,Aprobar/rechazar OC pendiente
+,4,[OPERACIONES] Compras > Orden de Servicios > Generación,Crear OS vinculada a proveedor/servicio
+,5,[OPERACIONES] Compras > Orden de Servicios > Aprobación de Acta de conformidad,Aprobar OS y acta
+,6,[OPERACIONES] Compras > Cuentas por Pagar > Registro de Cuentas x Pagar,Registrar factura CxP (cab+det); vincular OC/OS si aplica
+,7,[OPERACIONES] Compras > Cuentas por Pagar > Nota debito / Credito x Pagar,Emitir NC/ND CxP sobre documento existente
+,8,[OPERACIONES] Compras > Cuentas por Pagar > Documentos x Pagar Directo - Individual,"DPD: alta, modificación y consulta"
+,9,[REPORTES] Compras > Gestion de compras > Gestion de compras al detalle,Ejecutar reporte (invoca compras.sp_generar_reporte_compras) y exportar
+,10,[REPORTES] Ventas > Reporte de Ventas > Registro de Ventas > Formato de SUNAT,Ejecutar registro de ventas (ventas.sp_generar_registro_ventas)
+,11,"[REPORTES] Ventas > Reporte Tributario > Generación por periodo (IGV, Retenciones)",Generar reporte tributario por periodo
+,15,[TABLAS] Finanzas > Bancos > Cuentas de Bancos · /configuracion/localizacion/cuenta-bancaria,CRUD cuenta bancaria
+,16,[TABLAS] Finanzas > Tablas de SUNAT > Medios de PAGO,CRUD catálogo medios de pago
+,17,[TABLAS] Finanzas > Tablas de SUNAT > Formas de Pago,CRUD catálogo formas de pago
+,33,[TABLAS] Contabilidad > Tipo de cambio (no aplica EC),CRUD tipo de cambio; validar lectura vía fn_obtener_tipo_cambio en pantallas que lo usen
+,3 casos scripteados S1 (usuario demo):,,
+,,Compras E2E: proveedor → OC → aprobación → factura CxP (#6) → reporte #9.,
+,,Ventas reportes: registro ventas #10 + reporte tributario #11.,
+,,Finanzas base: cuenta banco #15 + medio/forma pago #16/#17 + tipo cambio #33.,
+,#,Opción de menú Sprint 2,Qué debe probar QA / usuario
+,12,[TABLAS] Finanzas > Documentos > Tipos de documentos,CRUD tipos de documento
+,13,[TABLAS] Finanzas > Concepto Financiero > Maestro Conceptos Financieros,CRUD conceptos
+,14,[TABLAS] Finanzas > Flujo de Caja > Grupos + Conceptos de flujo de caja,CRUD grupos (#14a) y códigos (#14b)
+,18,[OPERACIONES] Finanzas > Solicitud de Adelantos > Generación de órdenes de giro,Crear orden de giro
+,19,[OPERACIONES] Finanzas > Solicitud de Adelantos > Aprobación de órdenes de giro,Aprobar OG
+,20,[OPERACIONES] Finanzas > Solicitud de Adelantos > Rendición de gastos,Liquidación colaborador/proveedor
+,21,[OPERACIONES] Finanzas > Solicitud de Adelantos > Aprobación de rendición de gastos,Aprobar adelanto/rendición
+,22,[OPERACIONES] Finanzas > Solicitud de Adelantos > Cierre de liquidación de adelantos,Cerrar liquidación
+,23,[OPERACIONES] Finanzas > Tesorería > Cartera de pagos,Programar y registrar pago en cartera
+,24,[OPERACIONES] Finanzas > Tesorería > Carteras de cobros,Registrar cobro / documento en cartera
+,25,[OPERACIONES] Finanzas > Tesorería > Aplicación de documentos,Aplicar pago a documentos abiertos
+,26,[OPERACIONES] Finanzas > Tesorería (anulación en cartera de pagos),Anular/eliminar pago emitido
+,27,[OPERACIONES] Finanzas > Transferencias (nueva),Alta transferencia entre cuentas y confirmación
+,28,[TABLAS] Contabilidad > Plan contable,CRUD/import catálogo de cuentas
+,29,[TABLAS] Contabilidad > Plan de centros de costo,Árbol de centros de costo
+,30,[TABLAS] Finanzas > Concepto Financiero > Matriz Contable,Mantener matriz contable
+,31,[TABLAS] Contabilidad > Detracciones / Retenciones,CRUD tipos de detracción
+,32,[TABLAS] Finanzas > Impuestos,CRUD impuestos
+,34,[TABLAS] Contabilidad > UIT (nueva),CRUD UIT vigente
+,35,[REPORTES] Contabilidad > Formatos SUNAT > Formato 5.2 Libro Diario Simplificado,Generar libro (sp_generar_libro_diario_simplificado)
+,36,[REPORTES] Contabilidad > Formatos SUNAT (formatos básicos),Generar reporte SUNAT (sp_generar_reporte_sunat)
+,37,[PROCESOS] Contabilidad > Libros Electrónicos (SUNAT),Procesar PLE (sp_generar_libros_electronicos)
+,3 casos scripteados S2:,,
+,,Adelantos → tesorería: OG #18 → aprobación #19 → liquidación #20/#21 → cierre #22 → cartera pagos #23.,
+,,Cartera CxC: cobro #24 → aplicación #25 → (opcional) anulación #26.,
+,,Contabilidad: plan #28 + libro diario #35 + PLE #37 con SP desplegados.,
+,#,Opción de menú Sprint 3,Qué debe probar QA / usuario
+,38,[TABLAS] Activos Fijos > Maestro de activos fijos,"Alta activo, ficha completa, homologación/consulta"
+,39,[TABLAS] Activos Fijos > Parámetros de operaciones,Configurar tipos de operación
+,40,[TABLAS] Activos Fijos > Incidencias,CRUD tipos de incidencia
+,41,[TABLAS] Activos Fijos > Aseguradoras,CRUD aseguradoras
+,42,[TABLAS] Activos Fijos > Clasificación de Activos,Cuentas contables por activo
+,43,[OPERACIONES] Activos Fijos > Operaciones Especiales,Registrar operación especial y procesar
+,44,[OPERACIONES] Activos Fijos > Proceso de baja de activos,Baja por venta (sp_baja_activo_venta)
+,45,[PROCESOS] Activos Fijos > Generación de Asientos de Revaluación > Revaluación,Ejecutar revaluación (sp_revaluacion_activo)
+,46,[OPERACIONES] Activos Fijos > Asignación de ratios de depreciación,Tasas y métodos por activo/clase
+,47,[REPORTES] Activos Fijos > Resumen Activo Fijo,Listado con valor neto (fn_valor_neto_activo)
+,48,[REPORTES] Activos Fijos > Depreciación Anual por Activo,Consulta depreciación anual
+,49,[PROCESOS] Activos Fijos > Calculo de Depreciación,Calcular depreciación del periodo (sp_calcular_depreciacion)
+,50,[PROCESOS] Activos Fijos > Generación de Asientos de Depreciación,Generar asientos contables de depreciación
+,51,[PROCESOS] Activos Fijos > Generación de Asientos de Revaluación,Asientos de revaluación
+,52,[PROCESOS] Activos Fijos > Generación de Devengo Mensual de Aseguradores,Devengo mensual seguros
+,53,[TABLAS] RR.HH > Configuración > Parámetros de Fechas de Procesos,Definir periodos de nómina
+,54,[TABLAS] RR.HH > Configuración > Remuneración Mínima,Registrar RMV vigente
+,55,[TABLAS] RR.HH > Configuración > Parámetros de Control,Parámetros impuestos y aportes
+,56,[TABLAS] RR.HH > Datos del Personal > Datos Generales · /rrhh/maestro-personal/datos-contacto,Ficha trabajador: datos personales y contacto
+,58,[TABLAS] RR.HH > Categorías/Cargos · /rrhh/maestro-personal/definicion-cargos,Cargos y bandas salariales
+,,,
+,3 casos scripteados S3:,,
+,,AF E2E: alta activo #38 → cálculo depreciación #49 → asientos #50 (ver asiento en contabilidad si integrado).,
+,,Revaluación: #45 + asientos #51.,
+,,RRHH maestros: periodo #53 + trabajador #56 + cargo #58.,
+,#,Opción de menú Sprint 4,Qué debe probar QA / usuario
+,57,[TABLAS] RR.HH > Tipo de contrato · /rrhh/parametros/tipo-contrato,CRUD tipos de vínculo laboral
+,59,[TABLAS] RR.HH > Maestros > Administradoras de A.F.P.,CRUD fondos pensión y EPS
+,60,[TABLAS] RR.HH > Maestros > Calendario feriados (+ calendarios laborales),Feriados y turnos
+,61,[OPERACIONES] RR.HH > Asistencias y horas extra · /rrhh/asistencias-jornadas/asistencias-HE,Registrar asistencia; al guardar ver HE calculadas (#62 integrado)
+,63,[OPERACIONES] RR.HH > Mov. Info Variable > Vacaciones por Trabajador,Solicitud/saldo vacaciones (trg_actualizar_dias_gozados)
+,64,[OPERACIONES] RR.HH > Cálculo de Planilla > Ganancias y Descuentos Fijos,Conceptos fijos por trabajador
+,65,[OPERACIONES] RR.HH > Cálculo de Planilla > Ganancias y Descuentos Variables,Conceptos variables
+,66,[OPERACIONES] RR.HH > Propinas (RestPE),Calcular/registrar propinas (sp_calcular_propinas)
+,67,[OPERACIONES] RR.HH > Recargo al Consumo (RestPE),Calcular recargo (sp_calcular_recargo_consumo)
+,68,[OPERACIONES] RR.HH > Cálculo de Planilla > Cuenta Corriente,Anticipos y préstamos
+,69,[PROCESOS] RR.HH > Cálculo de Planilla > Cálculo de Planilla,Ejecutar planilla MVP (sp_calcular_planilla + sub-SP)
+,70,[OPERACIONES] RR.HH > Liquidaciones > Liquidaciones de Trabajador,Finiquito (sp_liquidar_beneficios)
+,71,[PROCESOS] RR.HH > Gratificaciones + Cálculo de C.T.S.,"Gratificación y CTS (sp_calcular_gratificacion, sp_calcular_cts)"
+,72,[CONSULTAS] RR.HH > Saldos de Cuenta Corriente,"Netos, adelantos y saldos (sp_generar_pago_remuneraciones)"
+,73,[REPORTES] RR.HH > Planillas y Boletas > Emisión de Boletas de Pago,Boletas/planilla (sp_generar_boleta_pago)
+,,,
+,3 casos scripteados S4:,,
+,,,
+,,Asistencia + planilla: asistencia #61 con HE → planilla #69 para mismo periodo.,
+,,Liquidación: finiquito #70 régimen general (truncas vía FN del SP).,
+,,Cierre nómina: gratificación/CTS #71 → netos #72 → boleta #73.,
