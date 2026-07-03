@@ -1,0 +1,160 @@
+N°,Nivel,Caso específico,Evento exacto del sistema,¿Inyecta stock?,Condición de pago / momento del dinero,Tipo de compra,Asiento manual,En el sistema,¿Lo soportamos? (SÍ/NO/PARCIAL),¿Cuál es la ruta? (compras > comprobantes),Observación (Falta agregar un campo o incluirlo)
+1,Fácil,"Registro de factura F001-4589 por compra de carnes por S/ 1,180 a Carnes Premium SAC, RUC 20604578912, para almacén Miraflores",Registro de factura con recepción inmediata,Sí,"Se pagará en el futuro. Crea CxP por S/ 1,180 al proveedor.",Inventario / materia prima,"Debe: 20/24 Materias primas 1,000Debe: 40 IGV crédito fiscal 180Haber: 42 Proveedores 1,180 ","Crea factura, CxP e ingreso de stock. No mueve banco/caja.",SI,ALMACEN-MAESTRO DE PRODUCTOS-> COMPRAS-REGISTRO DE FACTURA -> ALMACEN -ALMACENAMIENTO DE MERCADERIA - FINANZAS->CUENTAS POR PAGAR ,
+2,Fácil,"Pago por transferencia de factura F001-4589 por S/ 1,180 a Carnes Premium SAC",Pago de CxP registrada,No,"Se paga en ese momento. Sale banco por S/ 1,180.",Pago a proveedor,"Debe: 42 Proveedores 1,180Haber: 10 Banco 1,180",Cancela deuda. No vuelve a registrar compra ni stock.,SI,Finanzas > Cartera de Pagos > Elegir la factura > Llenar campos > Guarda ] Contabilidad > Reporte de Libros > Libro Diario > Revisión de factura,Mejorar la interfaz (cabeceras) del reporte de Libro Diario
+3,Fácil,"Registro de factura F002-7781 por compra de pollo entero por S/ 2,360 a Avícola Santa Rosa SAC, RUC 20518965432",Factura + recepción de stock,Sí,Se pagará en el futuro. Crédito a 7 días.,Inventario / materia prima,"Debe: 20/24 Materias primas 2,000Debe: 40 IGV crédito fiscal 360Haber: 42 Proveedores 2,360",Entra stock y queda CxP con fecha de vencimiento.,PARCIAL,CAJA CHICA->RENDICION DE GASTOS,FALTA INTERFAZ DE CAJA CHICA
+4,Fácil,"Compra urgente de verduras frescas por S/ 354 a Agroverduras del Valle EIRL, RUC 10458796321, pagada con caja POS",Compra directa con caja,Sí,Se paga en ese momento. Sale efectivo de caja POS.,Caja POS / compra urgente,Debe: 20/24 Insumos 300Debe: 40 IGV crédito fiscal 54Haber: 10 Caja POS 354,Mueve stock y caja en el mismo evento.,PARCIAL,CAJA CHICA->RENDICION DE GASTOS,FALTA INTERFAZ DE CAJA CHICA
+5,Fácil,Retiro de S/ 354 de caja POS por el cajero Luis Ramos para compra urgente de verduras,Entrega de dinero a rendir,No,"Se paga en ese momento al trabajador, pero todavía no al proveedor en contabilidad.",Entrega a rendir,Debe: 14/16 Entregas a rendir 354Haber: 10 Caja POS 354,No es compra aún. Solo dinero entregado a responsable.,PARCIAL,CAJA CHICA->RENDICION DE GASTOS,FALTA INTERFAZ DE CAJA CHICA
+6,Fácil,Rendición de compra urgente de verduras por S/ 354 con factura de Agroverduras del Valle EIRL,Rendición con comprobante,Sí,Ya fue pagado antes. Se aplica contra entrega a rendir.,Rendición + stock,Debe: 20/24 Insumos 300Debe: 40 IGV crédito fiscal 54Haber: 14/16 Entregas a rendir 354,Cierra la rendición y registra compra real.,SI,FINANZAS-RENDICION DE CUENTAS,
+7,Fácil,"Compra urgente de hielo por S/ 118 a Hielos Norte SAC, RUC 20607894561, pagada por cajero turno noche",Compra directa desde caja,Opcional,Se paga en ese momento. Sale efectivo de caja.,Gasto operativo / insumo,Debe: 63 Gasto cocina 100Debe: 40 IGV crédito fiscal 18Haber: 10 Caja POS 118,"Si se consume inmediato, va a gasto; si se controla, va a stock.",PARCIAL,CAJA CHICA->RENDICION DE GASTOS,FALTA INTERFAZ DE CAJA CHICA
+8,Fácil,Compra de cebolla y tomate por S/ 80 en mercado local sin comprobante válido,Registro de gasto sin sustento,Opcional,Se paga en ese momento. Sale caja.,Gasto no sustentado,Debe: 65 Gasto no sustentado 80Haber: 10 Caja POS 80,No genera IGV crédito fiscal.,PARCIAL,CAJA CHICA->RENDICION DE GASTOS,FALTA INTERFAZ DE CAJA CHICA
+9,Fácil,Factura F003-1022 por compra de gaseosas para reventa por S/ 708 a Distribuidora Bebidas Perú SAC,Factura + ingreso de mercadería,Sí,Se pagará en el futuro. Crédito a 15 días.,Mercadería para reventa,Debe: 20 Mercaderías 600Debe: 40 IGV crédito fiscal 108Haber: 42 Proveedores 708,Entra stock de reventa y CxP.,SI,"ALMACEN-MAESTRO DE PRODUCTOS-> COMPRAS-REGISTRO DE FACTURA -> ALMACEN-ALMACENAMIENTO DE MERCADERIA 
+FINANZAS-CUENTAS POR PAGAR",
+10,Fácil,"Pago parcial de S/ 400 de factura F003-1022 a Distribuidora Bebidas Perú SAC, saldo S/ 308",Pago parcial de CxP,No,Se paga una parte ahora. S/ 400 hoy; S/ 308 queda pendiente.,Pago parcial,Debe: 42 Proveedores 400Haber: 10 Banco 400,Factura queda parcialmente pagada.,PARCIAL,FINANZAS-CUENTAS POR PAGAR,NOS FALTA EL PAGO PARCIAL
+11,Fácil,"Factura F001-2190 por café en grano por S/ 472 a Café Andino SAC, RUC 20569874125",Factura + stock,Sí,Se pagará en el futuro. CxP a 10 días.,Materia prima,Debe: 24 Materias primas 400Debe: 40 IGV crédito fiscal 72Haber: 42 Proveedores 472,Entra al kárdex de café.,SI,"ALMACEN-MAESTRO DE PRODUCTOS-> COMPRAS-REGISTRO DE FACTURA -> ALMACEN-ALMACENAMIENTO DE MERCADERIA 
+FINANZAS-CUENTAS POR PAGAR",
+12,Fácil,Factura F002-4110 por bolsas delivery por S/ 295 a Empaques Food Service SAC,Factura + ingreso de suministros,Sí,Se pagará en el futuro. CxP a proveedor.,Envases / suministros,Debe: 25 Envases 250Debe: 40 IGV crédito fiscal 45Haber: 42 Proveedores 295,Entra a inventario de suministros si se controla.,SI,"ALMACEN-MAESTRO DE PRODUCTOS-> COMPRAS-REGISTRO DE FACTURA -> ALMACEN-ALMACENAMIENTO DE MERCADERIA 
+FINANZAS-CUENTAS POR PAGAR",
+13,Fácil,Factura F004-8750 por servilletas y sorbetes por S/ 141.60 a Comercial Papelera Lima SAC,Registro simple de factura de gasto,No,Se pagará en el futuro. CxP pequeña.,Suministro directo a gasto,Debe: 65 Suministros salón 120Debe: 40 IGV crédito fiscal 21.60Haber: 42 Proveedores 141.60,No mueve stock; solo gasto + CxP.,SI,"COMPRAS-REGISTRO DE FACTURA -> 
+FINANZAS-CUENTAS POR PAGAR","SE DEBE MODIFICAR EL SUBMÓDULO DE ""COMPRAS-FACTURAS QUE PERTENECEN A GASTOS"", PARA QUE SE CONSOLIDE EN UN SOLO INGRESO DE ""REGISTRO DE FACTURA""."
+14,Fácil,Factura F001-9090 por detergentes y lejía por S/ 177 a Limpieza Total SAC,Registro simple de gasto,No,Se pagará en el futuro. CxP.,Gasto operativo,Debe: 65 Limpieza 150Debe: 40 IGV crédito fiscal 27Haber: 42 Proveedores 177,No toca inventario de alimentos.,SI,"COMPRAS-REGISTRO DE FACTURA -> 
+FINANZAS-CUENTAS POR PAGAR","SE DEBE MODIFICAR EL SUBMÓDULO DE ""COMPRAS-FACTURAS QUE PERTENECEN A GASTOS"", PARA QUE SE CONSOLIDE EN UN SOLO SUBMÓDULO DE ""REGISTRO DE FACTURA""."
+15,Fácil,Pago en efectivo de factura F001-9090 por S/ 177 desde caja chica Arequipa,Pago de CxP con caja chica,No,Se paga en ese momento. Sale caja chica.,Pago caja chica,Debe: 42 Proveedores 177Haber: 10 Caja chica 177,Cancela deuda; no duplica gasto.,PARCIAL,CAJA CHICA->RENDICION DE GASTOS,FALTA INTERFAZ DE CAJA CHICA
+16,Fácil,Factura F007-3100 por gas de cocina por S/ 236 a Gas Norte SAC,Registro simple de insumo,Sí,Se pagará en el futuro. CxP.,Suministro operativo,Debe: 24 Materia Prima cocina 200Debe: 40 IGV crédito fiscal 36Haber: 42 Proveedores 236,Gasto operativo por local/cocina.,SI,"ALMACEN-MAESTRO DE PRODUCTOS-> COMPRAS-REGISTRO DE FACTURA -> ALMACEN-ALMACENAMIENTO DE MERCADERIA 
+FINANZAS-CUENTAS POR PAGAR",
+17,Fácil,Factura F001-2660 por uniformes para mozos por S/ 708 a Textiles Corporativos SAC,Registro de gasto,No,Se pagará en 2 cuotas futuras. S/ 354 + S/ 354.,Uniformes,Debe: 65 Uniformes 600Debe: 40 IGV crédito fiscal 108Haber: 42 Proveedores 708,Crea cronograma de pagos por cuotas.,PARCIAL,"COMPRAS-REGISTRO DE FACTURA -> 
+FINANZAS-CUENTAS POR PAGAR",NOS FALTA EL PAGO PARCIAL
+18,Fácil,Factura F005-1990 por descartables por S/ 212.40 a Descartables Express SAC,Factura de suministros,Sí o no según configuración,Se paga en ese momento con transferencia.,Suministros delivery,Debe: 25 Descartables 180Debe: 40 IGV crédito fiscal 32.40Haber: 10 Banco 212.40,Puede entrar a stock o gasto según producto. No crea CxP si se pagó al instante.,SI,"ALMACEN-MAESTRO DE PRODUCTOS-> COMPRAS-REGISTRO DE FACTURA -> ALMACEN-ALMACENAMIENTO DE MERCADERIA 
+FINANZAS-CUENTAS POR PAGAR
+FINANZAS-CARTERA DE PAGOS
+",
+19,Fácil,Factura F001-3301 por agua embotellada por S/ 118 a Agua Pura del Norte SAC para consumo interno,Registro de gasto,No,Se pagará en el futuro. CxP.,Consumo interno,Debe: 65 Consumo interno 100Debe: 40 IGV crédito fiscal 18Haber: 42 Proveedores 118,No confundir con mercadería para venta.,SI,"COMPRAS-REGISTRO DE FACTURA -> 
+FINANZAS-CUENTAS POR PAGAR",
+20,Fácil,Comprobante exonerado E001-1120 por papas nativas por S/ 200 a Productores Agrarios Unidos,Compra exonerada + stock,Sí,Se paga en ese momento con efectivo.,Compra sin IGV,Debe: 20/24 Insumos 200Haber: 10 Caja- Efectivo 200,No genera IGV crédito.,PARCIAL,"ALMACEN-MAESTRO DE PRODUCTOS-> COMPRAS-REGISTRO DE FACTURA -> ALMACEN-ALMACENAMIENTO DE MERCADERIA 
+FINANZAS-CUENTAS POR PAGAR
+FINANZAS-CARTERA DE PAGOS
+",NOS FALTA EL PAGO EN EFECTIVO
+21,Medio,"Orden de compra OC-00045 por carnes valorizadas en S/ 5,900 a Frigorífico Los Andes SAC",Creación de OC,No,No se paga todavía. No hay deuda contable.,OC sin asiento,No genera asiento.,"Solo intención de compra; no CxP, no IGV, no stock.",SI,COMPRAS-GENERAR ORDEN DE COMPRA,
+22,Medio,"Recepción RM-00045 por carnes de OC-00045 por S/ 5,000 base, sin factura recibida",Recepción sin factura,Sí,"Se pagará en el futuro, pero aún no hay factura formal.",Stock con provisión,"Debe: 20/24 Materias primas 5,000Haber: 42 Facturas por recibir 5,000",Entra stock; no hay IGV crédito aún.,SI,ALMACÉN- ALMACENAMIENTO DE MERCADERÍA,
+23,Medio,"Factura F001-7845 por S/ 5,900 de Frigorífico Los Andes contra recepción RM-00045",Registro posterior de factura,No,"Se pagará en el futuro. CxP formal por S/ 5,900.",Regularización de factura,"Debe: 42 Facturas por recibir 5,000Debe: 40 IGV crédito fiscal 900Haber: 42 Proveedores 5,900",Convierte provisión en proveedor real. No duplica stock.,SI,"COMPRAS-REGISTRO DE FACTURA -> 
+FINANZAS-CUENTAS POR PAGAR
+
+",
+24,Medio,"Factura F002-8891 por pollo por S/ 11,800 a Avícola El Granero SAC, con OC y recepción completa",Triple match,"Sí, si no hubo recepción previa","Se pagará en 3 cuotas futuras. S/ 3,933.33 cada una.",Compra controlada,"Debe: 20/24 Materias primas 10,000Debe: 40 IGV crédito fiscal 1,800Haber: 42 Proveedores 11,800",Crea CxP con cronograma de 3 cuotas.,PARCIAL,"ALMACEN-MAESTRO DE PRODUCTOS-> COMPRAS-REGISTRO DE FACTURA -> ALMACEN-ALMACENAMIENTO DE MERCADERIA 
+FINANZAS-CUENTAS POR PAGAR
+
+",NOS FALTA EL PAGO PARCIAL
+25,Medio,Recepción parcial de 70 kg de pollo por S/ 991.20 de Avícola Santa Rosa SAC,Recepción parcial con factura parcial,"Sí, solo 70 kg",Se pagará en el futuro. Solo por lo recibido/facturado.,Recepción parcial,Debe: 20/24 Materias primas 840Debe: 40 IGV crédito fiscal 151.20Haber: 42 Proveedores 991.20,OC queda parcialmente atendida.,SI,"ALMACEN-MAESTRO DE PRODUCTOS-> COMPRAS-REGISTRO DE FACTURA -> ALMACEN-ALMACENAMIENTO DE MERCADERIA 
+FINANZAS-CUENTAS POR PAGAR
+
+",
+26,Medio,"Factura F001-4580 por carnes por S/ 1,180 recibida antes de la mercadería",Factura antes de recepción,No todavía,Se pagará en el futuro. CxP nace con factura.,Mercadería en tránsito,"Debe: 28 Mercadería por recibir 1,000Debe: 40 IGV crédito fiscal 180Haber: 42 Proveedores 1,180",No habilita stock hasta recepción física.,SI,"COMPRAS-REGISTRO DE FACTURA -> 
+FINANZAS-CUENTAS POR PAGAR
+
+",
+27,Medio,"Recepción física posterior de carnes de factura F001-4580 por S/ 1,000 base",Ingreso desde tránsito,Sí,No se paga en este evento. La CxP ya existe.,Regularización de tránsito,"Debe: 20/24 Materias primas 1,000Haber: 28 Mercadería por recibir 1,000",Solo mueve tránsito a inventario.,SI,"ALMACEN-MAESTRO DE PRODUCTOS-> ALMACEN-ALMACENAMIENTO DE MERCADERIA 
+
+
+",
+28,Medio,"Factura F001-7000 por insumos por S/ 1,062 con descuento comercial de S/ 100",Factura con descuento,Sí,Se pagará en el futuro. CxP por neto facturado.,Compra con descuento,"Debe: 20/24 Insumos 900Debe: 40 IGV crédito fiscal 162Haber: 42 Proveedores 1,062","Guarda precio bruto, descuento y neto.",SI,"ALMACEN-MAESTRO DE PRODUCTOS-> COMPRAS-REGISTRO DE FACTURA -> COMPRAS-NOTAS DE CRÉDITO ALMACEN-ALMACENAMIENTO DE MERCADERIA 
+FINANZAS-CUENTAS POR PAGAR
+
+",
+29,Medio,"Factura F002-2500 por carnes por S/ 1,298 con flete incluido",Compra + flete,Sí,"Se pagará parcialmente. S/ 500 hoy, S/ 798 futuro.",Compra + flete,"Factura:Debe: 20/24 Materias primas 1,000Debe: 63 Flete 100Debe: 40 IGV crédito fiscal 198Haber: 42 Proveedores 1,298Pago parcial:Debe: 42 Proveedores 500Haber: 10 Banco 500",Debe dejar saldo pendiente de S/ 798.,PARCIAL,"ALMACEN-MAESTRO DE PRODUCTOS-> COMPRAS-REGISTRO DE FACTURA -> ALMACEN-ALMACENAMIENTO DE MERCADERIA 
+FINANZAS-CUENTAS POR PAGAR
+
+","NOS FALTA EL PAGO PARCIAL Y
+EL REGISTRO DEL FLETE"
+30,Medio,Factura F001-9801 por flete por S/ 354 a Transportes Rápidos SAC,Servicio de transporte,No,Se pagará en el futuro. CxP.,Servicio transporte,Debe: 63 Flete 300Debe: 40 IGV crédito fiscal 54Haber: 42 Proveedores 354,"No inyecta stock, salvo distribución de costo configurada.",SI,"COMPRAS-REGISTRO DE FACTURA -> 
+FINANZAS-CUENTAS POR PAGAR
+
+",
+31,Medio,"Factura F001-6550 por limpieza de campana por S/ 1,770, sujeta a detracción 12%",Registro de factura con detracción,No,Se pagará en el futuro con pago dividido. Proveedor + Banco Nación.,Servicio con detracción,"Debe: 63 Mantenimiento 1,500Debe: 40 IGV crédito fiscal 270Haber: 42 Proveedores 1,770",Marca obligación de detracción.,SI,"COMPRAS-REGISTRO DE FACTURA -> 
+FINANZAS-CUENTAS POR PAGAR
+
+",
+32,Medio,"Pago de factura F001-6550: S/ 1,557.60 al proveedor y S/ 212.40 al Banco de la Nación",Pago con detracción,No,"Se paga en ese momento, dividido en dos destinos.",Pago con detracción,"Debe: 42 Proveedores 1,770Haber: 10 Banco proveedor 1,557.60Haber: 10 Banco Nación 212.40","Una factura, dos salidas bancarias.",SI,"FINANZAS-CARTERA DE PAGOS
+FINANZAS-PAGO DE DETRACCIONES
+
+
+",
+33,Medio,"Factura F008-4100 por insumos por S/ 1,203.60 con percepción de S/ 23.60",Factura con percepción,Sí,Se paga en ese momento por el total percibido.,Compra con percepción,"Debe: 20/24 Insumos 1,000Debe: 40 IGV crédito fiscal 180Debe: 40 Percepciones por aplicar 23.60Haber: 10 Banco 1,203.60","Percepción es crédito tributario, no gasto.",SI,"ALMACEN-MAESTRO DE PRODUCTOS-> COMPRAS-REGISTRO DE FACTURA -> ALMACEN-ALMACENAMIENTO DE MERCADERIA 
+FINANZAS-CUENTAS POR PAGAR
+FINANZAS- CARTERA DE PAGOS
+
+",
+34,Medio,"Compra de cuchillos por S/ 1,180 a Equipos Chef SAC pagada con tarjeta de crédito corporativa BCP",Compra con tarjeta crédito,No,"Se paga con tarjeta ahora, pero el dinero saldrá en el futuro al banco emisor.",Tarjeta corporativa,"Debe: 65/33 Utensilios 1,000Debe: 40 IGV crédito fiscal 180Haber: 46 Tarjeta crédito por pagar 1,180","La deuda queda con el banco, no con el proveedor.",PARCIAL,"COMPRAS-REGISTRO DE FACTURA ->  
+FINANZAS-CUENTAS POR PAGAR
+FINANZAS- CARTERA DE PAGOS
+
+",NOS FALTA EL PAGO POR TARJETA DE CREDITO
+35,Medio,"Pago de estado de cuenta de tarjeta corporativa BCP por S/ 1,180",Pago a banco emisor,No,Se paga en ese momento al banco.,Pago tarjeta,"Debe: 46 Tarjeta crédito por pagar 1,180Haber: 10 Banco 1,180",Cancela deuda de tarjeta.,SI," 
+FINANZAS- CARTERA DE PAGOS
+FINANZAS- CRUCE DE EXTRACTO BANCARIO
+FINANZAS-CONCILIACIONES BANCARIAS 
+
+
+",
+36,Medio,Compra de vajilla por S/ 590 pagada con tarjeta de débito empresarial,Compra con débito,No,Se paga en ese momento. Sale banco inmediatamente.,Pago inmediato,Debe: 65/33 Vajilla 500Debe: 40 IGV crédito fiscal 90Haber: 10 Banco 590,No genera CxP.,SI,"COMPRAS-REGISTRO DE FACTURA ->  
+FINANZAS-CUENTAS POR PAGAR
+FINANZAS- CARTERA DE PAGOS
+
+",
+37,Medio,Compra de pescados por S/ 944 pagada por transferencia inmediata y recibida en almacén,Compra + pago + stock,Sí,Se paga en ese momento. Banco sale hoy.,Compra pagada,Debe: 20/24 Pescados 800Debe: 40 IGV crédito fiscal 144Haber: 10 Banco 944,Stock y banco en el mismo evento.,SI,"ALMACEN-MAESTRO DE PRODUCTOS-> COMPRAS-REGISTRO DE FACTURA -> ALMACEN-ALMACENAMIENTO DE MERCADERIA 
+FINANZAS-CUENTAS POR PAGAR
+FINANZAS- CARTERA DE PAGOS
+
+",
+38,Medio,"Compra de verduras por S/ 1,180 pagada S/ 300 caja POS y S/ 880 transferencia",Compra con pago mixto,Sí,"Se paga totalmente en ese momento, con dos medios.",Pago mixto,"Debe: 20/24 Verduras 1,000Debe: 40 IGV crédito fiscal 180Haber: 10 Caja POS 300Haber: 10 Banco 880",Debe afectar caja y banco por separado.,PARCIAL,"ALMACEN-MAESTRO DE PRODUCTOS-> COMPRAS-REGISTRO DE FACTURA -> ALMACEN-ALMACENAMIENTO DE MERCADERIA 
+FINANZAS-CUENTAS POR PAGAR
+FINANZAS- CARTERA DE PAGOS
+
+",FALTA INTERFAZ DE CAJA CHICA
+39,Medio,"Anticipo de S/ 1,000 a Licores Selectos SAC por reserva de bebidas",Pago anticipado,No,"Se paga ahora, pero la compra real será en el futuro.",Anticipo,"Debe: 42/46 Anticipos proveedores 1,000Haber: 10 Banco 1,000",No crea stock ni gasto.,PARCIAL,"FINANZAS-CUENTAS POR PAGAR
+FINANZAS- CARTERA DE PAGOS
+
+",FALTA REGISTRO DE ANTICIPO SIN DOCUMENTO
+40,Medio,"Factura definitiva F001-1200 por S/ 1,180 de Licores Selectos SAC aplicando anticipo de S/ 1,000",Factura + aplicación de anticipo,Sí,Se paga una parte con anticipo ya entregado y queda saldo futuro de S/ 180.,Aplicación anticipo,"Factura:Debe: 20 Mercaderías 1,000Debe: 40 IGV crédito fiscal 180Haber: 42 Proveedores 1,180Aplicación:Debe: 42 Proveedores 1,000Haber: 42/46 Anticipos 1,000",Saldo CxP final: S/ 180.,SI,"ALMACEN-MAESTRO DE PRODUCTOS-> COMPRAS-REGISTRO DE FACTURA -> ALMACEN-ALMACENAMIENTO DE MERCADERIA 
+FINANZAS-CUENTAS POR PAGAR
+FINANZAS- CARTERA DE PAGOS
+
+",
+41,Medio,Entrega de S/ 500 al administrador Juan Pérez para compras menores,Entrega a rendir,No,Se paga ahora al trabajador; el sustento vendrá después.,Fondo por rendir,Debe: 14/16 Entregas a rendir 500Haber: 10 Caja/Banco 500,No es gasto todavía.,SI,"FINANZAS-RENDICION DE GASTOS
+
+
+",
+42,Medio,"Rendición de Juan Pérez por S/ 531 en focos, pilas y artículos menores",Rendición con reembolso,No,Parte ya fue entregada antes; se paga diferencia de S/ 31 ahora.,Rendición gastos,Debe: 63 Gastos menores 450Debe: 40 IGV crédito fiscal 81Haber: 14/16 Entregas a rendir 500Haber: 10 Caja/Banco 31,Cierra rendición y reembolsa exceso.,PARCIAL,"FINANZAS-RENDICION DE GASTOS
+FINANZAS-APROBACIÓN DE RENDICIÓN DE GASTOS
+FINANZAS-CIERRE DE LIQUIDACIÓN DE ADELANTOS
+
+
+",FALTA VINCULAR EL SALDO A REGULARIZAR POR CAJA/BANCO
+43,Medio,"Creación de caja chica por S/ 1,000 para local San Isidro",Habilitación fondo fijo,No,Se transfiere dinero ahora de banco a caja chica.,Caja chica,"Debe: 10 Caja chica 1,000Haber: 10 Banco 1,000","No es gasto, solo traslado de fondos.",NO,CAJA CHICA,FALTA CREACIÓN DE LA PANTALLA DE CAJA CHICA
+44,Medio,"Rendición de caja chica por S/ 826 por limpieza, movilidad y mantenimiento menor",Rendición caja chica,No,Ya se pagó desde caja chica. Se reconoce el gasto.,Rendición caja chica,Debe: 63 Gastos menores 700Debe: 40 IGV crédito fiscal 126Haber: 10 Caja chica 826,Reduce caja chica y registra gasto.,PARCIAL,CAJA CHICA->RENDICION DE GASTOS,FALTA CREACIÓN DE LA PANTALLA DE CAJA CHICA
+45,Medio,Reposición de caja chica por S/ 826 al local San Isidro,Reposición fondo fijo,No,Se paga ahora desde banco a caja chica.,Reposición caja chica,Debe: 10 Caja chica 826Haber: 10 Banco 826,No duplica gasto. Solo repone caja.,NO,CAJA CHICA,FALTA CREACIÓN DE LA PANTALLA DE CAJA CHICA
+46,Medio,Nota de crédito NC01-077 por S/ 118 de Carnes Premium SAC por devolución de carne en mal estado,Nota de crédito proveedor,"Sí, disminuye stock",No se paga. Reduce CxP o genera saldo a favor.,Nota de crédito,Debe: 42 Proveedores 118Haber: 20/24 Materias primas 100Haber: 40 IGV crédito fiscal 18,Ajusta stock y deuda.,SI,COMPRAS-REGISTRO DE NOTAS DE CREDITO/DEBITO,
+47,Medio,Nota de débito ND01-033 por S/ 118 de Distribuidora Bebidas Perú SAC por diferencia de precio,Nota de débito proveedor,Depende,Se pagará en el futuro. Aumenta CxP.,Nota de débito,Debe: 20/63 Compra/gasto 100Debe: 40 IGV crédito fiscal 18Haber: 42 Proveedores 118,Aumenta deuda. Puede ajustar costo o gasto.,SI,COMPRAS-REGISTRO DE NOTAS DE CREDITO/DEBITO,
+48,Complejo,"Compra centralizada de carnes por S/ 11,800 a Frigorífico Los Andes para almacén central",Compra central,"Sí, almacén central","Se pagará en 2 cuotas futuras. S/ 5,900 + S/ 5,900.",Multi-sucursal,"Debe: 20/24 Almacén central 10,000Debe: 40 IGV crédito fiscal 1,800Haber: 42 Proveedores 11,800",Crea cronograma de pago; stock queda en almacén central.,PARCIAL,"COMPRAS-REGISTRO DE FACTURA -> 
+FINANZAS-CUENTAS POR PAGAR
+
+",NOS FALTA EL PAGO PARCIAL
+49,Complejo,"Transferencia interna de carnes por S/ 3,000 desde almacén central a local Miraflores",Transferencia entre almacenes,"Sí, sale/entra stock",No hay pago. Es movimiento interno del mismo RUC.,Transferencia stock,"Debe: 20/24 Inventario Miraflores 3,000Haber: 20/24 Inventario central 3,000","No proveedor, no IGV, no banco.",Si,ALMACEN-REQUERIMIENTO DE TRASLADO ENTRE ALMACENES -> ALMACENES-DESPACHO DE PRODUCTOS -> ALMACEN-RECEPCION DE MERCADERIA,
+50,Complejo,"Compra de refrigeradora industrial por S/ 5,000 al crédito a Equipos Frío Perú SAC",Factura activo fijo al crédito,No,"Se pagará en el futuro. CxP por S/ 5,000.",Activo fijo,"Debe: 33 Maquinaria y equipo 4,237.29
+Debe 40 IGV crédito fiscal 762.71 Haber: 42 Proveedores 5,000",Crea activo fijo y deuda.,SI,"ACTIVOS - MAESTRO DE ACTIVOS FIJOS  -> FINANZAS-CUENTAS POR PAGAR
+
+
+",
+51,Complejo,"Factura F001-9000 por horno industrial por S/ 23,600 a Hornos Profesionales SAC",Activo fijo con IGV,No,Se pagará 40% ahora y 60% en el futuro.,Activo fijo,"Factura:Debe: 33 Equipo 20,000Debe: 40 IGV crédito fiscal 3,600Haber: 42 Proveedores 23,600Pago inicial:Debe: 42 Proveedores 9,440Haber: 10 Banco 9,440","Queda saldo CxP S/ 14,160.",SI,"ACTIVOS - MAESTRO DE ACTIVOS FIJOS -> FINANZAS-CUENTAS POR PAGAR
+FINANZAS- CARTERA DE PAGOS
+
+
+
+",
+52,Complejo,Inicio de depreciación mensual del horno industrial por S/ 333.33,Depreciación mensual,No,No se paga. Es devengo contable.,Depreciación,Debe: 68 Depreciación 333.33Haber: 39 Depreciación acumulada 333.33,Asiento automático mensual. No toca banco ni proveedor.,SI,ACTIVOS - TABLAS --OPERACIONES,
+53,Complejo,Compra de licuadora pequeña por S/ 472 a Menaje Profesional SAC como gasto por bajo importe,Factura gasto,No,Se paga en ese momento con tarjeta débito.,Activo menor gasto,Debe: 63 Equipos menores 400Debe: 40 IGV crédito fiscal 72Haber: 10 Banco 472,No crea activo fijo.,,,
+54,Complejo,"Pago anual de seguro del local por S/ 14,160 a Seguros Andinos SAC, cobertura julio 2026-junio 2027",Gasto anticipado,No,"Se paga en ese momento, pero se devenga en el futuro mes a mes.",Gasto anticipado,"Debe: 18 Gastos pagados por anticipado 12,000Debe: 40 IGV crédito fiscal 2,160Haber: 10 Banco 14,160",Sale banco hoy; gasto se reconoce mensualmente.,,,
+55,Complejo,"Devengo mensual de seguro del local por S/ 1,000 correspondiente a julio 2026",Devengo gasto diferido,No,No se paga. Ya fue pagado antes.,Devengo diferido,"Debe: 63 Seguros 1,000Haber: 18 Gastos pagados por anticipado 1,000",Reconoce consumo mensual.,,,
+56,Complejo,"Compra importada de horno industrial por USD 6,000 a KitchenPro USA LLC, TC 3.70",Factura proveedor extranjero,No,Se pagará en el futuro en dólares.,Importación / activo fijo,"Debe: 33 Maquinaria y equipo 22,200Haber: 42 Proveedores exterior 22,200",Crea CxP en USD con tipo de cambio.,,,
+57,Complejo,"Registro de IGV de importación por S/ 3,996 según DAM del horno KitchenPro USA LLC",Registro tributo importación,No,Se paga en ese momento o queda tributo por pagar según operación aduanera.,IGV importación,"Debe: 40 IGV crédito fiscal importación 3,996Haber: 10 Banco / 40 Tributos por pagar 3,996","El IGV nace con documento aduanero, no con factura extranjera.",,,
+58,Complejo,"Pago de factura en dólares a KitchenPro USA LLC por USD 6,000 con pérdida de cambio de S/ 400",Pago CxP extranjera,No,"Se paga en ese momento. Sale banco por S/ 22,600.",Diferencia cambio pérdida,"Debe: 42 Proveedores exterior 22,200Debe: 67 Pérdida cambio 400Haber: 10 Banco 22,600",No toca activo fijo; solo cancela CxP y reconoce diferencia.,,,
+59,Complejo,"Compra común de alquiler de cocina central por S/ 5,900 con IGV parcialmente recuperable por prorrata 90%",Factura de gasto común,No,Se pagará mensualmente en el futuro. CxP al arrendador.,IGV prorrata,"Debe: 63 Alquiler 5,000Debe: 40 IGV crédito fiscal 810Debe: 63 IGV no recuperable 90Haber: 42 Proveedores 5,900",Separa IGV recuperable y no recuperable.,,,
+60,Complejo,"Factura de compra de carnes de mayo por S/ 1,180 recibida en junio, con mayo ya cerrado",Registro tardío,Depende,"Se pagará en el futuro, salvo que ya hubiera sido pagada/provisionada.",Periodo cerrado,"Si no hubo recepción:Debe: 20/24 Materias primas 1,000Debe: 40 IGV crédito fiscal 180Haber: 42 Proveedores 1,180Si ya hubo recepción:Debe: 42 Facturas por recibir 1,000Debe: 40 IGV crédito fiscal 180Haber: 42 Proveedores 1,180",No debe contabilizar en periodo cerrado. Debe evitar duplicar stock si ya existía recepción.,,,

@@ -6,22 +6,28 @@
 >
 > **Responsable:** QA Senior — Frontend Testing
 >
-> **Fecha:** 17/06/2026
+> **Fecha:** 17/06/2026 — **Actualizado:** 03/07/2026 (motor v2, multi-país, casos por módulo)
 >
+> **🆕 Referencias complementarias:**
+> - `reportes/CASOS POR MODULO - COMPRAS.csv` — 60 casos con asientos manuales de referencia
+> - `reportes/CASOS POR MODULO - VENTAS.csv` — 49 casos con asientos manuales de referencia
+> - `reportes/MAPA_FUNCIONAL_CONSOLIDADO.md` — Mapa integrado frontend + backend
+> - `reportes/01-VISION.md` a `11-REVISION_COMPLETA.md` — Motor de Asientos v2
+
 > **HU Referenciadas:**
 >
-> | HU | Funcionalidad | Sprint |
-> |:---|:---|:---:|
-> | `HU-FIN-OPE-001` | Ingreso de Facturas de Proveedores desde Compras | S1 |
-> | `HU-FIN-OP-CP-001` | Registro de Facturas No Asociadas a Compras | S1 |
-> | `HU-COM-OPE-003` | Registro de Ajustes / NC / ND de Deuda | S1 |
-> | `HU-RRHH-PN-CP-001` | Configuración y Cálculo de Conceptos Fijos | S4 |
-> | `HU-RRHH-PN-CP-002` | Carga Masiva o Automática de Variables | S4 |
-> | `HU-RRHH-PN-CP-003` | Distribución de Propinas Automática | S4 |
-> | `HU-RRH-NOM-CP-007` | Distribución del Recargo al Consumo | S4 |
-> | `HU-RRHH-NOM-CC-001` | Gestión de Adelantos, Préstamos y Amortizaciones | S4 |
-> | `HU-RRHH-NOM-AR-001` | Cálculo de Impuestos y Contribuciones Sociales | S4 |
-> | `HU-RRHH-NOM-LIQ-001` | Liquidación de Vacaciones, Indemnizaciones y Beneficios | S4 |
+> | HU | Funcionalidad | Sprint | Evento Motor v2 🆕 |
+> |:---|:---|:---:|:---|
+> | `HU-FIN-OPE-001` | Ingreso de Facturas de Proveedores desde Compras | S1 | `COMPRA_REGISTRADA` |
+> | `HU-FIN-OP-CP-001` | Registro de Facturas No Asociadas a Compras | S1 | `COMPRA_REGISTRADA` |
+> | `HU-COM-OPE-003` | Registro de Ajustes / NC / ND de Deuda | S1 | `NC_COMPRA` |
+> | `HU-RRHH-PN-CP-001` | Configuración y Cálculo de Conceptos Fijos | S4 | `PLANILLA_DEVENGADA` |
+> | `HU-RRHH-PN-CP-002` | Carga Masiva o Automática de Variables | S4 | `PLANILLA_DEVENGADA` |
+> | `HU-RRHH-PN-CP-003` | Distribución de Propinas Automática | S4 | `sp_calcular_propinas` |
+> | `HU-RRH-NOM-CP-007` | Distribución del Recargo al Consumo | S4 | `sp_calcular_recargo_consumo` |
+> | `HU-RRHH-NOM-CC-001` | Gestión de Adelantos, Préstamos y Amortizaciones | S4 | `PRESTAMO_DESEMBOLSADO` / `PRESTAMO_CUOTA_PAGADA` |
+> | `HU-RRHH-NOM-AR-001` | Cálculo de Impuestos y Contribuciones Sociales | S4 | `PLANILLA_DEVENGADA` |
+> | `HU-RRHH-NOM-LIQ-001` | Liquidación de Vacaciones, Indemnizaciones y Beneficios | S4 | `sp_liquidar_beneficios` |
 
 ---
 
@@ -37,6 +43,8 @@
 | 🟣 **Estado** | Loading, empty, success, transiciones |
 | ⚫ **Edge** | Casos límite, caracteres especiales, datos extremos |
 | 🔗 **Integración** | Navegación entre pantallas, dependencias, flujos cruzados |
+| 🆕 **Motor v2** | Alineación con evento de dominio del Motor de Asientos v2 |
+| 🆕 **Multi-país** | Comportamiento varía según país (PE/CO/EC) |
 
 ---
 
@@ -1877,3 +1885,71 @@
 ---
 
 *Documento generado el 17/06/2026 — v3.0 — 165 casos, 27 HU trazadas (Compras, CxP, Activos Fijos, RR.HH Planillas) — QA Senior - Frontend Testing*
+
+---
+
+## 🆕 Alineación Backend — Motor de Asientos v2 (03/07/2026)
+
+> **Referencia:** `reportes/01-VISION.md` a `reportes/05-CATALOGO_EVENTOS.md`
+> **Nota:** El motor v2 está en fase de diseño. Los CPs de este documento validan la UI. La validación del asiento contable resultante requiere casos adicionales de los CSVs por módulo.
+
+### Mapeo CP → Evento de Dominio
+
+| Sección | CPs | Evento Motor v2 | Asientos |
+|:--------|:----|:----------------|:---------|
+| 1.1 Proveedores | CP-S1-001 al 008 | (maestro, no genera evento) | — |
+| 1.2 OC | CP-S1-009 al 016 | (intención, no genera evento) | — |
+| 1.3 Aprobación OC | CP-S1-017 al 022 | (workflow, no genera evento) | — |
+| 1.5 CxP | CP-S1-026 al 032 | `COMPRA_REGISTRADA` | 1 |
+| 1.6 NC/ND | CP-S1-033 al 038 | `NC_COMPRA` | 1 (revierte) |
+| 1.8 Reportes Compras | CP-S1-040, 041 | `sp_generar_reporte_compras` | — |
+| 3.1 Maestro AF | CP-S3-001 al 005 | (maestro) | — |
+| 3.3 Operaciones AF | CP-S3-011, 012 | `MEJORA_ACTIVO` | 1 |
+| 3.3 Baja AF | CP-S3-013 al 015 | `BAJA_ACTIVO` / `VENTA_ACTIVO` | 1 |
+| 3.4 Depreciación | CP-S3-016, 019 | `DEPRECIACION_MENSUAL` | 1 |
+| 3.4 Revaluación | CP-S3-017, 018 | `REVALUACION_ACTIVO` | 1 |
+| 3.4 Asientos | CP-S3-020, 021 | (batch desde depreciación/revaluación) | 1 |
+| 3.4 Devengo Seguros | CP-S3-022 | `DEVENGAMIENTO_SEGURO` | 1 |
+| 3.5 RRHH Config | CP-S3-025 al 027 | (maestro) | — |
+| 3.6 Personal | CP-S3-028 al 030 | (maestro) | — |
+| 4.4 Conceptos Fijos | CP-S4-008 al 014 | `PLANILLA_DEVENGADA` | 1 |
+| 4.5 Carga Variables | CP-S4-015 al 018 | `PLANILLA_DEVENGADA` | 1 |
+| 4.6 Propinas | CP-S4-019 al 023 | `sp_calcular_propinas` | — |
+| 4.7 Recargo | CP-S4-024 al 028 | `sp_calcular_recargo_consumo` | — |
+| 4.8 Cuenta Corriente | CP-S4-029 al 033 | `PRESTAMO_DESEMBOLSADO` / `PRESTAMO_CUOTA_PAGADA` | 1 |
+| 4.9 Cálculo Planilla | CP-S4-034 al 039 | `PLANILLA_DEVENGADA` / `PLANILLA_PAGADA` | 1 cada uno |
+| 4.10 Liquidaciones | CP-S4-040 al 047 | `sp_liquidar_beneficios` | — |
+| 4.11 Gratificación/CTS | CP-S4-048, 049 | `PROVISION_GRATIFICACION` / `PROVISION_CTS` | 1 cada uno |
+| 4.12 Saldos CC | CP-S4-050 | `sp_generar_pago_remuneraciones` | — |
+| 4.13 Boletas | CP-S4-051 | `sp_generar_boleta_pago` | — |
+
+### Multi-País 🆕
+
+> **Nota:** Los CPs actuales no consideran variaciones por país. Las diferencias clave por país son:
+
+| Aspecto | PE (Perú) | CO (Colombia) | EC (Ecuador) |
+|:--------|:----------|:--------------|:-------------|
+| IVA | 18% | 19% | 15% |
+| Plan Contable | PCGE | PUC | SRI/NIIF |
+| Impuestos extra | Detracción, Percepción, ITF, ICBPER | ReteFuente, ReteIVA, ReteICA, GMF, INC | ISD |
+| Autoridad Fiscal | SUNAT | DIAN | SRI |
+| Moneda funcional | PEN | COP | USD |
+| Formato RUC/DNI | 11 dígitos | NIT | RUC |
+
+> Se requieren CPs adicionales que validen el comportamiento del sistema con configuración de Colombia y Ecuador.
+
+### Gaps Conocidos 🆕
+
+> **Fuente:** `reportes/COMPARATIVO_COBERTURA.md` y `reportes/PLANTILLA_EJECUCION_MANUAL_SPRINT1.md`
+
+| # | Gap | Módulo | Impacto en CPs |
+|---|-----|--------|:--------------|
+| 1 | Pantalla de Caja Chica no existe | Finanzas | Bloquea ~5 CPs nuevos |
+| 2 | Pago parcial de factura | Finanzas | Afecta CP-S1-026 y flujos E2E |
+| 3 | Pago mixto | Finanzas | No cubierto por CPs actuales |
+| 4 | Pago con tarjeta crédito corporativa | Finanzas | No cubierto |
+| 5 | Anticipo sin documento | Compras | No cubierto |
+| 6 | Importación con DAM/DUA | Compras | No cubierto |
+| 7 | Diferencia de cambio en pago ME | Tesorería | No cubierto |
+| 8 | Gasto anticipado con devengo | Compras | No cubierto |
+| 9 | Factura con detracción del cliente | Ventas | No cubierto |

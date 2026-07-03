@@ -1,22 +1,26 @@
-# Comparativo de Cobertura — CSV vs Casos de Prueba Frontend
+# Comparativo de Cobertura — CSV vs Casos de Prueba Frontend vs Casos por Módulo
 
 > **Fuente CSV:** `Listado de funcionalidades y flujos por probar por sprint - Hoja 1.csv`
 >
 > **Fuente MD:** `CASOS_PRUEBA_FRONTEND_POR_SPRINT.md` (165 casos, 27 HU trazadas)
 >
-> **Fecha:** 17/06/2026
+> **Fuente CSVs por Módulo 🆕:** `CASOS POR MODULO - COMPRAS.csv` (60 casos) + `CASOS POR MODULO - VENTAS.csv` (49 casos)
+>
+> **Fuente Motor v2 🆕:** `01-VISION.md` a `05-CATALOGO_EVENTOS.md` (33 eventos, 79 componentes)
+>
+> **Fecha:** 17/06/2026 — **Actualizado:** 03/07/2026
 
 ---
 
 ## Resumen
 
-| Sprint | Items CSV | Cubiertos en MD | Gaps | % Cobertura |
-|--------|----------:|:----------------:|:----:|:-----------:|
-| S1 | 14 items + 3 E2E | 51 CP (todos cubiertos) | Ninguno | 100% |
-| S2 | 18 items + 3 E2E | 25 CP (#36 no cubierto) | **#36** | ~95% |
-| S3 | 17 items + 3 E2E | 33 CP (todos cubiertos) | Ninguno | 100% |
-| S4 | 14 items + 3 E2E | 56 CP (todos cubiertos) | Ninguno | 100% |
-| **Total** | **63 items + 12 E2E** | **165 CP** | **1 item** | **~98%** |
+| Sprint | Items CSV | Cubiertos en MD | + Casos Módulo 🆕 | Gaps | % Cobertura MD |
+|--------|----------:|:----------------:|:-----------------:|:----:|:--------------:|
+| S1 | 14 items + 3 E2E | 51 CP (todos cubiertos) | +109 (Compras 60 + Ventas 49) | Ninguno en MD, 15 en CSVs 🆕 | 100% MD |
+| S2 | 18 items + 3 E2E | 25 CP (#36 no cubierto) | — | **#36** | ~95% |
+| S3 | 17 items + 3 E2E | 33 CP (todos cubiertos) | — | Ninguno | 100% |
+| S4 | 14 items + 4 E2E | 56 CP (todos cubiertos) | — | Ninguno | 100% |
+| **Total** | **63 items + 13 E2E** | **165 CP** | **+109 CP** | **1 item MD + 15 gaps CSV** 🆕 | **~98%** |
 
 ---
 
@@ -129,15 +133,78 @@
 
 ---
 
-## Gap Identificado
+## Cobertura Casos por Módulo 🆕
 
-### Item #36 — Formatos SUNAT básicos
+### CSV Compras (60 casos)
+
+| Nivel | Cantidad | Soporte | Observación |
+|:------|:--------:|:-------:|:------------|
+| Fácil | 20 | ✅ 14, ⚠️ 6 | Caja chica, pago parcial, pago mixto no soportados |
+| Medio | 27 | ✅ 16, ⚠️ 8, ❌ 3 | Anticipo sin doc, tarjeta crédito, caja chica |
+| Complejo | 13 | ✅ 4, ⚠️ 4, ❌ 5 | Importación, diferencia cambio, gasto anticipado, prorrata IGV |
+| **Total** | **60** | **✅ 34, ⚠️ 18, ❌ 8** | **57% soporte completo** |
+
+### CSV Ventas (49 casos)
+
+| Nivel | Cantidad | Soporte | Observación |
+|:------|:--------:|:-------:|:------------|
+| Fácil | 10 | ✅ 10 | Efectivo, Yape, Plin, tarjeta, exonerado |
+| Medio | 23 | ✅ 18, ⚠️ 5 | Liquidación, gift card, delivery, anticipo |
+| Complejo | 16 | ✅ 8, ⚠️ 5, ❌ 3 | Detracción cliente, multi-sucursal, importación |
+| **Total** | **49** | **✅ 36, ⚠️ 10, ❌ 3** | **73% soporte completo** |
+
+---
+
+## Cobertura Motor de Asientos v2 🆕
+
+| Módulo | Eventos documentados | Estado motor v1 | Objetivo v2 |
+|:-------|:--------------------:|:---------------:|:-----------:|
+| Compras | 5 | ~19% (3/16 escenarios) | 100% |
+| Ventas | 8 | ~30% | 100% |
+| Tesorería | 12 | ~25% | 100% |
+| Activos Fijos | 7 | ~40% | 100% |
+| Planillas | 6 | ~0% | 100% |
+| Inventario | 6 | ~0% | 100% |
+| Extornos/Contab. | 1 | ~0% | 100% |
+
+**Cobertura actual del motor v1: ~19%. Objetivo v2: 100% (33 eventos).**
+
+---
+
+## Gaps Identificados (Actualizado) 🆕
+
+### Item #36 — Formatos SUNAT básicos (existente)
 
 | Campo | Detalle |
 |-------|---------|
 | **CSV** | `[REPORTES] Contabilidad > Formatos SUNAT (formatos básicos)` — Generar reporte SUNAT (`sp_generar_reporte_sunat`) |
-| **MD** | No cubierto explícitamente. El encabezado `2.7 Reportes y Procesos Contables (#35, #36, #37)` sugiere que debía cubrirse, pero solo existen CP-S2-021 (#35) y CP-S2-022 (#37). |
+| **MD** | No cubierto explícitamente. |
 | **Acción** | Se incluirá en el archivo Gherkin como caso faltante. |
+
+### Gaps CSVs Compras 🆕
+
+| # | Gap | Severidad |
+|---|-----|:---------:|
+| 1 | Pantalla de Caja Chica no existe (creación, rendición, reposición) | 🔴 Crítica |
+| 2 | Pago parcial de factura (solo pago total) | 🟡 Alta |
+| 3 | Pago mixto (efectivo + transferencia en misma factura) | 🟡 Alta |
+| 4 | Pago con tarjeta de crédito corporativa | 🟡 Alta |
+| 5 | Anticipo a proveedor sin documento asociado | 🟡 Alta |
+| 6 | Registro de flete como línea separada en factura | 🟡 Alta |
+| 7 | Rendición con reembolso de exceso | 🟡 Alta |
+| 8 | Importación con DAM/DUA e IGV importación | 🟡 Alta |
+| 9 | Diferencia de cambio en pago de factura ME | 🟡 Alta |
+| 10 | Gasto anticipado con devengo mensual | 🟢 Media |
+| 11 | IGV prorrata (parcialmente recuperable) | 🟢 Media |
+| 12 | Compra centralizada multi-sucursal | 🟢 Media |
+
+### Gaps CSVs Ventas 🆕
+
+| # | Gap | Severidad |
+|---|-----|:---------:|
+| 13 | Factura con detracción del cliente | 🟡 Alta |
+| 14 | Venta mixta cobro/crédito | 🟡 Alta |
+| 15 | Venta con múltiples medios de pago en mismo ticket | 🟡 Alta |
 
 ---
 
@@ -148,3 +215,11 @@
 2. **Numeración duplicada**: El MD tiene 2 casos con CP-S4-046 (boletas y visualización moneda) — error menor de numeración.
 
 3. **Validaciones CSV no explicitadas en MD**: Algunas validaciones que el CSV pide probar no tienen un CP dedicado (ej. "TC automático vía `fn_obtener_tipo_cambio` en pantallas que lo usen").
+
+4. 🆕 **Casos por Módulo exceden el scope original**: Los CSVs de Compras (60) y Ventas (49) cubren escenarios contables completos con asientos manuales de referencia. El MD original solo cubría la validación funcional del frontend. Estos 109 casos requieren validación tanto de UI como de precisión contable del asiento resultante.
+
+5. 🆕 **Motor v2 redefine la cobertura**: El motor actual (v1) cubre ~19% de escenarios de compra. El motor v2 objetivo cubre 100% con 33 eventos. La automatización E2E deberá verificar que el asiento generado coincide con el esperado según los CSVs.
+
+6. 🆕 **Multi-país no cubierto**: Ningún CP existente considera variaciones por país (PE vs CO vs EC). Las tasas de IVA, cuentas contables y reglas fiscales difieren. Se requieren CPs específicos por país.
+
+7. 🆕 **Usuario QA bloqueado**: Los bugs #006 y #010 impiden probar ~30% de los flujos de Compras. Sin permisos COM-002 y COM-022, los E2E de OC y Aprobación no son ejecutables.

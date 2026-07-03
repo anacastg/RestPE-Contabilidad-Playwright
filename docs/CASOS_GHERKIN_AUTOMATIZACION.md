@@ -6,13 +6,21 @@
 >
 > **Responsable:** QA Automation
 >
-> **Fecha:** 17/06/2026
+> **Fecha:** 17/06/2026 — **Actualizado:** 03/07/2026 (motor v2, multi-país)
+>
+> **🆕 Referencias complementarias:**
+> - `reportes/CASOS POR MODULO - COMPRAS.csv` — 60 casos con asientos manuales
+> - `reportes/CASOS POR MODULO - VENTAS.csv` — 49 casos con asientos manuales
+> - `reportes/05-CATALOGO_EVENTOS.md` — Catálogo completo de 33 eventos de dominio
 
 ---
 
 ## Convenciones
 
-- **Tags**: `@Sprint1` `@Sprint2` `@Sprint3` `@Sprint4` | `@critical` `@high` `@medium` | `@module-compras` `@module-finanzas` `@module-activos` `@module-rrhh` | `@smoke` `@regression`
+- **Tags**: `@Sprint1` `@Sprint2` `@Sprint3` `@Sprint4` | `@critical` `@high` `@medium` | `@module-compras` `@module-finanzas` `@module-activos` `@module-rrhh` `@module-ventas` | `@smoke` `@regression`
+- 🆕 **Tags de país**: `@PE` `@CO` `@EC` — para escenarios con comportamiento específico por país
+- 🆕 **Tags de evento**: `@evento-COMPRA_REGISTRADA` `@evento-VENTA_EMITIDA` `@evento-PLANILLA_DEVENGADA` etc. — para trazabilidad con Motor de Asientos v2
+- 🆕 **Tags de componente**: `@componente-PROVEEDOR` `@componente-IVA` `@componente-DETRACCION` etc. — para trazabilidad de roles contables
 - `# N` al inicio del Scenario = referencia al ítem del CSV
 - `sp_*` / `fn_*` = stored procedure/función backend involucrada
 
@@ -31,6 +39,9 @@
 ```gherkin
 @Sprint1 @module-compras @critical @smoke
 Feature: Gestión de Proveedores — CRUD e Inactivación
+  # Motor v2: (maestro — no genera evento contable)
+  # Componentes relacionados: PROVEEDOR (tipo=contrapartida, pos=1, haber)
+  # Países: PE, CO, EC (tipo de identificación autodetectado por país)
   Como usuario del sistema contable de Restaurant.pe
   Quiero registrar, consultar, modificar e inactivar proveedores
   Para mantener un maestro único de proveedores actualizado
@@ -286,6 +297,9 @@ Feature: Gestión de Proveedores — CRUD e Inactivación
 ```gherkin
 @Sprint1 @module-compras @critical @smoke
 Feature: Orden de Compra — Creación y gestión (HU-COM-003)
+  # Motor v2: (intención de compra — no genera evento contable)
+  # El asiento se genera cuando la OC se convierte en factura: COMPRA_REGISTRADA
+  # Componentes: COMPRA (gasto, debe), IVA_CREDITO (impuesto, debe), PROVEEDOR (contrapartida, haber)
   Como usuario del sistema contable de Restaurant.pe
   Quiero crear y gestionar órdenes de compra de bienes o servicios
   Para formalizar el requerimiento de adquisiciones a proveedores
@@ -574,6 +588,9 @@ Feature: Orden de Servicios — Generación y Aprobación
 ```gherkin
 @Sprint1 @module-finanzas @critical @smoke
 Feature: Cuentas por Pagar — Registro de facturas
+  # Motor v2: COMPRA_REGISTRADA (1 asiento en diario compras)
+  # Componentes: COMPRA (gasto, debe), IVA_CREDITO (impuesto, debe), PROVEEDOR (contrapartida, haber)
+  # Variantes: DETRACCION (puente, haber, si tiene_detraccion=true), PERCEPCION, RETENCION
   Como usuario de Finanzas
   Quiero registrar facturas de proveedores vinculadas o no a OC
   Para gestionar las cuentas por pagar
@@ -646,6 +663,8 @@ Feature: Cuentas por Pagar — Registro de facturas
 ```gherkin
 @Sprint1 @module-finanzas @high
 Feature: Nota Débito / Crédito — Ajustes de deuda
+  # Motor v2: NC_COMPRA (1 asiento — revierte el original)
+  # Componentes invertidos: PROVEEDOR (debe), COMPRA (haber), IVA_CREDITO (haber)
   Como usuario de Finanzas
   Quiero emitir NC/ND vinculadas a facturas CxP
   Para ajustar saldos pendientes
@@ -2123,5 +2142,81 @@ Feature: E2E Sprint 4 — Flujos transversales RR.HH
     And consulta saldos
     And emite boletas
     Then todos los beneficios truncos deben ser proporcionales
-    And los saldos deben ser consistentes
+     And los saldos deben ser consistentes
 ```
+
+---
+
+## 🆕 Alineación Backend — Motor de Asientos v2 (03/07/2026)
+
+> **Referencia:** `reportes/01-VISION.md` a `reportes/05-CATALOGO_EVENTOS.md`
+
+### Mapeo Feature Gherkin → Evento de Dominio
+
+| Feature | Evento Motor v2 | Asientos | Países |
+|:--------|:----------------|:---------|:-------|
+| Gestión de Proveedores | (maestro) | — | PE, CO, EC |
+| Orden de Compra | (intención) | — | PE, CO, EC |
+| Aprobación de OC | (workflow) | — | PE, CO, EC |
+| Orden de Servicios | (intención) | — | PE, CO, EC |
+| Cuentas por Pagar | `COMPRA_REGISTRADA` / `COMPRA_CONTADO` | 1 | PE, CO, EC |
+| NC/ND y Ajustes | `NC_COMPRA` | 1 (revierte) | PE, CO, EC |
+| Reportes de Compras | `sp_generar_reporte_compras` | — | PE |
+| Reportes de Ventas | `sp_generar_registro_ventas` | — | PE |
+| Maestros Financieros | (maestro) | — | PE, CO, EC |
+| Tablas Financieras | (maestro) | — | PE, CO, EC |
+| Órdenes de Giro | (intención) | — | PE, CO, EC |
+| Rendición de Gastos | `GASTO_CAJA_CHICA` / `REPOSICION_CAJA_CHICA` | 1 | PE, CO, EC |
+| Cartera Pagos/Cobros | `PAGO_PROVEEDOR` / `COBRO_REGISTRADO` | 1 | PE, CO, EC |
+| Transferencias | `TRANSFERENCIA_INTERNA` | 1 | PE, CO, EC |
+| Tablas Contables | (maestro) | — | PE, CO, EC |
+| Reportes SUNAT | `sp_generar_libro_diario_simplificado` / `sp_generar_libros_electronicos` | — | PE |
+| Maestro Activos Fijos | (maestro) | — | PE, CO, EC |
+| Parámetros AF | (maestro) | — | PE, CO, EC |
+| Operaciones AF | `COMPRA_ACTIVO_FIJO` / `MEJORA_ACTIVO` | 1 | PE, CO, EC |
+| Procesos AF | `DEPRECIACION_MENSUAL` / `BAJA_ACTIVO` / `VENTA_ACTIVO` / `REVALUACION_ACTIVO` | 1 | PE, CO, EC |
+| RRHH Configuración | (maestro) | — | PE, CO, EC |
+| RRHH Personal | (maestro) | — | PE, CO, EC |
+| Asistencias y HE | (operación) | — | PE, CO, EC |
+| Conceptos Fijos | `PLANILLA_DEVENGADA` | 1 | PE, CO, EC |
+| Carga Variables | `PLANILLA_DEVENGADA` | 1 | PE, CO, EC |
+| Propinas | `sp_calcular_propinas` | — | PE, CO |
+| Recargo al Consumo | `sp_calcular_recargo_consumo` | — | PE |
+| Cuenta Corriente | `PRESTAMO_DESEMBOLSADO` / `PRESTAMO_CUOTA_PAGADA` | 1 | PE, CO, EC |
+| Cálculo Planilla | `PLANILLA_DEVENGADA` / `PLANILLA_PAGADA` | 1 cada uno | PE, CO, EC |
+| Liquidaciones | `sp_liquidar_beneficios` | — | PE, CO, EC |
+| Gratificaciones/CTS | `PROVISION_GRATIFICACION` / `PROVISION_CTS` | 1 cada uno | PE |
+| Saldos CC | `sp_generar_pago_remuneraciones` | — | PE, CO, EC |
+| Boletas de Pago | `sp_generar_boleta_pago` | — | PE, CO, EC |
+
+### Nuevos Tags Recomendados para Automatización
+
+| Tag | Uso |
+|:----|:----|
+| `@PE` `@CO` `@EC` | Filtrar tests por país (tasas, cuentas, reglas fiscales distintas) |
+| `@evento-COMPRA_REGISTRADA` | Trazabilidad con evento de dominio del motor v2 |
+| `@evento-VENTA_EMITIDA` | Trazabilidad con evento de dominio del motor v2 |
+| `@evento-PLANILLA_DEVENGADA` | Trazabilidad con evento de dominio del motor v2 |
+| `@asiento` | El test debe validar el asiento contable generado (no solo la UI) |
+
+### Escenarios Faltantes (CSVs Casos por Módulo)
+
+> **Fuente:** `reportes/CASOS POR MODULO - COMPRAS.csv` y `reportes/CASOS POR MODULO - VENTAS.csv`
+
+| # | Escenario | Evento v2 | Prioridad |
+|---|-----------|-----------|:---------:|
+| 1 | Pago parcial de factura (S/400 de S/708) | `PAGO_PROVEEDOR` | Alta |
+| 2 | Pago mixto (efectivo + transferencia) | `PAGO_PROVEEDOR` | Alta |
+| 3 | Apertura de caja chica | `APERTURA_CAJA_CHICA` | Alta |
+| 4 | Rendición de caja chica | `GASTO_CAJA_CHICA` | Alta |
+| 5 | Reposición de caja chica | `REPOSICION_CAJA_CHICA` | Alta |
+| 6 | Anticipo a proveedor sin documento | `ANTICIPO_PROVEEDOR` | Alta |
+| 7 | Venta con múltiples medios de pago | `VENTA_EMITIDA` | Alta |
+| 8 | Venta con gift card y canje posterior | `VENTA_EMITIDA` (gift card = pasivo) | Media |
+| 9 | Liquidación de agregador (Rappi) | `LIQUIDACION_AGREGADOR` | Media |
+| 10 | Contracargo (chargeback) | `CONTRACARGO_RESUELTO` | Media |
+| 11 | Préstamo bancario + cuota | `PRESTAMO_DESEMBOLSADO` / `PRESTAMO_CUOTA_PAGADA` | Media |
+| 12 | Factoring de facturas | `LIQUIDACION_FACTORING` | Media |
+| 13 | Compensación CxC vs CxP mismo tercero | `COMPENSACION_REGISTRADA` | Media |
+| 14 | Diferencia de cambio en pago ME | `PAGO_PROVEEDOR` con `DIF_CAMBIO` | Alta |
+| 15 | Compra con IGV prorrata | `COMPRA_REGISTRADA` | Media |

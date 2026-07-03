@@ -8,7 +8,7 @@ module.exports = defineConfig({
   testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: 1,
+  retries: 0,
   workers: 3,
   reporter: [
     ['html', { outputFolder: 'playwright-report' }],
