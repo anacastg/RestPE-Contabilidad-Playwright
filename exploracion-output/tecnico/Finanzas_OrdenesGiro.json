@@ -1,0 +1,327 @@
+{
+  "module": "Finanzas",
+  "screen": "OrdenesGiro",
+  "route": "/finanzas/adelantos/ordenes-giro",
+  "actualUrl": "/finanzas/adelantos/ordenes-giro",
+  "title": "Restaurant Contabilidad",
+  "timestamp": "2026-07-04T21:39:59.444Z",
+  "fields": [
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar por número, monto, motivo o estado",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar por número, monto, motivo o estado\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar OC aprobada",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar OC aprobada\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "referenciaSolicitudAdelanto",
+      "label": "",
+      "type": "text",
+      "placeholder": "Se autollena desde la OC",
+      "disabled": true,
+      "readonly": true,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"referenciaSolicitudAdelanto\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "fecha",
+      "label": "",
+      "type": "date",
+      "placeholder": "",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "2026-07-04",
+      "selector": "ion-input[formcontrolname=\"fecha\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar sucursal",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar sucursal\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "estado",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": true,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "Pendiente",
+      "selector": "ion-input[formcontrolname=\"estado\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar centro de costo",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar centro de costo\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "monto",
+      "label": "",
+      "type": "number",
+      "placeholder": "0.00",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"monto\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Perú",
+      "placeholder": "País",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Perú",
+        "Colombia",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "selector": "ion-select:nth-child(9)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Todos los estados",
+      "placeholder": "Estado",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Todos los estados",
+        "Pendiente",
+        "Aprobada",
+        "Rechazada",
+        "Anulada"
+      ],
+      "selector": "ion-select:nth-child(10)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "tipoSolicitud",
+      "label": "Orden de Giro",
+      "placeholder": "Selecciona un tipo",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Orden de Giro",
+        "Fondo Fijo"
+      ],
+      "selector": "ion-select[formcontrolname=\"tipoSolicitud\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-textarea",
+      "formControlName": "motivo",
+      "placeholder": "Escribe aquí...",
+      "disabled": false,
+      "selector": "ion-textarea[formcontrolname=\"motivo\"] textarea",
+      "stability": "ALTA"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "01/07/2026 - 04/07/2026",
+      "type": "button",
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"01/07/2026 - 04/07/2026\"), ion-button:has-text(\"01/07/2026 - 04/07/2026\")"
+    },
+    {
+      "text": "Nueva orden de giro",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Nueva orden de giro\"), ion-button:has-text(\"Nueva orden de giro\")"
+    },
+    {
+      "text": "Registrar",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Registrar\"), ion-button:has-text(\"Registrar\")"
+    },
+    {
+      "text": "Cancelar",
+      "type": null,
+      "disabled": false,
+      "color": "medium",
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Cancelar\"), ion-button:has-text(\"Cancelar\")"
+    },
+    {
+      "text": "Anular",
+      "type": null,
+      "disabled": false,
+      "color": "danger",
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Anular\"), ion-button:has-text(\"Anular\")"
+    }
+  ],
+  "tabs": [],
+  "grid": {
+    "type": "AG Grid",
+    "columns": [
+      {
+        "index": 0,
+        "name": "N° de orden de giro",
+        "sortable": true
+      },
+      {
+        "index": 1,
+        "name": "N° Solicitud de adelanto/Orden de Compra",
+        "sortable": true
+      },
+      {
+        "index": 2,
+        "name": "Fecha de emisión",
+        "sortable": true
+      },
+      {
+        "index": 3,
+        "name": "Monto",
+        "sortable": true
+      },
+      {
+        "index": 4,
+        "name": "Estado",
+        "sortable": true
+      },
+      {
+        "index": 5,
+        "name": "Tipo de solicitud",
+        "sortable": true
+      },
+      {
+        "index": 6,
+        "name": "Sucursal",
+        "sortable": true
+      },
+      {
+        "index": 7,
+        "name": "Centro de costo",
+        "sortable": true
+      }
+    ],
+    "rows": 7,
+    "features": {
+      "export": true,
+      "pagination": true,
+      "filters": true,
+      "selection": false
+    },
+    "rowActions": []
+  },
+  "modals": [],
+  "validations": [],
+  "patterns": {
+    "app-autocomplete": {
+      "type": "reusable",
+      "desc": "Buscador con autocompletado"
+    },
+    "app-base-calendar-new": {
+      "type": "reusable",
+      "desc": "Componente calendario"
+    },
+    "app-sidebar": {
+      "type": "layout",
+      "desc": "Sidebar de navegación"
+    },
+    "app-header": {
+      "type": "layout",
+      "desc": "Header con selector país/empresa/sucursal"
+    }
+  }
+}

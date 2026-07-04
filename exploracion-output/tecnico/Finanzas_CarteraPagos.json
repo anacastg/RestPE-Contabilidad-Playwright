@@ -1,0 +1,146 @@
+{
+  "module": "Finanzas",
+  "screen": "CarteraPagos",
+  "route": "/finanzas/tesoreria/cartera-pagos",
+  "actualUrl": "/finanzas/tesoreria/cartera-pagos",
+  "title": "Restaurant Contabilidad",
+  "timestamp": "2026-07-04T21:39:29.937Z",
+  "fields": [
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar por código",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar por código\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Perú",
+      "placeholder": "País",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Perú",
+        "Colombia",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "selector": "ion-select:nth-child(2)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-textarea",
+      "formControlName": "observaciones",
+      "placeholder": "Ingresa aquí tus observaciones",
+      "disabled": false,
+      "selector": "ion-textarea[formcontrolname=\"observaciones\"] textarea",
+      "stability": "ALTA"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Registrar",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Registrar\"), ion-button:has-text(\"Registrar\")"
+    }
+  ],
+  "tabs": [
+    {
+      "index": 0,
+      "name": "Pago de documento",
+      "selected": false,
+      "selector": "ion-segment-button:nth-child(1), [role=\"tab\"]:has-text(\"Pago de documento\")"
+    },
+    {
+      "index": 2,
+      "name": "Pago de planilla",
+      "selected": false,
+      "selector": "ion-segment-button:nth-child(3), [role=\"tab\"]:has-text(\"Pago de planilla\")"
+    }
+  ],
+  "grid": {
+    "type": "AG Grid",
+    "columns": [
+      {
+        "index": 0,
+        "name": "Proveedor",
+        "sortable": true
+      },
+      {
+        "index": 1,
+        "name": "Tipo registro",
+        "sortable": true
+      },
+      {
+        "index": 2,
+        "name": "Tipo de comprobante",
+        "sortable": true
+      },
+      {
+        "index": 3,
+        "name": "Serie/N° comprobante",
+        "sortable": true
+      },
+      {
+        "index": 4,
+        "name": "Fecha programada",
+        "sortable": true
+      },
+      {
+        "index": 5,
+        "name": "Monto total pagado",
+        "sortable": true
+      },
+      {
+        "index": 6,
+        "name": "Medio pago",
+        "sortable": true
+      },
+      {
+        "index": 7,
+        "name": "Estado",
+        "sortable": true
+      }
+    ],
+    "rows": 1,
+    "features": {
+      "export": true,
+      "pagination": true,
+      "filters": true,
+      "selection": false
+    },
+    "rowActions": []
+  },
+  "modals": [],
+  "validations": [],
+  "patterns": {
+    "app-base-calendar-new": {
+      "type": "reusable",
+      "desc": "Componente calendario"
+    },
+    "app-sidebar": {
+      "type": "layout",
+      "desc": "Sidebar de navegación"
+    },
+    "app-header": {
+      "type": "layout",
+      "desc": "Header con selector país/empresa/sucursal"
+    }
+  }
+}

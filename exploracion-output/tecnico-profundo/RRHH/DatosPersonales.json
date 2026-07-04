@@ -1,0 +1,1014 @@
+{
+  "module": "RRHH",
+  "screen": "DatosPersonales",
+  "route": "/rrhh/maestro-personal/datos-contacto",
+  "actualUrl": "/rrhh/maestro-personal/datos-contacto",
+  "initialFields": [
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Buscar por código o nombre de empleado",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "input[placeholder=\"Buscar por código o nombre de empleado\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "empleado_documento",
+      "ph": "Ingrese documento",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"empleado_documento\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "empleado_nombres_apellidos",
+      "ph": "Ingrese nombres y apellidos",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"empleado_nombres_apellidos\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "empleado_direccion",
+      "ph": "Ingrese dirección",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"empleado_direccion\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "empleado_celular1",
+      "ph": "Ingrese celular principal",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"empleado_celular1\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "empleado_celular2",
+      "ph": "Ingrese celular alterno",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"empleado_celular2\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "empleado_telefono_fijo",
+      "ph": "Ingrese teléfono fijo",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"empleado_telefono_fijo\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "empleado_codigo_tel_ciudad",
+      "ph": "Ej. 043",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"empleado_codigo_tel_ciudad\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "empleado_correo_privado",
+      "ph": "Ingrese correo",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"empleado_correo_privado\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "empleado_contacto_emergencia_nombre",
+      "ph": "Ingrese nombre de contacto",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"empleado_contacto_emergencia_nombre\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "empleado_contacto_emergencia_telefono",
+      "ph": "Ingrese teléfono",
+      "type": "number",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"empleado_contacto_emergencia_telefono\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-select",
+      "fc": null,
+      "ph": "País",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "",
+      "stability": "BAJA"
+    },
+    {
+      "el": "ion-select",
+      "fc": "empleado_tipo_documento",
+      "ph": "",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "ion-select[formcontrolname=\"empleado_tipo_documento\"]",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-select",
+      "fc": "empleado_sexo",
+      "ph": "Seleccione sexo",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "ion-select[formcontrolname=\"empleado_sexo\"]",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-select",
+      "fc": "empleado_nacionalidad",
+      "ph": "Seleccione una nacionalidad",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "ion-select[formcontrolname=\"empleado_nacionalidad\"]",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-select",
+      "fc": "empleado_pais",
+      "ph": "Seleccione un país",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "ion-select[formcontrolname=\"empleado_pais\"]",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-select",
+      "fc": "empleado_departamento",
+      "ph": "Seleccione un departamento",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "ion-select[formcontrolname=\"empleado_departamento\"]",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-select",
+      "fc": "empleado_provincia",
+      "ph": "Seleccione una provincia",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "ion-select[formcontrolname=\"empleado_provincia\"]",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-select",
+      "fc": "empleado_distrito",
+      "ph": "Seleccione un distrito",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "ion-select[formcontrolname=\"empleado_distrito\"]",
+      "stability": "ALTA"
+    }
+  ],
+  "tabs": {
+    "Datos generales del trabajador": {
+      "tabIndex": 0,
+      "fields": [
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por código o nombre de empleado",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por código o nombre de empleado\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "empleado_documento",
+          "ph": "Ingrese documento",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"empleado_documento\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "empleado_nombres_apellidos",
+          "ph": "Ingrese nombres y apellidos",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"empleado_nombres_apellidos\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "empleado_direccion",
+          "ph": "Ingrese dirección",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"empleado_direccion\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "empleado_celular1",
+          "ph": "Ingrese celular principal",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"empleado_celular1\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "empleado_celular2",
+          "ph": "Ingrese celular alterno",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"empleado_celular2\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "empleado_telefono_fijo",
+          "ph": "Ingrese teléfono fijo",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"empleado_telefono_fijo\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "empleado_codigo_tel_ciudad",
+          "ph": "Ej. 043",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"empleado_codigo_tel_ciudad\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "empleado_correo_privado",
+          "ph": "Ingrese correo",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"empleado_correo_privado\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "empleado_contacto_emergencia_nombre",
+          "ph": "Ingrese nombre de contacto",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"empleado_contacto_emergencia_nombre\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "empleado_contacto_emergencia_telefono",
+          "ph": "Ingrese teléfono",
+          "type": "number",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"empleado_contacto_emergencia_telefono\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": null,
+          "ph": "País",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "",
+          "stability": "BAJA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_tipo_documento",
+          "ph": "",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_tipo_documento\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_sexo",
+          "ph": "Seleccione sexo",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_sexo\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_nacionalidad",
+          "ph": "Seleccione una nacionalidad",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_nacionalidad\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_pais",
+          "ph": "Seleccione un país",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_pais\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_departamento",
+          "ph": "Seleccione un departamento",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_departamento\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_provincia",
+          "ph": "Seleccione una provincia",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_provincia\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_distrito",
+          "ph": "Seleccione un distrito",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_distrito\"]",
+          "stability": "ALTA"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Seleccione una fecha",
+          "disabled": false
+        },
+        {
+          "text": "Registrar",
+          "disabled": false
+        },
+        {
+          "text": "Cancelar",
+          "disabled": false
+        }
+      ],
+      "gridCols": [
+        "Cód. de empleado",
+        "Apellido paterno",
+        "Apellido materno",
+        "Nombre 1",
+        "Nombre 2",
+        "Tipo de documento",
+        "Documento",
+        "Fecha de inicio",
+        "Tipo de trabajador",
+        "AFP",
+        "Fecha inicio afiliación"
+      ],
+      "gridRows": 20
+    },
+    "Información laboral": {
+      "tabIndex": 2,
+      "fields": [
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por código o nombre de empleado",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por código o nombre de empleado\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Selecciona un tipo",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Selecciona un tipo\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Selecciona una sucursal",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Selecciona una sucursal\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Selecciona un centro de costos",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Selecciona un centro de costos\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "fec_ini_afil_afp",
+          "ph": "",
+          "type": "date",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"fec_ini_afil_afp\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "fec_fin_afil_afp",
+          "ph": "",
+          "type": "date",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"fec_fin_afil_afp\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "cuenta_bancaria_sueldo",
+          "ph": "",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"cuenta_bancaria_sueldo\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "cuenta_cts",
+          "ph": "",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"cuenta_cts\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "motivo_cese",
+          "ph": "",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"motivo_cese\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "empleado_remuneracion",
+          "ph": "0.00",
+          "type": "number",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"empleado_remuneracion\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar acción por tipo",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar acción por tipo\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-select",
+          "fc": null,
+          "ph": "País",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "",
+          "stability": "BAJA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_jornada",
+          "ph": "Seleccione una jornada",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_jornada\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_modalidad",
+          "ph": "Seleccione una modalidad",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_modalidad\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_cargo",
+          "ph": "Seleccione una cargo",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_cargo\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "flag_estado",
+          "ph": "Seleccione estado",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"flag_estado\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_regimen_salud",
+          "ph": "Seleccione regimen de salud",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_regimen_salud\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_regimen_pensionario",
+          "ph": "Seleccione regimen pensionario",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_regimen_pensionario\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "area_id",
+          "ph": null,
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"area_id\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_seccion_id",
+          "ph": null,
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_seccion_id\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_tipo_trabajador_id",
+          "ph": null,
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_tipo_trabajador_id\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_tipo_trabajador_rtps_id",
+          "ph": null,
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_tipo_trabajador_rtps_id\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "ocupacion_rtps_id",
+          "ph": null,
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"ocupacion_rtps_id\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "pension_rtps_id",
+          "ph": null,
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"pension_rtps_id\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "regimen_pensionario_id",
+          "ph": null,
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"regimen_pensionario_id\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "banco_sueldo_id",
+          "ph": null,
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"banco_sueldo_id\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "banco_cts_id",
+          "ph": null,
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"banco_cts_id\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "moneda_sueldo_id",
+          "ph": null,
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"moneda_sueldo_id\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "moneda_cts_id",
+          "ph": null,
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"moneda_cts_id\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_motivo_cese_id",
+          "ph": null,
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_motivo_cese_id\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_moneda",
+          "ph": "Seleccione moneda",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_moneda\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "empleado_periodicidad_pago",
+          "ph": "Selecciona una periodicidad",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"empleado_periodicidad_pago\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "formaPago",
+          "ph": "Seleccione forma de pago",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"formaPago\"]",
+          "stability": "ALTA"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Seleccione una fecha",
+          "disabled": false
+        },
+        {
+          "text": "Seleccione una fecha",
+          "disabled": false
+        },
+        {
+          "text": "Acciones",
+          "disabled": false
+        },
+        {
+          "text": "Registrar",
+          "disabled": false
+        },
+        {
+          "text": "Cancelar",
+          "disabled": false
+        }
+      ],
+      "gridCols": [
+        "Cód. de empleado",
+        "Apellido paterno",
+        "Apellido materno",
+        "Nombre 1",
+        "Nombre 2",
+        "Tipo de documento",
+        "Documento",
+        "Fecha de inicio",
+        "Tipo de trabajador",
+        "AFP",
+        "Fecha inicio afiliación",
+        "Fecha",
+        "Tipo de acción",
+        "Cargo anterior",
+        "Nuevo cargo"
+      ],
+      "gridRows": 20
+    },
+    "Equipamiento": {
+      "tabIndex": 4,
+      "fields": [
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por código o nombre de empleado",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por código o nombre de empleado\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Ingrese una operación y presione Enter",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Ingrese una operación y presione Enter\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-select",
+          "fc": null,
+          "ph": "País",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "",
+          "stability": "BAJA"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Nuevo equipamiento",
+          "disabled": false
+        },
+        {
+          "text": "Registrar",
+          "disabled": false
+        },
+        {
+          "text": "Cancelar",
+          "disabled": false
+        }
+      ],
+      "gridCols": [
+        "Cód. de empleado",
+        "Apellido paterno",
+        "Apellido materno",
+        "Nombre 1",
+        "Nombre 2",
+        "Tipo de documento",
+        "Documento",
+        "Fecha de inicio",
+        "Tipo de trabajador",
+        "AFP",
+        "Fecha inicio afiliación",
+        "Fecha de asignación",
+        "Tipo de elemento",
+        "Descripción",
+        "Cantidad"
+      ],
+      "gridRows": 20
+    }
+  },
+  "selects": [],
+  "grid": {
+    "rowActions": [
+      {
+        "text": "Seleccione una fecha",
+        "disabled": false
+      },
+      {
+        "text": "Registrar",
+        "disabled": false
+      },
+      {
+        "text": "Cancelar",
+        "disabled": false
+      }
+    ],
+    "features": {
+      "exportExcel": 0,
+      "exportPDF": 0,
+      "pagination": true,
+      "columnFilters": 0,
+      "checkboxSelection": 0
+    }
+  },
+  "modals": [],
+  "validations": [
+    {
+      "text": "Información personalDa clic para subir una imagen(Archivo JPG, PNG)Imagen 146 x 146pxDoc. del empleado *Nombres y apellidos *Fecha de nacimiento *Seleccione una fechaSexo *FemeninoINDEFINIDOMasculinoNacionalidad *United Arab EmiratesAfghanistanAntigua & BarbudaAnguillaAlbaniaArmeniaAngolaAntarcticaArgentinaSamoa (American)AustriaAustraliaArubaÅland IslandsAzerbaijanBosnia & HerzegovinaBarbadosBangladeshBelgiumBurkina FasoBulgariaBahrainBurundiBeninSt BarthelemyBermudaBruneiBoliviaCaribbean NLBrazilBahamasBhutanBouvet IslandBotswanaBelarusBelizeCanadaCocos (Keeling) IslandsCongo (Dem. Rep.)Central African Rep.Congo (Rep.)SwitzerlandCôte d’IvoireCook IslandsChileCameroonChinaCosta RicaCubaCape VerdeCuraçaoChristmas IslandCyprusCzech RepublicGermanyDjiboutiDenmarkDominicaDominican RepublicAlgeriaEstoniaEgyptWestern SaharaEritreaSpainEthiopiaFinlandFijiFalkland IslandsMicronesiaFaroe IslandsFranceGabonBritain (UK)GrenadaGeorgiaFrench GuianaGuernseyGhanaGibraltarGreenlandGambiaGuineaGuadeloupeEquatorial GuineaGreeceSouth Georgia & the South Sandwich IslandsGuamGuinea-BissauColombiaGuyanaHong KongHeard Island & McDonald IslandsHondurasCroatiaHaitiHungaryIndonesiaIrelandIsraelDocumento de identidadCopia del DNI Haz clic para subir el DNI UbicaciónPaísUnited Arab EmiratesAfghanistanAntigua & BarbudaAnguillaAlbaniaArmeniaAngolaAntarcticaArgentinaSamoa (American)AustriaAustraliaArubaÅland IslandsAzerbaijanBosnia & HerzegovinaBarbadosBangladeshBelgiumBurkina FasoBulgariaBahrainBurundiBeninSt BarthelemyBermudaBruneiBoliviaCaribbean NLBrazilBahamasBhutanBouvet IslandBotswanaBelarusBelizeCanadaCocos (Keeling) IslandsCongo (Dem. Rep.)Central African Rep.Congo (Rep.)SwitzerlandCôte d’IvoireCook IslandsChileCameroonChinaCosta RicaCubaCape VerdeCuraçaoChristmas IslandCyprusCzech RepublicGermanyDjiboutiDenmarkDominicaDominican RepublicAlgeriaEstoniaEgyptWestern SaharaEritreaSpainEthiopiaFinlandFijiFalkland IslandsMicronesiaFaroe IslandsFranceGabonBritain (UK)GrenadaGeorgiaFrench GuianaGuernseyGhanaGibraltarGreenlandGambiaGuineaGuadeloupeEquatorial GuineaGreeceSouth Georgia & the South Sandwich IslandsGuamGuinea-BissauColombiaGuyanaHong KongHeard Island & McDonald IslandsHondurasCroatiaHaitiHungaryIndonesiaIrelandIsraelDepartamentoAncashApurimacArequipaAyacuchoCajamarcaCuscoHuancavelicaHuanucoIcaJuninLa LibertadLambayequeLimaLoretoMadre de DiosMoqueguaPascoPiuraPunoSan MartinTacnaTumbesUcayaliChinchaAmazonasProvinciaDistritoDirecciónContacto privadoCelular 1Celular 2Teléfono fijoCód. tel. ciudadCorreoContacto de emergenciaContacto (nombre)Telefono",
+      "type": "validation"
+    },
+    {
+      "text": "FemeninoINDEFINIDOMasculino",
+      "type": "validation"
+    },
+    {
+      "text": "United Arab EmiratesAfghanistanAntigua & BarbudaAnguillaAlbaniaArmeniaAngolaAntarcticaArgentinaSamoa (American)AustriaAustraliaArubaÅland IslandsAzerbaijanBosnia & HerzegovinaBarbadosBangladeshBelgiumBurkina FasoBulgariaBahrainBurundiBeninSt BarthelemyBermudaBruneiBoliviaCaribbean NLBrazilBahamasBhutanBouvet IslandBotswanaBelarusBelizeCanadaCocos (Keeling) IslandsCongo (Dem. Rep.)Central African Rep.Congo (Rep.)SwitzerlandCôte d’IvoireCook IslandsChileCameroonChinaCosta RicaCubaCape VerdeCuraçaoChristmas IslandCyprusCzech RepublicGermanyDjiboutiDenmarkDominicaDominican RepublicAlgeriaEstoniaEgyptWestern SaharaEritreaSpainEthiopiaFinlandFijiFalkland IslandsMicronesiaFaroe IslandsFranceGabonBritain (UK)GrenadaGeorgiaFrench GuianaGuernseyGhanaGibraltarGreenlandGambiaGuineaGuadeloupeEquatorial GuineaGreeceSouth Georgia & the South Sandwich IslandsGuamGuinea-BissauColombiaGuyanaHong KongHeard Island & McDonald IslandsHondurasCroatiaHaitiHungaryIndonesiaIrelandIsrael",
+      "type": "validation"
+    }
+  ],
+  "navigation": {
+    "navigatedAway": false,
+    "targetUrl": "",
+    "hasLinks": false
+  }
+}

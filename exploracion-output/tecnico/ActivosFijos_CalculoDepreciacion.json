@@ -1,0 +1,220 @@
+{
+  "module": "ActivosFijos",
+  "screen": "CalculoDepreciacion",
+  "route": "/activos/procesos/calculo-depreciacion",
+  "actualUrl": "/activos/procesos/calculo-depreciacion",
+  "title": "Restaurant Contabilidad",
+  "timestamp": "2026-07-04T21:41:42.441Z",
+  "fields": [
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar por código o usuario",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar por código o usuario\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "fechaE",
+      "label": "",
+      "type": "date",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "2026-07-04",
+      "selector": "ion-input[formcontrolname=\"fechaE\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Perú",
+      "placeholder": "País",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Perú",
+        "Colombia",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "selector": "ion-select:nth-child(3)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "tipoC",
+      "label": "Mensual",
+      "placeholder": "Selecciona un tipo",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Mensual",
+        "Anual"
+      ],
+      "selector": "ion-select[formcontrolname=\"tipoC\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "tipoD",
+      "label": "Selecciona un tipo",
+      "placeholder": "Selecciona un tipo",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Contable",
+        "Tributaria"
+      ],
+      "selector": "ion-select[formcontrolname=\"tipoD\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "metodoC",
+      "label": "Selecciona un método",
+      "placeholder": "Selecciona un método",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Decreciente",
+        "Lineal"
+      ],
+      "selector": "ion-select[formcontrolname=\"metodoC\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-checkbox",
+      "formControlName": "incluirAR",
+      "label": "",
+      "checked": false,
+      "selector": "ion-checkbox[formcontrolname=\"incluirAR\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-checkbox",
+      "formControlName": "incluirAM",
+      "label": "",
+      "checked": false,
+      "selector": "ion-checkbox[formcontrolname=\"incluirAM\"]",
+      "stability": "ALTA"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Exportar",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Exportar\"), ion-button:has-text(\"Exportar\")"
+    },
+    {
+      "text": "Nuevo cálculo",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Nuevo cálculo\"), ion-button:has-text(\"Nuevo cálculo\")"
+    },
+    {
+      "text": "Ejecutar cálculo masivo",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Ejecutar cálculo masivo\"), ion-button:has-text(\"Ejecutar cálculo masivo\")"
+    }
+  ],
+  "tabs": [],
+  "grid": {
+    "type": "AG Grid",
+    "columns": [
+      {
+        "index": 0,
+        "name": "Código",
+        "sortable": true
+      },
+      {
+        "index": 1,
+        "name": "Periodo",
+        "sortable": true
+      },
+      {
+        "index": 2,
+        "name": "Fecha ejecución",
+        "sortable": true
+      },
+      {
+        "index": 3,
+        "name": "Usuario que ejecutó",
+        "sortable": true
+      },
+      {
+        "index": 4,
+        "name": "Total activos",
+        "sortable": true
+      },
+      {
+        "index": 5,
+        "name": "Depreciación total",
+        "sortable": true
+      },
+      {
+        "index": 6,
+        "name": "Costo de adquisición",
+        "sortable": true
+      },
+      {
+        "index": 7,
+        "name": "% Desgaste",
+        "sortable": true
+      }
+    ],
+    "rows": 4,
+    "features": {
+      "export": true,
+      "pagination": true,
+      "filters": true,
+      "selection": false
+    },
+    "rowActions": []
+  },
+  "modals": [],
+  "validations": [],
+  "patterns": {
+    "app-base-calendar-new": {
+      "type": "reusable",
+      "desc": "Componente calendario"
+    },
+    "app-sidebar": {
+      "type": "layout",
+      "desc": "Sidebar de navegación"
+    },
+    "app-header": {
+      "type": "layout",
+      "desc": "Header con selector país/empresa/sucursal"
+    }
+  }
+}

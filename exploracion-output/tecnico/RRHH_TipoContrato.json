@@ -1,0 +1,137 @@
+{
+  "module": "RRHH",
+  "screen": "TipoContrato",
+  "route": "/rrhh/parametros/tipo-contrato",
+  "actualUrl": "/rrhh/parametros/tipo-contrato",
+  "title": "Restaurant Contabilidad",
+  "timestamp": "2026-07-04T21:42:17.288Z",
+  "fields": [
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar por código",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar por código\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "nombre",
+      "label": "",
+      "type": "text",
+      "placeholder": "Ingrese un nombre",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"nombre\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Perú",
+      "placeholder": "País",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Perú",
+        "Colombia",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "selector": "ion-select:nth-child(3)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "estado",
+      "label": "Activo",
+      "placeholder": null,
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Activo",
+        "Inactivo"
+      ],
+      "selector": "ion-select[formcontrolname=\"estado\"]",
+      "stability": "ALTA"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Registrar",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Registrar\"), ion-button:has-text(\"Registrar\")"
+    },
+    {
+      "text": "Cancelar",
+      "type": null,
+      "disabled": false,
+      "color": "medium",
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Cancelar\"), ion-button:has-text(\"Cancelar\")"
+    }
+  ],
+  "tabs": [],
+  "grid": {
+    "type": "AG Grid",
+    "columns": [
+      {
+        "index": 0,
+        "name": "Código",
+        "sortable": true
+      },
+      {
+        "index": 1,
+        "name": "Nombre",
+        "sortable": true
+      },
+      {
+        "index": 2,
+        "name": "Estado",
+        "sortable": true
+      }
+    ],
+    "rows": 6,
+    "features": {
+      "export": true,
+      "pagination": true,
+      "filters": true,
+      "selection": false
+    },
+    "rowActions": []
+  },
+  "modals": [],
+  "validations": [],
+  "patterns": {
+    "app-sidebar": {
+      "type": "layout",
+      "desc": "Sidebar de navegación"
+    },
+    "app-header": {
+      "type": "layout",
+      "desc": "Header con selector país/empresa/sucursal"
+    }
+  }
+}

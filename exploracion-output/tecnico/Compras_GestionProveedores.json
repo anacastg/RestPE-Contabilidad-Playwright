@@ -1,0 +1,316 @@
+{
+  "module": "Compras",
+  "screen": "GestionProveedores",
+  "route": "/compras/tabla/gestion-proveedores",
+  "actualUrl": "/compras/tabla/gestion-proveedores",
+  "title": "Restaurant Contabilidad",
+  "timestamp": "2026-07-04T21:38:26.699Z",
+  "fields": [
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar proveedor código o por razón social",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar proveedor código o por razón social\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "tipoIdentificacion",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": true,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "RUC",
+      "selector": "ion-input[formcontrolname=\"tipoIdentificacion\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "identfiscal",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": "11",
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"identfiscal\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "razonSocial",
+      "label": "",
+      "type": "text",
+      "placeholder": "Proveedor ejemplo S.A.C",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": "200",
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"razonSocial\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "nombreComercial",
+      "label": "",
+      "type": "text",
+      "placeholder": "Proveedor ejemplo",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": "150",
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"nombreComercial\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "direccionFiscal",
+      "label": "",
+      "type": "text",
+      "placeholder": "Ingresar dirección fiscal",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": "250",
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"direccionFiscal\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "email",
+      "label": "",
+      "type": "email",
+      "placeholder": "Ingresa un correo electrónico",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": "100",
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"email\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "telefono",
+      "label": "",
+      "type": "text",
+      "placeholder": "Ingresa un número",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": "15",
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"telefono\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Perú",
+      "placeholder": "País",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Perú",
+        "Colombia",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "selector": "ion-select:nth-child(9)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "estado",
+      "label": "Activo",
+      "placeholder": "Activo",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Activo",
+        "Inactivo"
+      ],
+      "selector": "ion-select[formcontrolname=\"estado\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "proveedor",
+      "label": "Nacional",
+      "placeholder": "Nacional",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Nacional",
+        "Extranjero"
+      ],
+      "selector": "ion-select[formcontrolname=\"proveedor\"]",
+      "stability": "ALTA"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Registrar",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Registrar\"), ion-button:has-text(\"Registrar\")"
+    },
+    {
+      "text": "Cancelar",
+      "type": null,
+      "disabled": false,
+      "color": "medium",
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Cancelar\"), ion-button:has-text(\"Cancelar\")"
+    }
+  ],
+  "tabs": [
+    {
+      "index": 0,
+      "name": "General",
+      "selected": false,
+      "selector": "ion-segment-button:nth-child(1), [role=\"tab\"]:has-text(\"General\")"
+    },
+    {
+      "index": 2,
+      "name": "Bancaria",
+      "selected": false,
+      "selector": "ion-segment-button:nth-child(3), [role=\"tab\"]:has-text(\"Bancaria\")"
+    },
+    {
+      "index": 4,
+      "name": "Comercial",
+      "selected": false,
+      "selector": "ion-segment-button:nth-child(5), [role=\"tab\"]:has-text(\"Comercial\")"
+    }
+  ],
+  "grid": {
+    "type": "AG Grid",
+    "columns": [
+      {
+        "index": 0,
+        "name": "Código",
+        "sortable": true
+      },
+      {
+        "index": 1,
+        "name": "Razón social",
+        "sortable": true
+      },
+      {
+        "index": 2,
+        "name": "Documento fiscal",
+        "sortable": true
+      },
+      {
+        "index": 3,
+        "name": "Cargo",
+        "sortable": true
+      },
+      {
+        "index": 4,
+        "name": "Estado",
+        "sortable": true
+      },
+      {
+        "index": 5,
+        "name": "Banco",
+        "sortable": true
+      },
+      {
+        "index": 6,
+        "name": "N° Cuenta",
+        "sortable": true
+      },
+      {
+        "index": 7,
+        "name": "CCI",
+        "sortable": true
+      },
+      {
+        "index": 8,
+        "name": "Nombre",
+        "sortable": true
+      },
+      {
+        "index": 9,
+        "name": "Tipo de condición",
+        "sortable": true
+      },
+      {
+        "index": 10,
+        "name": "Plazo pagos días",
+        "sortable": true
+      }
+    ],
+    "rows": 11,
+    "features": {
+      "export": false,
+      "pagination": true,
+      "filters": true,
+      "selection": false
+    },
+    "rowActions": []
+  },
+  "modals": [],
+  "validations": [],
+  "patterns": {
+    "app-autocomplete": {
+      "type": "reusable",
+      "desc": "Buscador con autocompletado"
+    },
+    "app-sidebar": {
+      "type": "layout",
+      "desc": "Sidebar de navegación"
+    },
+    "app-header": {
+      "type": "layout",
+      "desc": "Header con selector país/empresa/sucursal"
+    }
+  }
+}

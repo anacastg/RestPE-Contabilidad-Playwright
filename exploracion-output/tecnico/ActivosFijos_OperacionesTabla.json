@@ -1,0 +1,246 @@
+{
+  "module": "ActivosFijos",
+  "screen": "OperacionesTabla",
+  "route": "/activos/tabla/operaciones",
+  "actualUrl": "/activos/tabla/operaciones",
+  "title": "Restaurant Contabilidad",
+  "timestamp": "2026-07-04T21:41:22.204Z",
+  "fields": [
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar por código o descripción",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar por código o descripción\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar cuenta contable",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar cuenta contable\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Selecciona centro de costo",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Selecciona centro de costo\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Perú",
+      "placeholder": "País",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Perú",
+        "Colombia",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "selector": "ion-select:nth-child(4)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "naturaleza",
+      "label": "Aumento",
+      "placeholder": "Aumento",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Aumento",
+        "Disminución",
+        "Neutro"
+      ],
+      "selector": "ion-select[formcontrolname=\"naturaleza\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "tipoCalculo",
+      "label": "Depreciación",
+      "placeholder": "Depreciación",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Depreciación",
+        "Revaluación",
+        "Mejora",
+        "Baja",
+        "Transferencia",
+        "Otros"
+      ],
+      "selector": "ion-select[formcontrolname=\"tipoCalculo\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "metodoCalculo",
+      "label": "Seleccione método",
+      "placeholder": "Seleccione método",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Línea recta",
+        "Unidades de producción",
+        "Doble saldo decreciente (Acelerada)",
+        "Suma de dígitos de los años (Acelerada)"
+      ],
+      "selector": "ion-select[formcontrolname=\"metodoCalculo\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "estado",
+      "label": "Activo",
+      "placeholder": "Activo",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Activo",
+        "Inactivo"
+      ],
+      "selector": "ion-select[formcontrolname=\"estado\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-checkbox",
+      "formControlName": "afectaContabilidad",
+      "label": "",
+      "checked": false,
+      "selector": "ion-checkbox[formcontrolname=\"afectaContabilidad\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-textarea",
+      "formControlName": "descripcion",
+      "placeholder": null,
+      "disabled": false,
+      "selector": "ion-textarea[formcontrolname=\"descripcion\"] textarea",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-textarea",
+      "formControlName": "observaciones",
+      "placeholder": null,
+      "disabled": false,
+      "selector": "ion-textarea[formcontrolname=\"observaciones\"] textarea",
+      "stability": "ALTA"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Registrar",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Registrar\"), ion-button:has-text(\"Registrar\")"
+    },
+    {
+      "text": "Cancelar",
+      "type": null,
+      "disabled": false,
+      "color": "medium",
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Cancelar\"), ion-button:has-text(\"Cancelar\")"
+    }
+  ],
+  "tabs": [],
+  "grid": {
+    "type": "AG Grid",
+    "columns": [
+      {
+        "index": 0,
+        "name": "Código",
+        "sortable": true
+      },
+      {
+        "index": 1,
+        "name": "Descripción",
+        "sortable": true
+      },
+      {
+        "index": 2,
+        "name": "Naturaleza",
+        "sortable": true
+      },
+      {
+        "index": 3,
+        "name": "Tipo de Cálculo",
+        "sortable": true
+      },
+      {
+        "index": 4,
+        "name": "Cuenta Contable",
+        "sortable": true
+      },
+      {
+        "index": 5,
+        "name": "Estado",
+        "sortable": true
+      }
+    ],
+    "rows": 8,
+    "features": {
+      "export": true,
+      "pagination": true,
+      "filters": true,
+      "selection": false
+    },
+    "rowActions": []
+  },
+  "modals": [],
+  "validations": [],
+  "patterns": {
+    "app-autocomplete": {
+      "type": "reusable",
+      "desc": "Buscador con autocompletado"
+    },
+    "app-sidebar": {
+      "type": "layout",
+      "desc": "Sidebar de navegación"
+    },
+    "app-header": {
+      "type": "layout",
+      "desc": "Header con selector país/empresa/sucursal"
+    }
+  }
+}

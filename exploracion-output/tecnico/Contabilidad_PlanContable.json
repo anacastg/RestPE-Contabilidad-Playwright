@@ -1,0 +1,206 @@
+{
+  "module": "Contabilidad",
+  "screen": "PlanContable",
+  "route": "/contabilidad/tabla/plan-contable",
+  "actualUrl": "/contabilidad/tabla/plan-contable",
+  "title": "Restaurant Contabilidad",
+  "timestamp": "2026-07-04T21:40:45.533Z",
+  "fields": [
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar por código o nombre",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar por código o nombre\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "codigo",
+      "label": "",
+      "type": "number",
+      "placeholder": "Ingresar cuenta contable",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"codigo\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "nombreD",
+      "label": "",
+      "type": "text",
+      "placeholder": "Ingresar nombre o descripción",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"nombreD\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Perú",
+      "placeholder": "País",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Perú",
+        "Colombia",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "selector": "ion-select:nth-child(4)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "nivel",
+      "label": "01",
+      "placeholder": "01",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05"
+      ],
+      "selector": "ion-select[formcontrolname=\"nivel\"]",
+      "stability": "ALTA"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "01/07/2026 - 04/07/2026",
+      "type": "button",
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"01/07/2026 - 04/07/2026\"), ion-button:has-text(\"01/07/2026 - 04/07/2026\")"
+    },
+    {
+      "text": "Siguiente",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Siguiente\"), ion-button:has-text(\"Siguiente\")"
+    },
+    {
+      "text": "Registrar",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Registrar\"), ion-button:has-text(\"Registrar\")"
+    },
+    {
+      "text": "Cancelar",
+      "type": null,
+      "disabled": false,
+      "color": "medium",
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Cancelar\"), ion-button:has-text(\"Cancelar\")"
+    }
+  ],
+  "tabs": [
+    {
+      "index": 0,
+      "name": "Identificación Cuenta",
+      "selected": false,
+      "selector": "ion-segment-button:nth-child(1), [role=\"tab\"]:has-text(\"Identificación Cuenta\")"
+    },
+    {
+      "index": 2,
+      "name": "Clasificación",
+      "selected": false,
+      "selector": "ion-segment-button:nth-child(3), [role=\"tab\"]:has-text(\"Clasificación\")"
+    },
+    {
+      "index": 4,
+      "name": "Parametrización operativa",
+      "selected": false,
+      "selector": "ion-segment-button:nth-child(5), [role=\"tab\"]:has-text(\"Parametrización operativa\")"
+    },
+    {
+      "index": 6,
+      "name": "Normativa/Plantilla",
+      "selected": false,
+      "selector": "ion-segment-button:nth-child(7), [role=\"tab\"]:has-text(\"Normativa/Plantilla\")"
+    }
+  ],
+  "grid": {
+    "type": "AG Grid",
+    "columns": [
+      {
+        "index": 0,
+        "name": "Código | Descripción de cuenta",
+        "sortable": true
+      },
+      {
+        "index": 1,
+        "name": "Nivel",
+        "sortable": true
+      },
+      {
+        "index": 2,
+        "name": "Estado",
+        "sortable": true
+      }
+    ],
+    "rows": 1,
+    "features": {
+      "export": false,
+      "pagination": true,
+      "filters": true,
+      "selection": false
+    },
+    "rowActions": []
+  },
+  "modals": [],
+  "validations": [],
+  "patterns": {
+    "app-base-calendar-new": {
+      "type": "reusable",
+      "desc": "Componente calendario"
+    },
+    "app-sidebar": {
+      "type": "layout",
+      "desc": "Sidebar de navegación"
+    },
+    "app-header": {
+      "type": "layout",
+      "desc": "Header con selector país/empresa/sucursal"
+    }
+  }
+}

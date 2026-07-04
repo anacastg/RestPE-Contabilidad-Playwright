@@ -1,0 +1,108 @@
+{
+  "module": "RRHH",
+  "screen": "CalculoPlanilla",
+  "route": "/rrhh/procesos-de-nomina/calculo-planillas",
+  "actualUrl": "/rrhh/procesos-de-nomina/calculo-planillas",
+  "initialFields": [
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Buscar configuraciones por código o nombre",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "input[placeholder=\"Buscar configuraciones por código o nombre\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-select",
+      "fc": null,
+      "ph": "País",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "",
+      "stability": "BAJA"
+    },
+    {
+      "el": "ion-select",
+      "fc": "tipoPlanilla",
+      "ph": "Selecciona un tipo",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "ion-select[formcontrolname=\"tipoPlanilla\"]",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-select",
+      "fc": "periodicidadPago",
+      "ph": "Selecciona una periodicidad",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "ion-select[formcontrolname=\"periodicidadPago\"]",
+      "stability": "ALTA"
+    }
+  ],
+  "tabs": {},
+  "selects": [],
+  "grid": {
+    "rowActions": [
+      {
+        "text": "Exportar",
+        "disabled": false
+      },
+      {
+        "text": "Nuevo calculo",
+        "disabled": false
+      },
+      {
+        "text": "Seleccione una fecha",
+        "disabled": false
+      },
+      {
+        "text": "Seleccione una fecha",
+        "disabled": false
+      },
+      {
+        "text": "Calcular planilla",
+        "disabled": false
+      },
+      {
+        "text": "Cancelar",
+        "disabled": false
+      }
+    ],
+    "features": {
+      "exportExcel": 0,
+      "exportPDF": 0,
+      "pagination": true,
+      "columnFilters": 0,
+      "checkboxSelection": 0
+    }
+  },
+  "modals": [],
+  "validations": [
+    {
+      "text": "Tipo de planilla *SueldoCTSGratificaciónPeriodoSelecciona un periodoSucursal * Seleccione sucursales Periodicidad de pago *DiariaSemanalQuincenalMensualCalcular desde *Seleccione una fechaCalcular hasta *Seleccione una fecha",
+      "type": "validation"
+    },
+    {
+      "text": "SueldoCTSGratificación",
+      "type": "validation"
+    },
+    {
+      "text": "DiariaSemanalQuincenalMensual",
+      "type": "validation"
+    }
+  ],
+  "navigation": {
+    "navigatedAway": false,
+    "targetUrl": "",
+    "hasLinks": false
+  }
+}

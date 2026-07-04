@@ -1,0 +1,382 @@
+{
+  "module": "Finanzas",
+  "screen": "CarteraCobros",
+  "route": "/finanzas/tesoreria/carteras-cobros",
+  "actualUrl": "/finanzas/tesoreria/carteras-cobros",
+  "title": "Restaurant Contabilidad",
+  "timestamp": "2026-07-04T21:39:37.107Z",
+  "fields": [
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar por cliente o tipo de documento",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar por cliente o tipo de documento\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Selecciona un cliente",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Selecciona un cliente\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Selecciona tipo",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Selecciona tipo\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Busca cuenta por cobrar",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Busca cuenta por cobrar\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "fechaEmision",
+      "label": "",
+      "type": "date",
+      "placeholder": "",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"fechaEmision\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "fechaVencimiento",
+      "label": "",
+      "type": "date",
+      "placeholder": "",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"fechaVencimiento\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "tipoCambio",
+      "label": "",
+      "type": "text",
+      "placeholder": "S/ 3.40",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"tipoCambio\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "montoTotal",
+      "label": "",
+      "type": "text",
+      "placeholder": "S/ 1,500.00",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"montoTotal\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "montoTotal",
+      "label": "",
+      "type": "text",
+      "placeholder": "S/ 1,500.00",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"montoTotal\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "La Molina, Lima",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"La Molina, Lima\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "asientoContable",
+      "label": "",
+      "type": "text",
+      "placeholder": "ASC-2025-000148",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"asientoContable\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Perú",
+      "placeholder": "País",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Perú",
+        "Colombia",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "selector": "ion-select:nth-child(12)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "De emisión",
+      "placeholder": "De emisión",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "De emisión",
+        "De vencimiento"
+      ],
+      "selector": "ion-select:nth-child(13)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "moneda",
+      "label": "Soles (S/)",
+      "placeholder": "Soles (S/)",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Soles",
+        "Soles",
+        "Dolares Americanos",
+        "Euros",
+        "Peso Colombiano",
+        "Quetzal Guatemalteco"
+      ],
+      "selector": "ion-select[formcontrolname=\"moneda\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "estado",
+      "label": "Pendiente",
+      "placeholder": "Pendiente",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Pendiente",
+        "Parcial",
+        "Cobrado"
+      ],
+      "selector": "ion-select[formcontrolname=\"estado\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-checkbox",
+      "formControlName": null,
+      "label": "",
+      "checked": false,
+      "selector": "",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-textarea",
+      "formControlName": "observacion",
+      "placeholder": "Escribe aquí...",
+      "disabled": false,
+      "selector": "ion-textarea[formcontrolname=\"observacion\"] textarea",
+      "stability": "ALTA"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "01/07/2026 - 04/07/2026",
+      "type": "button",
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"01/07/2026 - 04/07/2026\"), ion-button:has-text(\"01/07/2026 - 04/07/2026\")"
+    },
+    {
+      "text": "Registrar pago",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Registrar pago\"), ion-button:has-text(\"Registrar pago\")"
+    }
+  ],
+  "tabs": [],
+  "grid": {
+    "type": "AG Grid",
+    "columns": [
+      {
+        "index": 0,
+        "name": "Cliente",
+        "sortable": true
+      },
+      {
+        "index": 1,
+        "name": "Tipo de comprobante",
+        "sortable": true
+      },
+      {
+        "index": 2,
+        "name": "Serie/N° comprobante",
+        "sortable": true
+      },
+      {
+        "index": 3,
+        "name": "Fecha de emisión",
+        "sortable": true
+      },
+      {
+        "index": 4,
+        "name": "Fecha de vencimiento",
+        "sortable": true
+      },
+      {
+        "index": 5,
+        "name": "Sucursal",
+        "sortable": true
+      },
+      {
+        "index": 6,
+        "name": "Monto total",
+        "sortable": true
+      },
+      {
+        "index": 7,
+        "name": "Monto cobrado",
+        "sortable": true
+      },
+      {
+        "index": 8,
+        "name": "Monto pendiente",
+        "sortable": true
+      },
+      {
+        "index": 9,
+        "name": "Estado",
+        "sortable": true
+      }
+    ],
+    "rows": 0,
+    "features": {
+      "export": true,
+      "pagination": true,
+      "filters": true,
+      "selection": false
+    },
+    "rowActions": []
+  },
+  "modals": [],
+  "validations": [],
+  "patterns": {
+    "app-autocomplete": {
+      "type": "reusable",
+      "desc": "Buscador con autocompletado"
+    },
+    "app-base-calendar-new": {
+      "type": "reusable",
+      "desc": "Componente calendario"
+    },
+    "app-sidebar": {
+      "type": "layout",
+      "desc": "Sidebar de navegación"
+    },
+    "app-header": {
+      "type": "layout",
+      "desc": "Header con selector país/empresa/sucursal"
+    }
+  }
+}

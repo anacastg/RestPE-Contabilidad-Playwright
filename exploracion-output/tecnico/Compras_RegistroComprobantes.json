@@ -1,0 +1,392 @@
+{
+  "module": "Compras",
+  "screen": "RegistroComprobantes",
+  "route": "/compras/operaciones/facturas-proveedores",
+  "actualUrl": "/compras/operaciones/facturas-proveedores",
+  "title": "Restaurant Contabilidad",
+  "timestamp": "2026-07-04T21:38:54.577Z",
+  "fields": [
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar facturas de proveedores",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar facturas de proveedores\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "serie",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"serie\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "numero",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"numero\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "documentoproveedorinput",
+      "label": "",
+      "type": "number",
+      "placeholder": "",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"documentoproveedorinput\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "proveedor",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"proveedor\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar el producto o servicio por nombre o código",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar el producto o servicio por nombre o código\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Perú",
+      "placeholder": "País",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Perú",
+        "Colombia",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "selector": "ion-select:nth-child(7)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "De emisión",
+      "placeholder": "De registro",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "De emisión",
+        "De vencimiento"
+      ],
+      "selector": "ion-select:nth-child(8)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "moneda",
+      "label": "Soles",
+      "placeholder": "",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Soles",
+        "Dólares",
+        "Euros"
+      ],
+      "selector": "ion-select[formcontrolname=\"moneda\"]",
+      "stability": "ALTA"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "01/07/2026 - 04/07/2026",
+      "type": "button",
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"01/07/2026 - 04/07/2026\"), ion-button:has-text(\"01/07/2026 - 04/07/2026\")"
+    },
+    {
+      "text": "Seleccione una fecha",
+      "type": "button",
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Seleccione una fecha\"), ion-button:has-text(\"Seleccione una fecha\")"
+    },
+    {
+      "text": "Seleccione una fecha",
+      "type": "button",
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Seleccione una fecha\"), ion-button:has-text(\"Seleccione una fecha\")"
+    },
+    {
+      "text": "Nuevo",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": "solid",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Nuevo\"), ion-button:has-text(\"Nuevo\")"
+    },
+    {
+      "text": "Registrar",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Registrar\"), ion-button:has-text(\"Registrar\")"
+    },
+    {
+      "text": "Cancelar",
+      "type": null,
+      "disabled": false,
+      "color": "medium",
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Cancelar\"), ion-button:has-text(\"Cancelar\")"
+    },
+    {
+      "text": "Anular",
+      "type": null,
+      "disabled": false,
+      "color": "danger",
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Anular\"), ion-button:has-text(\"Anular\")"
+    }
+  ],
+  "tabs": [
+    {
+      "index": 0,
+      "name": "Registro",
+      "selected": false,
+      "selector": "ion-segment-button:nth-child(1), [role=\"tab\"]:has-text(\"Registro\")"
+    },
+    {
+      "index": 2,
+      "name": "Referencias",
+      "selected": false,
+      "selector": "ion-segment-button:nth-child(3), [role=\"tab\"]:has-text(\"Referencias\")"
+    },
+    {
+      "index": 4,
+      "name": "Impuestos",
+      "selected": false,
+      "selector": "ion-segment-button:nth-child(5), [role=\"tab\"]:has-text(\"Impuestos\")"
+    },
+    {
+      "index": 6,
+      "name": "Asientos",
+      "selected": false,
+      "selector": "ion-segment-button:nth-child(7), [role=\"tab\"]:has-text(\"Asientos\")"
+    }
+  ],
+  "grid": {
+    "type": "AG Grid",
+    "columns": [
+      {
+        "index": 0,
+        "name": "Nº comprobante",
+        "sortable": true
+      },
+      {
+        "index": 1,
+        "name": "Tipo",
+        "sortable": true
+      },
+      {
+        "index": 2,
+        "name": "Razón social",
+        "sortable": true
+      },
+      {
+        "index": 3,
+        "name": "Fecha de emisión",
+        "sortable": true
+      },
+      {
+        "index": 4,
+        "name": "Fecha de vencimiento",
+        "sortable": true
+      },
+      {
+        "index": 5,
+        "name": "Monto total",
+        "sortable": true
+      },
+      {
+        "index": 6,
+        "name": "Moneda",
+        "sortable": true
+      },
+      {
+        "index": 7,
+        "name": "Orden asociada",
+        "sortable": true
+      },
+      {
+        "index": 8,
+        "name": "Estado",
+        "sortable": true
+      },
+      {
+        "index": 9,
+        "name": "Código",
+        "sortable": true
+      },
+      {
+        "index": 10,
+        "name": "Cantidad",
+        "sortable": true
+      },
+      {
+        "index": 11,
+        "name": "Descripción",
+        "sortable": true
+      },
+      {
+        "index": 12,
+        "name": "Concepto financiero",
+        "sortable": true
+      },
+      {
+        "index": 13,
+        "name": "Precio unitario",
+        "sortable": true
+      },
+      {
+        "index": 14,
+        "name": "Nro. Doc. Ref.",
+        "sortable": true
+      },
+      {
+        "index": 15,
+        "name": "Origen Ref.",
+        "sortable": true
+      },
+      {
+        "index": 16,
+        "name": "Ítem / Impuesto",
+        "sortable": true
+      },
+      {
+        "index": 17,
+        "name": "Base imponible",
+        "sortable": true
+      },
+      {
+        "index": 18,
+        "name": "Cuenta",
+        "sortable": true
+      },
+      {
+        "index": 19,
+        "name": "Descripción",
+        "sortable": true
+      }
+    ],
+    "rows": 19,
+    "features": {
+      "export": true,
+      "pagination": true,
+      "filters": true,
+      "selection": false
+    },
+    "rowActions": []
+  },
+  "modals": [],
+  "validations": [],
+  "patterns": {
+    "app-autocomplete": {
+      "type": "reusable",
+      "desc": "Buscador con autocompletado"
+    },
+    "app-selector-busqueda": {
+      "type": "reusable",
+      "desc": "Selector desplegable con búsqueda"
+    },
+    "app-base-calendar-new": {
+      "type": "reusable",
+      "desc": "Componente calendario"
+    },
+    "app-sidebar": {
+      "type": "layout",
+      "desc": "Sidebar de navegación"
+    },
+    "app-header": {
+      "type": "layout",
+      "desc": "Header con selector país/empresa/sucursal"
+    }
+  }
+}

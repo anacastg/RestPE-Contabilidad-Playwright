@@ -1,0 +1,376 @@
+{
+  "module": "Finanzas",
+  "screen": "CuentaBancaria",
+  "route": "/finanzas/tabla/cuenta-bancaria",
+  "actualUrl": "/finanzas/tabla/cuenta-bancaria",
+  "title": "Restaurant Contabilidad",
+  "timestamp": "2026-07-04T21:39:47.363Z",
+  "fields": [
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar cuenta bancaria por número de cuenta, CCI o razón social.",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar cuenta bancaria por número de cuenta, CCI o razón social.\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "fechaCreacion",
+      "label": "",
+      "type": "date",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "2026-07-04",
+      "selector": "ion-input[formcontrolname=\"fechaCreacion\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "codigo",
+      "label": "",
+      "type": "text",
+      "placeholder": "Ej: CTA-001",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": "20",
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"codigo\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "numeroCuenta",
+      "label": "",
+      "type": "text",
+      "placeholder": "00000000000000",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"numeroCuenta\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "cci",
+      "label": "",
+      "type": "text",
+      "placeholder": "00000000000000000",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"cci\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "saldoContable",
+      "label": "",
+      "type": "number",
+      "placeholder": "0.00",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "0",
+      "selector": "ion-input[formcontrolname=\"saldoContable\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Selecciona cuenta contable",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Selecciona cuenta contable\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "correlativoCheque",
+      "label": "",
+      "type": "number",
+      "placeholder": "0",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"correlativoCheque\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Perú",
+      "placeholder": "País",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Perú",
+        "Colombia",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "selector": "ion-select:nth-child(9)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "bancoId",
+      "label": "Selecciona un banco",
+      "placeholder": "Selecciona un banco",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "BANCO LATINO",
+        "BANCO CITIBANK DEL PERU S.A",
+        "BANCO STANDARD CHARTERED",
+        "BANCO DE CREDITO DEL PERU",
+        "BANCO CONTINENTAL",
+        "BANBIF",
+        "Bco de Comercio",
+        "CAJA MUNICIPAL DE PAITA",
+        "CAJA MUNICIPAL DE PIURA",
+        "BANCO SCOTIABANK",
+        "BANCO PICHINCHA",
+        "Banco Continental",
+        "Banco de la Nacion",
+        "MIBANCO",
+        "Banco Falabella",
+        "BANCO RIPLEY",
+        "Banco Santander",
+        "Regularización Telecredito",
+        "CIO NANTES",
+        "CAJA MUNICIPAL DEL SANTA",
+        "Banco QA 899",
+        "Banco QA 939",
+        "Banco QA 969",
+        "BANCO DE LA NACION",
+        "BANCO CREDITO"
+      ],
+      "selector": "ion-select[formcontrolname=\"bancoId\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "tipoCuenta",
+      "label": "Selecciona un tipo de cuenta",
+      "placeholder": "Selecciona un tipo de cuenta",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Corriente",
+        "Ahorros",
+        "Línea de crédito",
+        "Otros"
+      ],
+      "selector": "ion-select[formcontrolname=\"tipoCuenta\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "moneda",
+      "label": "Selecciona una moneda",
+      "placeholder": "Selecciona una moneda",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Soles",
+        "Soles",
+        "Dolares Americanos",
+        "Euros",
+        "Peso Colombiano",
+        "Quetzal Guatemalteco"
+      ],
+      "selector": "ion-select[formcontrolname=\"moneda\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "sucursalId",
+      "label": "Selecciona una sucursal",
+      "placeholder": "Selecciona una sucursal",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "CX - CHICLAYO",
+        "LM - LIMA",
+        "AR - AREQUIPA",
+        "LL - LA LIBERTAD",
+        "LA - LA LIBERTAD",
+        "CH - CHIMBOTE",
+        "PI - PIURA",
+        "34 - 3423424"
+      ],
+      "selector": "ion-select[formcontrolname=\"sucursalId\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "estado",
+      "label": "Activo",
+      "placeholder": "Seleccionar",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Activo",
+        "Inactivo"
+      ],
+      "selector": "ion-select[formcontrolname=\"estado\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-textarea",
+      "formControlName": "descripcion",
+      "placeholder": "Descripción de la cuenta",
+      "disabled": false,
+      "selector": "ion-textarea[formcontrolname=\"descripcion\"] textarea",
+      "stability": "ALTA"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Registrar",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Registrar\"), ion-button:has-text(\"Registrar\")"
+    },
+    {
+      "text": "Cancelar",
+      "type": null,
+      "disabled": false,
+      "color": "medium",
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Cancelar\"), ion-button:has-text(\"Cancelar\")"
+    }
+  ],
+  "tabs": [],
+  "grid": {
+    "type": "AG Grid",
+    "columns": [
+      {
+        "index": 0,
+        "name": "Fecha de creación",
+        "sortable": true
+      },
+      {
+        "index": 1,
+        "name": "Entidad financiera",
+        "sortable": true
+      },
+      {
+        "index": 2,
+        "name": "Tipo de cuenta",
+        "sortable": true
+      },
+      {
+        "index": 3,
+        "name": "Moneda",
+        "sortable": true
+      },
+      {
+        "index": 4,
+        "name": "N° de cuenta",
+        "sortable": true
+      },
+      {
+        "index": 5,
+        "name": "CCI",
+        "sortable": true
+      },
+      {
+        "index": 6,
+        "name": "Cuenta Contable",
+        "sortable": true
+      },
+      {
+        "index": 7,
+        "name": "Saldo contable",
+        "sortable": true
+      },
+      {
+        "index": 8,
+        "name": "Estado",
+        "sortable": true
+      }
+    ],
+    "rows": 20,
+    "features": {
+      "export": true,
+      "pagination": true,
+      "filters": true,
+      "selection": false
+    },
+    "rowActions": []
+  },
+  "modals": [],
+  "validations": [],
+  "patterns": {
+    "app-autocomplete": {
+      "type": "reusable",
+      "desc": "Buscador con autocompletado"
+    },
+    "app-base-calendar-new": {
+      "type": "reusable",
+      "desc": "Componente calendario"
+    },
+    "app-sidebar": {
+      "type": "layout",
+      "desc": "Sidebar de navegación"
+    },
+    "app-header": {
+      "type": "layout",
+      "desc": "Header con selector país/empresa/sucursal"
+    }
+  }
+}

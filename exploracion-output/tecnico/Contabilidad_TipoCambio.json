@@ -1,0 +1,238 @@
+{
+  "module": "Contabilidad",
+  "screen": "TipoCambio",
+  "route": "/contabilidad/tabla/tipo-de-cambio",
+  "actualUrl": "/contabilidad/tabla/tipo-de-cambio",
+  "title": "Restaurant Contabilidad",
+  "timestamp": "2026-07-04T21:41:02.052Z",
+  "fields": [
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar por moneda, fecha, monto o estado",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar por moneda, fecha, monto o estado\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "fechaCreacion",
+      "label": "",
+      "type": "date",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "2026-07-04",
+      "selector": "ion-input[formcontrolname=\"fechaCreacion\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "tcCompra",
+      "label": "",
+      "type": "text",
+      "placeholder": "0.00",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"tcCompra\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "tcVenta",
+      "label": "",
+      "type": "text",
+      "placeholder": "0.00",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"tcVenta\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Perú",
+      "placeholder": "País",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Perú",
+        "Colombia",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "selector": "ion-select:nth-child(5)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "moneda",
+      "label": "Selecciona una moneda",
+      "placeholder": "Selecciona una moneda",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Dólar",
+        "Euro"
+      ],
+      "selector": "ion-select[formcontrolname=\"moneda\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "fuente",
+      "label": "Selecciona una fuente",
+      "placeholder": "Selecciona una fuente",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "SUNAT",
+        "Externa"
+      ],
+      "selector": "ion-select[formcontrolname=\"fuente\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "estado",
+      "label": "Activo",
+      "placeholder": "Activo",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Activo",
+        "Inactivo"
+      ],
+      "selector": "ion-select[formcontrolname=\"estado\"]",
+      "stability": "ALTA"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "01/07/2026 - 04/07/2026",
+      "type": "button",
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"01/07/2026 - 04/07/2026\"), ion-button:has-text(\"01/07/2026 - 04/07/2026\")"
+    },
+    {
+      "text": "Seleccione una fecha",
+      "type": "button",
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Seleccione una fecha\"), ion-button:has-text(\"Seleccione una fecha\")"
+    },
+    {
+      "text": "Registrar",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Registrar\"), ion-button:has-text(\"Registrar\")"
+    },
+    {
+      "text": "Cancelar",
+      "type": null,
+      "disabled": false,
+      "color": "medium",
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Cancelar\"), ion-button:has-text(\"Cancelar\")"
+    }
+  ],
+  "tabs": [],
+  "grid": {
+    "type": "AG Grid",
+    "columns": [
+      {
+        "index": 0,
+        "name": "Fecha registro",
+        "sortable": true
+      },
+      {
+        "index": 1,
+        "name": "Fecha vigencia",
+        "sortable": true
+      },
+      {
+        "index": 2,
+        "name": "Moneda",
+        "sortable": true
+      },
+      {
+        "index": 3,
+        "name": "Tipo de cambio compra",
+        "sortable": true
+      },
+      {
+        "index": 4,
+        "name": "Tipo de cambio venta",
+        "sortable": true
+      },
+      {
+        "index": 5,
+        "name": "Estado",
+        "sortable": true
+      }
+    ],
+    "rows": 20,
+    "features": {
+      "export": true,
+      "pagination": true,
+      "filters": true,
+      "selection": false
+    },
+    "rowActions": []
+  },
+  "modals": [],
+  "validations": [],
+  "patterns": {
+    "app-base-calendar-new": {
+      "type": "reusable",
+      "desc": "Componente calendario"
+    },
+    "app-sidebar": {
+      "type": "layout",
+      "desc": "Sidebar de navegación"
+    },
+    "app-header": {
+      "type": "layout",
+      "desc": "Header con selector país/empresa/sucursal"
+    }
+  }
+}

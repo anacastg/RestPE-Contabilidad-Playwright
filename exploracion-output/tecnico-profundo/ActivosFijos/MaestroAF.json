@@ -1,0 +1,1151 @@
+{
+  "module": "ActivosFijos",
+  "screen": "MaestroAF",
+  "route": "/activos/operaciones/registroactivos",
+  "actualUrl": "/activos/operaciones/registroactivos",
+  "initialFields": [
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Buscar por código o descripción",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "input[placeholder=\"Buscar por código o descripción\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "nombreActivo",
+      "ph": "",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "Máquina productora de hielo 10TN",
+      "selector": "ion-input[formcontrolname=\"nombreActivo\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Selecciona una clasificación",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "Maquinaria y Equipo",
+      "selector": "input[placeholder=\"Selecciona una clasificación\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Selecciona una subclasificación",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "Equipos de Refrigeración",
+      "selector": "input[placeholder=\"Selecciona una subclasificación\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Selecciona una sub clasificación",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "input[placeholder=\"Selecciona una sub clasificación\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "marcaModelo",
+      "ph": "",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "Scotsman / MAR-1000 / MH-2026-077",
+      "selector": "ion-input[formcontrolname=\"marcaModelo\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Selecciona un proveedor",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "PROVEEDOR QA AUTO 1782830433434",
+      "selector": "input[placeholder=\"Selecciona un proveedor\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Selecciona un documento",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "Factura F001-000123",
+      "selector": "input[placeholder=\"Selecciona un documento\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "tasadecambio",
+      "ph": "",
+      "type": "text",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "3.8",
+      "selector": "ion-input[formcontrolname=\"tasadecambio\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "valorAdquisicion",
+      "ph": "",
+      "type": "number",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "62000",
+      "selector": "ion-input[formcontrolname=\"valorAdquisicion\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "valorSoles",
+      "ph": "",
+      "type": "number",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "62000",
+      "selector": "ion-input[formcontrolname=\"valorSoles\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "valorDolares",
+      "ph": "",
+      "type": "number",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "16315.79",
+      "selector": "ion-input[formcontrolname=\"valorDolares\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "vidaUtil",
+      "ph": "",
+      "type": "number",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "10",
+      "selector": "ion-input[formcontrolname=\"vidaUtil\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-select",
+      "fc": null,
+      "ph": "País",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "",
+      "stability": "BAJA"
+    },
+    {
+      "el": "ion-select",
+      "fc": "moneda",
+      "ph": "Selecciona moneda",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "ion-select[formcontrolname=\"moneda\"]",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-select",
+      "fc": "estado",
+      "ph": "Activo",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "ion-select[formcontrolname=\"estado\"]",
+      "stability": "ALTA"
+    }
+  ],
+  "tabs": {
+    "Datos Generales": {
+      "tabIndex": 0,
+      "fields": [
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por código o descripción",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por código o descripción\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "nombreActivo",
+          "ph": "",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "Máquina productora de hielo 10TN",
+          "selector": "ion-input[formcontrolname=\"nombreActivo\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Selecciona una clasificación",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "Maquinaria y Equipo",
+          "selector": "input[placeholder=\"Selecciona una clasificación\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Selecciona una subclasificación",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "Equipos de Refrigeración",
+          "selector": "input[placeholder=\"Selecciona una subclasificación\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Selecciona una sub clasificación",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Selecciona una sub clasificación\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "marcaModelo",
+          "ph": "",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "Scotsman / MAR-1000 / MH-2026-077",
+          "selector": "ion-input[formcontrolname=\"marcaModelo\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Selecciona un proveedor",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "PROVEEDOR QA AUTO 1782830433434",
+          "selector": "input[placeholder=\"Selecciona un proveedor\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Selecciona un documento",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "Factura F001-000123",
+          "selector": "input[placeholder=\"Selecciona un documento\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "tasadecambio",
+          "ph": "",
+          "type": "text",
+          "disabled": true,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "3.8",
+          "selector": "ion-input[formcontrolname=\"tasadecambio\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "valorAdquisicion",
+          "ph": "",
+          "type": "number",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "62000",
+          "selector": "ion-input[formcontrolname=\"valorAdquisicion\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "valorSoles",
+          "ph": "",
+          "type": "number",
+          "disabled": true,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "62000",
+          "selector": "ion-input[formcontrolname=\"valorSoles\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "valorDolares",
+          "ph": "",
+          "type": "number",
+          "disabled": true,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "16315.79",
+          "selector": "ion-input[formcontrolname=\"valorDolares\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "vidaUtil",
+          "ph": "",
+          "type": "number",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "10",
+          "selector": "ion-input[formcontrolname=\"vidaUtil\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": null,
+          "ph": "País",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "",
+          "stability": "BAJA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "moneda",
+          "ph": "Selecciona moneda",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"moneda\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "estado",
+          "ph": "Activo",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"estado\"]",
+          "stability": "ALTA"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "04/07/2026",
+          "disabled": false
+        },
+        {
+          "text": "Dar de baja",
+          "disabled": false
+        },
+        {
+          "text": "Transferir",
+          "disabled": false
+        },
+        {
+          "text": "Revalorizar",
+          "disabled": false
+        },
+        {
+          "text": "Guardar",
+          "disabled": false
+        },
+        {
+          "text": "Cancelar",
+          "disabled": false
+        }
+      ],
+      "gridCols": [
+        "Código",
+        "Descripción",
+        "Fecha de adquisición",
+        "Periodo Contable",
+        "Valor de adquisición",
+        "Valor neto en libros",
+        "Estado"
+      ],
+      "gridRows": 11
+    },
+    "Datos Complementarios": {
+      "tabIndex": 2,
+      "fields": [
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por código o descripción",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por código o descripción\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar ubicación física",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "UB-002 - Oficina Principal Lima",
+          "selector": "input[placeholder=\"Buscar ubicación física\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Selecciona un usuario",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "Juan Pérez",
+          "selector": "input[placeholder=\"Selecciona un usuario\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "valorActualizado",
+          "ph": "",
+          "type": "number",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "62000",
+          "selector": "ion-input[formcontrolname=\"valorActualizado\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-textarea",
+          "fc": "observaciones",
+          "ph": null,
+          "disabled": false,
+          "selector": "ion-textarea[formcontrolname=\"observaciones\"] textarea",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": null,
+          "ph": "País",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "",
+          "stability": "BAJA"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "01/07/2026 - 04/07/2026",
+          "disabled": false
+        },
+        {
+          "text": "Dar de baja",
+          "disabled": false
+        },
+        {
+          "text": "Transferir",
+          "disabled": false
+        },
+        {
+          "text": "Revalorizar",
+          "disabled": false
+        },
+        {
+          "text": "Guardar",
+          "disabled": false
+        },
+        {
+          "text": "Cancelar",
+          "disabled": false
+        }
+      ],
+      "gridCols": [
+        "Código",
+        "Descripción",
+        "Fecha de adquisición",
+        "Periodo Contable",
+        "Valor de adquisición",
+        "Valor neto en libros",
+        "Estado"
+      ],
+      "gridRows": 11
+    },
+    "Accesorios": {
+      "tabIndex": 4,
+      "fields": [
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por código o descripción",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por código o descripción\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por código o descripción",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por código o descripción\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-select",
+          "fc": null,
+          "ph": "País",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "",
+          "stability": "BAJA"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Nuevo accesorio",
+          "disabled": false
+        },
+        {
+          "text": "Dar de baja",
+          "disabled": false
+        },
+        {
+          "text": "Transferir",
+          "disabled": false
+        },
+        {
+          "text": "Revalorizar",
+          "disabled": false
+        },
+        {
+          "text": "Guardar",
+          "disabled": false
+        },
+        {
+          "text": "Cancelar",
+          "disabled": false
+        }
+      ],
+      "gridCols": [
+        "Código",
+        "Descripción",
+        "Fecha de adquisición",
+        "Periodo Contable",
+        "Valor de adquisición",
+        "Valor neto en libros",
+        "Estado",
+        "Código",
+        "Descripción",
+        "Valor individual",
+        "Relación con activo principal",
+        "Acciones"
+      ],
+      "gridRows": 11
+    },
+    "Depreciación": {
+      "tabIndex": 6,
+      "fields": [
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por código o descripción",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por código o descripción\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "tasaAnual",
+          "ph": "",
+          "type": "number",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "10",
+          "selector": "ion-input[formcontrolname=\"tasaAnual\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "valorResidual",
+          "ph": "",
+          "type": "number",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "3100",
+          "selector": "ion-input[formcontrolname=\"valorResidual\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "depreciacionAcumulada",
+          "ph": "",
+          "type": "number",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"depreciacionAcumulada\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "valorNetoLibros",
+          "ph": "",
+          "type": "number",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "62000",
+          "selector": "ion-input[formcontrolname=\"valorNetoLibros\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": null,
+          "ph": "País",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "",
+          "stability": "BAJA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "metodoDepreciacion",
+          "ph": "Selecciona método",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"metodoDepreciacion\"]",
+          "stability": "ALTA"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Dar de baja",
+          "disabled": false
+        },
+        {
+          "text": "Transferir",
+          "disabled": false
+        },
+        {
+          "text": "Revalorizar",
+          "disabled": false
+        },
+        {
+          "text": "Guardar",
+          "disabled": false
+        },
+        {
+          "text": "Cancelar",
+          "disabled": false
+        }
+      ],
+      "gridCols": [
+        "Código",
+        "Descripción",
+        "Fecha de adquisición",
+        "Periodo Contable",
+        "Valor de adquisición",
+        "Valor neto en libros",
+        "Estado"
+      ],
+      "gridRows": 11
+    },
+    "Traslados": {
+      "tabIndex": 8,
+      "fields": [
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por código o descripción",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por código o descripción\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por número de traslado",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por número de traslado\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-select",
+          "fc": null,
+          "ph": "País",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "",
+          "stability": "BAJA"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Dar de baja",
+          "disabled": false
+        },
+        {
+          "text": "Transferir",
+          "disabled": false
+        },
+        {
+          "text": "Revalorizar",
+          "disabled": false
+        },
+        {
+          "text": "Guardar",
+          "disabled": false
+        },
+        {
+          "text": "Cancelar",
+          "disabled": false
+        }
+      ],
+      "gridCols": [
+        "Código",
+        "Descripción",
+        "Fecha de adquisición",
+        "Periodo Contable",
+        "Valor de adquisición",
+        "Valor neto en libros",
+        "Estado",
+        "Nro de traslado",
+        "Fecha de traslado",
+        "Origen",
+        "Destino"
+      ],
+      "gridRows": 12
+    },
+    "Incidencias": {
+      "tabIndex": 10,
+      "fields": [
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por código o descripción",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por código o descripción\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar cuenta bancaria",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar cuenta bancaria\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-select",
+          "fc": null,
+          "ph": "País",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "",
+          "stability": "BAJA"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Nueva incidencia",
+          "disabled": false
+        },
+        {
+          "text": "Dar de baja",
+          "disabled": false
+        },
+        {
+          "text": "Transferir",
+          "disabled": false
+        },
+        {
+          "text": "Revalorizar",
+          "disabled": false
+        },
+        {
+          "text": "Guardar",
+          "disabled": false
+        },
+        {
+          "text": "Cancelar",
+          "disabled": false
+        }
+      ],
+      "gridCols": [
+        "Código",
+        "Descripción",
+        "Fecha de adquisición",
+        "Periodo Contable",
+        "Valor de adquisición",
+        "Valor neto en libros",
+        "Estado",
+        "F. de incidencia",
+        "Tipo de incidencia",
+        "Descripción",
+        "Acción Correctiva"
+      ],
+      "gridRows": 11
+    },
+    "Adaptaciones": {
+      "tabIndex": 12,
+      "fields": [
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por código o descripción",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por código o descripción\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por descripción",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por descripción\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-select",
+          "fc": null,
+          "ph": "País",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "",
+          "stability": "BAJA"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Nueva adaptación",
+          "disabled": false
+        },
+        {
+          "text": "Dar de baja",
+          "disabled": false
+        },
+        {
+          "text": "Transferir",
+          "disabled": false
+        },
+        {
+          "text": "Revalorizar",
+          "disabled": false
+        },
+        {
+          "text": "Guardar",
+          "disabled": false
+        },
+        {
+          "text": "Cancelar",
+          "disabled": false
+        }
+      ],
+      "gridCols": [
+        "Código",
+        "Descripción",
+        "Fecha de adquisición",
+        "Periodo Contable",
+        "Valor de adquisición",
+        "Valor neto en libros",
+        "Estado",
+        "Fecha de adaptación",
+        "Descripción",
+        "Valor incremental",
+        "Responsable"
+      ],
+      "gridRows": 11
+    },
+    "Asignaciones": {
+      "tabIndex": 14,
+      "fields": [
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por código o descripción",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por código o descripción\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar centro de costos",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "21010203 - GAS NATURAL",
+          "selector": "input[placeholder=\"Buscar centro de costos\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-select",
+          "fc": null,
+          "ph": "País",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "",
+          "stability": "BAJA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "responsableActivo",
+          "ph": "Selecciona responsable",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"responsableActivo\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "estadoAsignacion",
+          "ph": "Activo",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"estadoAsignacion\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-checkbox",
+          "fc": "notificarResponsable",
+          "checked": false,
+          "selector": "ion-checkbox[formcontrolname=\"notificarResponsable\"]",
+          "stability": "ALTA"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Dar de baja",
+          "disabled": false
+        },
+        {
+          "text": "Transferir",
+          "disabled": false
+        },
+        {
+          "text": "Revalorizar",
+          "disabled": false
+        },
+        {
+          "text": "Guardar",
+          "disabled": false
+        },
+        {
+          "text": "Cancelar",
+          "disabled": false
+        }
+      ],
+      "gridCols": [
+        "Código",
+        "Descripción",
+        "Fecha de adquisición",
+        "Periodo Contable",
+        "Valor de adquisición",
+        "Valor neto en libros",
+        "Estado"
+      ],
+      "gridRows": 11
+    }
+  },
+  "selects": [],
+  "grid": {
+    "rowActions": [
+      {
+        "text": "04/07/2026",
+        "disabled": false
+      },
+      {
+        "text": "Dar de baja",
+        "disabled": false
+      },
+      {
+        "text": "Transferir",
+        "disabled": false
+      },
+      {
+        "text": "Revalorizar",
+        "disabled": false
+      },
+      {
+        "text": "Guardar",
+        "disabled": false
+      },
+      {
+        "text": "Cancelar",
+        "disabled": false
+      }
+    ],
+    "features": {
+      "exportExcel": 0,
+      "exportPDF": 0,
+      "pagination": true,
+      "columnFilters": 0,
+      "checkboxSelection": 0
+    }
+  },
+  "modals": [],
+  "validations": [
+    {
+      "text": "Nombre del Activo *Clase *Subclase *Sub clasificaciónMarca/Modelo/Serie *Proveedor *Documento vinculadoFecha de adquisición *04/07/2026Moneda * Soles  Dólares Tasa de cambioValor de adquisición *Valor en soles *Valor en dólares *Estado * Activo  Inactivo Vida Útil (Años) * Dar de baja  Transferir  Revalorizar  Guardar Cancelar",
+      "type": "validation"
+    }
+  ],
+  "navigation": {
+    "navigatedAway": false,
+    "targetUrl": "",
+    "hasLinks": false
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "module": "Compras",
+  "screen": "AprobarOC",
+  "route": "/compras/operaciones/aprobar-compra",
+  "actualUrl": "/compras/operaciones/aprobar-compra",
+  "title": "Restaurant Contabilidad",
+  "timestamp": "2026-07-04T21:38:46.063Z",
+  "fields": [
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar órdenes de compra",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar órdenes de compra\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "documentoproveedorinput",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"documentoproveedorinput\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "proveedor",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"proveedor\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "direccionFiscal",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"direccionFiscal\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "almacen",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"almacen\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "centroCosto",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"centroCosto\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "fechaRegistro",
+      "label": "",
+      "type": "date",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"fechaRegistro\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "fechaEntrega",
+      "label": "",
+      "type": "date",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"fechaEntrega\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "direccionEntrega",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"direccionEntrega\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "moneda",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"moneda\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "tipoCambio",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"tipoCambio\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "condicionPago",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"condicionPago\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "estado",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"estado\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar producto por nombre o código...",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar producto por nombre o código...\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Perú",
+      "placeholder": "País",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Perú",
+        "Colombia",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "selector": "ion-select:nth-child(15)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "De registro",
+      "placeholder": "De registro",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "De registro",
+        "De entrega"
+      ],
+      "selector": "ion-select:nth-child(16)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-textarea",
+      "formControlName": null,
+      "placeholder": "Observaciones",
+      "disabled": false,
+      "selector": "",
+      "stability": "BAJA"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "01/07/2026 - 04/07/2026",
+      "type": "button",
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"01/07/2026 - 04/07/2026\"), ion-button:has-text(\"01/07/2026 - 04/07/2026\")"
+    }
+  ],
+  "tabs": [],
+  "grid": {
+    "type": "AG Grid",
+    "columns": [
+      {
+        "index": 1,
+        "name": "Nº. Órden de compra",
+        "sortable": true
+      },
+      {
+        "index": 2,
+        "name": "Fecha registro",
+        "sortable": true
+      },
+      {
+        "index": 3,
+        "name": "Fecha entrega",
+        "sortable": true
+      },
+      {
+        "index": 4,
+        "name": "Razón social",
+        "sortable": true
+      },
+      {
+        "index": 5,
+        "name": "Almacén",
+        "sortable": true
+      },
+      {
+        "index": 6,
+        "name": "Sucursal",
+        "sortable": true
+      },
+      {
+        "index": 7,
+        "name": "Moneda",
+        "sortable": true
+      },
+      {
+        "index": 8,
+        "name": "Total",
+        "sortable": true
+      },
+      {
+        "index": 9,
+        "name": "Estado",
+        "sortable": true
+      },
+      {
+        "index": 10,
+        "name": "Código",
+        "sortable": true
+      },
+      {
+        "index": 11,
+        "name": "Cantidad",
+        "sortable": true
+      },
+      {
+        "index": 12,
+        "name": "Unidad",
+        "sortable": true
+      },
+      {
+        "index": 13,
+        "name": "Centro de costos",
+        "sortable": true
+      }
+    ],
+    "rows": 2,
+    "features": {
+      "export": false,
+      "pagination": true,
+      "filters": true,
+      "selection": true
+    },
+    "rowActions": []
+  },
+  "modals": [],
+  "validations": [],
+  "patterns": {
+    "app-base-calendar-new": {
+      "type": "reusable",
+      "desc": "Componente calendario"
+    },
+    "app-sidebar": {
+      "type": "layout",
+      "desc": "Sidebar de navegación"
+    },
+    "app-header": {
+      "type": "layout",
+      "desc": "Header con selector país/empresa/sucursal"
+    }
+  }
+}

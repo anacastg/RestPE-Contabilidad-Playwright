@@ -1,0 +1,259 @@
+{
+  "module": "Finanzas",
+  "screen": "CarteraPagos",
+  "route": "/finanzas/tesoreria/cartera-pagos",
+  "actualUrl": "/finanzas/tesoreria/cartera-pagos",
+  "initialFields": [
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Buscar por código",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "input[placeholder=\"Buscar por código\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-textarea",
+      "fc": "observaciones",
+      "ph": "Ingresa aquí tus observaciones",
+      "disabled": false,
+      "selector": "ion-textarea[formcontrolname=\"observaciones\"] textarea",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-select",
+      "fc": null,
+      "ph": "País",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "",
+      "stability": "BAJA"
+    }
+  ],
+  "tabs": {
+    "Pago de documento": {
+      "tabIndex": 0,
+      "fields": [
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por código",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por código\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-textarea",
+          "fc": "observaciones",
+          "ph": "Ingresa aquí tus observaciones",
+          "disabled": false,
+          "selector": "ion-textarea[formcontrolname=\"observaciones\"] textarea",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": null,
+          "ph": "País",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "",
+          "stability": "BAJA"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Registrar",
+          "disabled": false
+        }
+      ],
+      "gridCols": [
+        "Proveedor",
+        "Tipo registro",
+        "Tipo de comprobante",
+        "Serie/N° comprobante",
+        "Fecha programada",
+        "Monto total pagado",
+        "Medio pago",
+        "Estado"
+      ],
+      "gridRows": 1
+    },
+    "Pago de planilla": {
+      "tabIndex": 2,
+      "fields": [
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por código",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por código\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "tipoPlanilla",
+          "ph": "",
+          "type": "text",
+          "disabled": true,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"tipoPlanilla\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "periodo",
+          "ph": "",
+          "type": "text",
+          "disabled": true,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"periodo\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "sucursal",
+          "ph": "",
+          "type": "text",
+          "disabled": true,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"sucursal\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "calculadoDesde",
+          "ph": "",
+          "type": "text",
+          "disabled": true,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"calculadoDesde\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "calculadoHasta",
+          "ph": "",
+          "type": "text",
+          "disabled": true,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"calculadoHasta\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "porPagar",
+          "ph": "",
+          "type": "text",
+          "disabled": true,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"porPagar\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar por código",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar por código\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-select",
+          "fc": null,
+          "ph": "País",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "",
+          "stability": "BAJA"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Exportar",
+          "disabled": false
+        },
+        {
+          "text": "Pagar planilla",
+          "disabled": false
+        },
+        {
+          "text": "Cancelar",
+          "disabled": false
+        }
+      ],
+      "gridCols": [
+        "Codigo",
+        "Tipo de planilla",
+        "Periodo",
+        "Sucursal",
+        "Calculado desde",
+        "Calculado hasta",
+        "N° trabajadores",
+        "Código",
+        "Nombre de trabajador",
+        "Centro de costo",
+        "Tipo doc."
+      ],
+      "gridRows": 0
+    }
+  },
+  "selects": [],
+  "grid": {
+    "rowActions": [],
+    "features": {
+      "exportExcel": 0,
+      "exportPDF": 0,
+      "pagination": true,
+      "columnFilters": 0,
+      "checkboxSelection": 0
+    }
+  },
+  "modals": [],
+  "validations": [],
+  "navigation": {
+    "navigatedAway": false,
+    "targetUrl": "",
+    "hasLinks": false
+  }
+}

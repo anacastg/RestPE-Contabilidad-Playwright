@@ -1,0 +1,300 @@
+{
+  "module": "Compras",
+  "screen": "GestionCompras",
+  "route": "/compras/reportes/gestion-compras",
+  "actualUrl": "/compras/reportes/gestion-compras",
+  "title": "Restaurant Contabilidad",
+  "timestamp": "2026-07-04T21:39:03.796Z",
+  "fields": [
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar por n° de orden, Nombre del producto o razón social",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar por n° de orden, Nombre del producto o razón social\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "nombreProducto",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"nombreProducto\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "precioPorUnidad",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"precioPorUnidad\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "diasCredito",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"diasCredito\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "fechaVencimiento",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"fechaVencimiento\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "razonSoc",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"razonSoc\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "moneda",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"moneda\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "sucursalAlmacen",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"sucursalAlmacen\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "estadoPago",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"estadoPago\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar producto",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar producto\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Perú",
+      "placeholder": "País",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Perú",
+        "Colombia",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "selector": "ion-select:nth-child(11)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-textarea",
+      "formControlName": null,
+      "placeholder": "Observaciones",
+      "disabled": false,
+      "selector": "",
+      "stability": "BAJA"
+    }
+  ],
+  "buttons": [],
+  "tabs": [],
+  "grid": {
+    "type": "AG Grid",
+    "columns": [
+      {
+        "index": 0,
+        "name": "Fecha compra",
+        "sortable": true
+      },
+      {
+        "index": 1,
+        "name": "Nº orden",
+        "sortable": true
+      },
+      {
+        "index": 2,
+        "name": "Documento fiscal",
+        "sortable": true
+      },
+      {
+        "index": 3,
+        "name": "Razón social",
+        "sortable": true
+      },
+      {
+        "index": 4,
+        "name": "Producto",
+        "sortable": true
+      },
+      {
+        "index": 5,
+        "name": "Categoría de producto",
+        "sortable": true
+      },
+      {
+        "index": 6,
+        "name": "Unidad de medida",
+        "sortable": true
+      },
+      {
+        "index": 7,
+        "name": "Cantidad comprada",
+        "sortable": true
+      },
+      {
+        "index": 8,
+        "name": "Precio venta",
+        "sortable": true
+      },
+      {
+        "index": 9,
+        "name": "Código",
+        "sortable": true
+      },
+      {
+        "index": 10,
+        "name": "Cantidad comprada",
+        "sortable": true
+      },
+      {
+        "index": 11,
+        "name": "Producto",
+        "sortable": true
+      },
+      {
+        "index": 12,
+        "name": "Monto acumulado",
+        "sortable": true
+      }
+    ],
+    "rows": 0,
+    "features": {
+      "export": true,
+      "pagination": true,
+      "filters": true,
+      "selection": false
+    },
+    "rowActions": []
+  },
+  "modals": [],
+  "validations": [],
+  "patterns": {
+    "app-base-calendar-new": {
+      "type": "reusable",
+      "desc": "Componente calendario"
+    },
+    "app-sidebar": {
+      "type": "layout",
+      "desc": "Sidebar de navegación"
+    },
+    "app-header": {
+      "type": "layout",
+      "desc": "Header con selector país/empresa/sucursal"
+    }
+  }
+}

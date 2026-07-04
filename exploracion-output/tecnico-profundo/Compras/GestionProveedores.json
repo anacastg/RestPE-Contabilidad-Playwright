@@ -1,0 +1,494 @@
+{
+  "module": "Compras",
+  "screen": "GestionProveedores",
+  "route": "/compras/tabla/gestion-proveedores",
+  "actualUrl": "/compras/tabla/gestion-proveedores",
+  "initialFields": [
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Buscar proveedor código o por razón social",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "input[placeholder=\"Buscar proveedor código o por razón social\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "tipoIdentificacion",
+      "ph": "",
+      "type": "text",
+      "disabled": true,
+      "readonly": true,
+      "required": false,
+      "maxlength": null,
+      "value": "RUC",
+      "selector": "ion-input[formcontrolname=\"tipoIdentificacion\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "identfiscal",
+      "ph": "",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": "11",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"identfiscal\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "razonSocial",
+      "ph": "Proveedor ejemplo S.A.C",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": "200",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"razonSocial\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "nombreComercial",
+      "ph": "Proveedor ejemplo",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": "150",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"nombreComercial\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "direccionFiscal",
+      "ph": "Ingresar dirección fiscal",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": "250",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"direccionFiscal\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "email",
+      "ph": "Ingresa un correo electrónico",
+      "type": "email",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": "100",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"email\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "telefono",
+      "ph": "Ingresa un número",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": "15",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"telefono\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-select",
+      "fc": null,
+      "ph": "País",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "",
+      "stability": "BAJA"
+    },
+    {
+      "el": "ion-select",
+      "fc": "estado",
+      "ph": "Activo",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "ion-select[formcontrolname=\"estado\"]",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-select",
+      "fc": "proveedor",
+      "ph": "Nacional",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "ion-select[formcontrolname=\"proveedor\"]",
+      "stability": "ALTA"
+    }
+  ],
+  "tabs": {
+    "General": {
+      "tabIndex": 0,
+      "fields": [
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar proveedor código o por razón social",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar proveedor código o por razón social\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "tipoIdentificacion",
+          "ph": "",
+          "type": "text",
+          "disabled": true,
+          "readonly": true,
+          "required": false,
+          "maxlength": null,
+          "value": "RUC",
+          "selector": "ion-input[formcontrolname=\"tipoIdentificacion\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "identfiscal",
+          "ph": "",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": "11",
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"identfiscal\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "razonSocial",
+          "ph": "Proveedor ejemplo S.A.C",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": "200",
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"razonSocial\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "nombreComercial",
+          "ph": "Proveedor ejemplo",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": "150",
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"nombreComercial\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "direccionFiscal",
+          "ph": "Ingresar dirección fiscal",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": "250",
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"direccionFiscal\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "email",
+          "ph": "Ingresa un correo electrónico",
+          "type": "email",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": "100",
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"email\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "telefono",
+          "ph": "Ingresa un número",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": "15",
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"telefono\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": null,
+          "ph": "País",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "",
+          "stability": "BAJA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "estado",
+          "ph": "Activo",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"estado\"]",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": "proveedor",
+          "ph": "Nacional",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "ion-select[formcontrolname=\"proveedor\"]",
+          "stability": "ALTA"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Registrar",
+          "disabled": false
+        },
+        {
+          "text": "Cancelar",
+          "disabled": false
+        }
+      ],
+      "gridCols": [
+        "Código",
+        "Razón social",
+        "Documento fiscal",
+        "Cargo",
+        "Estado"
+      ],
+      "gridRows": 11
+    },
+    "Bancaria": {
+      "tabIndex": 2,
+      "fields": [
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar proveedor código o por razón social",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar proveedor código o por razón social\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar cuentas bancarias",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar cuentas bancarias\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-select",
+          "fc": null,
+          "ph": "País",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "",
+          "stability": "BAJA"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Nueva Cuenta",
+          "disabled": false
+        },
+        {
+          "text": "Registrar",
+          "disabled": false
+        },
+        {
+          "text": "Cancelar",
+          "disabled": false
+        }
+      ],
+      "gridCols": [
+        "Código",
+        "Razón social",
+        "Documento fiscal",
+        "Cargo",
+        "Estado",
+        "Banco",
+        "N° Cuenta",
+        "CCI",
+        "Tipo",
+        "Moneda"
+      ],
+      "gridRows": 11
+    },
+    "Comercial": {
+      "tabIndex": 4,
+      "fields": [
+        {
+          "el": "ion-input",
+          "fc": null,
+          "ph": "Buscar proveedor código o por razón social",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": null,
+          "value": "",
+          "selector": "input[placeholder=\"Buscar proveedor código o por razón social\"]",
+          "stability": "MEDIA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "nombre",
+          "ph": "Ingresar un nombre de contacto",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": "150",
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"nombre\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "cargo",
+          "ph": "Ingresar el cargo",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": "100",
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"cargo\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "telefono",
+          "ph": "Ingresa un número",
+          "type": "text",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": "15",
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"telefono\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-input",
+          "fc": "email",
+          "ph": "Ingresar un correo electrónico",
+          "type": "email",
+          "disabled": false,
+          "readonly": false,
+          "required": false,
+          "maxlength": "100",
+          "value": "",
+          "selector": "ion-input[formcontrolname=\"email\"] input",
+          "stability": "ALTA"
+        },
+        {
+          "el": "ion-select",
+          "fc": null,
+          "ph": "País",
+          "disabled": false,
+          "value": "",
+          "options": [],
+          "selector": "",
+          "stability": "BAJA"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Registrar",
+          "disabled": false
+        },
+        {
+          "text": "Cancelar",
+          "disabled": false
+        }
+      ],
+      "gridCols": [
+        "Código",
+        "Razón social",
+        "Documento fiscal",
+        "Cargo",
+        "Estado"
+      ],
+      "gridRows": 11
+    }
+  },
+  "selects": [],
+  "grid": {
+    "rowActions": [
+      {
+        "text": "Guardar",
+        "disabled": false
+      },
+      {
+        "text": "Cancelar",
+        "disabled": false
+      }
+    ],
+    "features": {
+      "exportExcel": 0,
+      "exportPDF": 0,
+      "pagination": true,
+      "columnFilters": 0,
+      "checkboxSelection": 0
+    }
+  },
+  "modals": [],
+  "validations": [],
+  "navigation": {
+    "navigatedAway": false,
+    "targetUrl": "",
+    "hasLinks": false
+  }
+}

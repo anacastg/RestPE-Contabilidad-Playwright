@@ -1,0 +1,283 @@
+{
+  "module": "Contabilidad",
+  "screen": "CentrosCosto",
+  "route": "/contabilidad/tabla/plan-centro-costo",
+  "actualUrl": "/contabilidad/tabla/plan-centro-costo",
+  "title": "Restaurant Contabilidad",
+  "timestamp": "2026-07-04T21:40:53.330Z",
+  "fields": [
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar por código, nombre o usuario que registra",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar por código, nombre o usuario que registra\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "fechaC",
+      "label": "",
+      "type": "date",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "2026-07-04",
+      "selector": "ion-input[formcontrolname=\"fechaC\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "nombre",
+      "label": "",
+      "type": "text",
+      "placeholder": "Ingresa un nombre",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"nombre\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Selecciona una cuenta",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Selecciona una cuenta\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Selecciona una cuenta",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Selecciona una cuenta\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "factor",
+      "label": "",
+      "type": "number",
+      "placeholder": "",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": "0",
+      "max": "100",
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "0",
+      "selector": "ion-input[formcontrolname=\"factor\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Perú",
+      "placeholder": "País",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Perú",
+        "Colombia",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "selector": "ion-select:nth-child(7)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "clasificacion",
+      "label": "Selecciona una Tipo",
+      "placeholder": "Selecciona una Tipo",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Administrativo",
+        "Operativo",
+        "Sucursal",
+        "Proyecto",
+        "Otro"
+      ],
+      "selector": "ion-select[formcontrolname=\"clasificacion\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "estado",
+      "label": "Activo",
+      "placeholder": "Selecciona un estado",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Activo",
+        "Inactivo"
+      ],
+      "selector": "ion-select[formcontrolname=\"estado\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-textarea",
+      "formControlName": "descripcion",
+      "placeholder": null,
+      "disabled": false,
+      "selector": "ion-textarea[formcontrolname=\"descripcion\"] textarea",
+      "stability": "ALTA"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Acciones",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Acciones\"), ion-button:has-text(\"Acciones\")"
+    },
+    {
+      "text": "Nuevo centro de costo",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Nuevo centro de costo\"), ion-button:has-text(\"Nuevo centro de costo\")"
+    },
+    {
+      "text": "Registrar",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Registrar\"), ion-button:has-text(\"Registrar\")"
+    },
+    {
+      "text": "Cancelar",
+      "type": null,
+      "disabled": false,
+      "color": "medium",
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Cancelar\"), ion-button:has-text(\"Cancelar\")"
+    }
+  ],
+  "tabs": [],
+  "grid": {
+    "type": "AG Grid",
+    "columns": [
+      {
+        "index": 0,
+        "name": "Código",
+        "sortable": true
+      },
+      {
+        "index": 1,
+        "name": "Nombre",
+        "sortable": true
+      },
+      {
+        "index": 2,
+        "name": "Factor (%)",
+        "sortable": true
+      },
+      {
+        "index": 3,
+        "name": "Tipo",
+        "sortable": true
+      },
+      {
+        "index": 4,
+        "name": "Usuario que registra",
+        "sortable": true
+      },
+      {
+        "index": 5,
+        "name": "Fecha de creación",
+        "sortable": true
+      },
+      {
+        "index": 6,
+        "name": "Última modificación",
+        "sortable": true
+      },
+      {
+        "index": 7,
+        "name": "Estado",
+        "sortable": true
+      }
+    ],
+    "rows": 20,
+    "features": {
+      "export": false,
+      "pagination": true,
+      "filters": true,
+      "selection": false
+    },
+    "rowActions": []
+  },
+  "modals": [],
+  "validations": [],
+  "patterns": {
+    "app-autocomplete": {
+      "type": "reusable",
+      "desc": "Buscador con autocompletado"
+    },
+    "app-base-calendar-new": {
+      "type": "reusable",
+      "desc": "Componente calendario"
+    },
+    "app-sidebar": {
+      "type": "layout",
+      "desc": "Sidebar de navegación"
+    },
+    "app-header": {
+      "type": "layout",
+      "desc": "Header con selector país/empresa/sucursal"
+    }
+  }
+}

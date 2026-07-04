@@ -1,0 +1,404 @@
+{
+  "module": "RRHH",
+  "screen": "RegistrarLiquidacion",
+  "route": "/rrhh/procesos-de-nomina/registrar-liquidacion",
+  "actualUrl": "/rrhh/procesos-de-nomina/registrar-liquidacion",
+  "title": "Restaurant Contabilidad",
+  "timestamp": "2026-07-04T21:42:33.469Z",
+  "fields": [
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar por código",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar por código\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Selecciona un trabajador",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Selecciona un trabajador\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "liquidacion_sueldo_basico",
+      "label": "",
+      "type": "text",
+      "placeholder": "0.00",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_sueldo_basico\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "liquidacion_asignacion_familiar",
+      "label": "",
+      "type": "text",
+      "placeholder": "0.00",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_asignacion_familiar\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "liquidacion_promedio_gratificacion",
+      "label": "",
+      "type": "text",
+      "placeholder": "0.00",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_promedio_gratificacion\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "liquidacion_fecha_inicio",
+      "label": "",
+      "type": "date",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "2026-07-04",
+      "selector": "ion-input[formcontrolname=\"liquidacion_fecha_inicio\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "liquidacion_cts_total",
+      "label": "",
+      "type": "text",
+      "placeholder": "0.00",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_cts_total\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "liquidacion_gratificacion_total",
+      "label": "",
+      "type": "text",
+      "placeholder": "0.00",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_gratificacion_total\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "liquidacion_otros_beneficios",
+      "label": "",
+      "type": "text",
+      "placeholder": "0.00",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_otros_beneficios\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "liquidacion_vacaciones_total",
+      "label": "",
+      "type": "text",
+      "placeholder": "0.00",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_vacaciones_total\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "liquidacion_bonificacion_extraordinaria",
+      "label": "",
+      "type": "text",
+      "placeholder": "0.00",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_bonificacion_extraordinaria\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "liquidacion_descuento_rr",
+      "label": "",
+      "type": "text",
+      "placeholder": "0.00",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_descuento_rr\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "liquidacion_total_pagar",
+      "label": "",
+      "type": "text",
+      "placeholder": "0.00",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_total_pagar\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-input",
+      "formControlName": "liquidacion_estado",
+      "label": "",
+      "type": "text",
+      "placeholder": "",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "En revisión",
+      "selector": "ion-input[formcontrolname=\"liquidacion_estado\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Perú",
+      "placeholder": "País",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Perú",
+        "Colombia",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "selector": "ion-select:nth-child(15)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "liquidacion_tipo_cese",
+      "label": "Selecciona un tipo",
+      "placeholder": "Selecciona un tipo",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Renuncia",
+        "Renuncia con incentivos",
+        "Despido o destitución",
+        "Cese colectivo",
+        "Jubilación"
+      ],
+      "selector": "ion-select[formcontrolname=\"liquidacion_tipo_cese\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "trabajadorSelect",
+      "label": "No",
+      "placeholder": null,
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Sí",
+        "No"
+      ],
+      "selector": "ion-select[formcontrolname=\"trabajadorSelect\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-textarea",
+      "formControlName": "liquidacion_observaciones",
+      "placeholder": "Escribe aqui...",
+      "disabled": false,
+      "selector": "ion-textarea[formcontrolname=\"liquidacion_observaciones\"] textarea",
+      "stability": "ALTA"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Seleccione una fecha",
+      "type": "button",
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Seleccione una fecha\"), ion-button:has-text(\"Seleccione una fecha\")"
+    },
+    {
+      "text": "Registrar",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Registrar\"), ion-button:has-text(\"Registrar\")"
+    },
+    {
+      "text": "Cancelar",
+      "type": null,
+      "disabled": false,
+      "color": "medium",
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Cancelar\"), ion-button:has-text(\"Cancelar\")"
+    }
+  ],
+  "tabs": [],
+  "grid": {
+    "type": "AG Grid",
+    "columns": [
+      {
+        "index": 0,
+        "name": "Cód. de liquidación",
+        "sortable": true
+      },
+      {
+        "index": 1,
+        "name": "Fecha de ingreso",
+        "sortable": true
+      },
+      {
+        "index": 2,
+        "name": "Fecha de cese",
+        "sortable": true
+      },
+      {
+        "index": 3,
+        "name": "Trabajador",
+        "sortable": true
+      },
+      {
+        "index": 4,
+        "name": "Tipo de cese",
+        "sortable": true
+      },
+      {
+        "index": 5,
+        "name": "Total a pagar",
+        "sortable": true
+      },
+      {
+        "index": 6,
+        "name": "Estado",
+        "sortable": true
+      }
+    ],
+    "rows": 0,
+    "features": {
+      "export": true,
+      "pagination": true,
+      "filters": true,
+      "selection": false
+    },
+    "rowActions": []
+  },
+  "modals": [],
+  "validations": [],
+  "patterns": {
+    "app-autocomplete": {
+      "type": "reusable",
+      "desc": "Buscador con autocompletado"
+    },
+    "app-base-calendar-new": {
+      "type": "reusable",
+      "desc": "Componente calendario"
+    },
+    "app-sidebar": {
+      "type": "layout",
+      "desc": "Sidebar de navegación"
+    },
+    "app-header": {
+      "type": "layout",
+      "desc": "Header con selector país/empresa/sucursal"
+    }
+  }
+}

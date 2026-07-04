@@ -1,0 +1,239 @@
+{
+  "module": "Compras",
+  "screen": "GenerarOC",
+  "route": "/compras/operaciones/ordenes-compra",
+  "actualUrl": "/compras/operaciones/ordenes-compra",
+  "initialFields": [
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Buscar por n° de orden de compra o proveedor",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "input[placeholder=\"Buscar por n° de orden de compra o proveedor\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "documentoproveedorinput",
+      "ph": "Ingrese documento",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"documentoproveedorinput\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "proveedor",
+      "ph": "Proveeedor Ejemplo",
+      "type": "text",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"proveedor\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "fechaRegistro",
+      "ph": "",
+      "type": "date",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "2026-07-04",
+      "selector": "ion-input[formcontrolname=\"fechaRegistro\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Seleccionar almacén",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "input[placeholder=\"Seleccionar almacén\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Buscar sucursal...",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "input[placeholder=\"Buscar sucursal...\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "direccionEntrega",
+      "ph": "",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"direccionEntrega\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Buscar centro de costos",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "input[placeholder=\"Buscar centro de costos\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "tipoCambio",
+      "ph": "",
+      "type": "text",
+      "disabled": true,
+      "readonly": true,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"tipoCambio\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "estado",
+      "ph": "",
+      "type": "text",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "Pendiente",
+      "selector": "ion-input[formcontrolname=\"estado\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Buscar producto por nombre o código...",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "input[placeholder=\"Buscar producto por nombre o código...\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-textarea",
+      "fc": "observaciones",
+      "ph": "Agregar notas adicionales",
+      "disabled": false,
+      "selector": "ion-textarea[formcontrolname=\"observaciones\"] textarea",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-select",
+      "fc": null,
+      "ph": "País",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "",
+      "stability": "BAJA"
+    },
+    {
+      "el": "ion-select",
+      "fc": null,
+      "ph": "De registro",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "",
+      "stability": "BAJA"
+    },
+    {
+      "el": "ion-select",
+      "fc": "moneda",
+      "ph": "Selecciona una moneda",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "ion-select[formcontrolname=\"moneda\"]",
+      "stability": "ALTA"
+    }
+  ],
+  "tabs": {},
+  "selects": [],
+  "grid": {
+    "rowActions": [
+      {
+        "text": "01/07/2026 - 04/07/2026",
+        "disabled": false
+      },
+      {
+        "text": "Nuevo producto",
+        "disabled": false
+      },
+      {
+        "text": "Guardar",
+        "disabled": false
+      },
+      {
+        "text": "Anular OC",
+        "disabled": false
+      },
+      {
+        "text": "Cancelar",
+        "disabled": false
+      }
+    ],
+    "features": {
+      "exportExcel": 0,
+      "exportPDF": 0,
+      "pagination": true,
+      "columnFilters": 0,
+      "checkboxSelection": 0
+    }
+  },
+  "modals": [
+    {
+      "trigger": "Nuevo producto",
+      "title": "",
+      "fieldCount": 8,
+      "buttons": [
+        "Cancelar",
+        "Crear"
+      ]
+    }
+  ],
+  "validations": [],
+  "navigation": {
+    "navigatedAway": false,
+    "targetUrl": "",
+    "hasLinks": false
+  }
+}

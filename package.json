@@ -9,10 +9,18 @@
     "test:sprint1": "npx playwright test tests/e2e/sprint-1/",
     "test:report": "npx playwright show-report"
   },
-  "keywords": ["playwright", "e2e", "testing"],
+  "keywords": [
+    "playwright",
+    "e2e",
+    "testing"
+  ],
   "license": "ISC",
   "dependencies": {
-    "@playwright/test": "^1.61.0",
     "dotenv": "^17.4.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0",
+    "typescript": "^6.0.3"
   }
 }

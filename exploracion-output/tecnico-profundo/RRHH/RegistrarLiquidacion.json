@@ -1,0 +1,269 @@
+{
+  "module": "RRHH",
+  "screen": "RegistrarLiquidacion",
+  "route": "/rrhh/procesos-de-nomina/registrar-liquidacion",
+  "actualUrl": "/rrhh/procesos-de-nomina/registrar-liquidacion",
+  "initialFields": [
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Buscar por código",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "input[placeholder=\"Buscar por código\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-input",
+      "fc": null,
+      "ph": "Selecciona un trabajador",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "input[placeholder=\"Selecciona un trabajador\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "liquidacion_sueldo_basico",
+      "ph": "0.00",
+      "type": "text",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_sueldo_basico\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "liquidacion_asignacion_familiar",
+      "ph": "0.00",
+      "type": "text",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_asignacion_familiar\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "liquidacion_promedio_gratificacion",
+      "ph": "0.00",
+      "type": "text",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_promedio_gratificacion\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "liquidacion_fecha_inicio",
+      "ph": "",
+      "type": "date",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "2026-07-04",
+      "selector": "ion-input[formcontrolname=\"liquidacion_fecha_inicio\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "liquidacion_cts_total",
+      "ph": "0.00",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_cts_total\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "liquidacion_gratificacion_total",
+      "ph": "0.00",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_gratificacion_total\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "liquidacion_otros_beneficios",
+      "ph": "0.00",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_otros_beneficios\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "liquidacion_vacaciones_total",
+      "ph": "0.00",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_vacaciones_total\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "liquidacion_bonificacion_extraordinaria",
+      "ph": "0.00",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_bonificacion_extraordinaria\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "liquidacion_descuento_rr",
+      "ph": "0.00",
+      "type": "text",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_descuento_rr\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "liquidacion_total_pagar",
+      "ph": "0.00",
+      "type": "text",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "",
+      "selector": "ion-input[formcontrolname=\"liquidacion_total_pagar\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-input",
+      "fc": "liquidacion_estado",
+      "ph": "",
+      "type": "text",
+      "disabled": true,
+      "readonly": false,
+      "required": false,
+      "maxlength": null,
+      "value": "En revisión",
+      "selector": "ion-input[formcontrolname=\"liquidacion_estado\"] input",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-textarea",
+      "fc": "liquidacion_observaciones",
+      "ph": "Escribe aqui...",
+      "disabled": false,
+      "selector": "ion-textarea[formcontrolname=\"liquidacion_observaciones\"] textarea",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-select",
+      "fc": null,
+      "ph": "País",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "",
+      "stability": "BAJA"
+    },
+    {
+      "el": "ion-select",
+      "fc": "liquidacion_tipo_cese",
+      "ph": "Selecciona un tipo",
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "ion-select[formcontrolname=\"liquidacion_tipo_cese\"]",
+      "stability": "ALTA"
+    },
+    {
+      "el": "ion-select",
+      "fc": "trabajadorSelect",
+      "ph": null,
+      "disabled": false,
+      "value": "",
+      "options": [],
+      "selector": "ion-select[formcontrolname=\"trabajadorSelect\"]",
+      "stability": "ALTA"
+    }
+  ],
+  "tabs": {},
+  "selects": [],
+  "grid": {
+    "rowActions": [
+      {
+        "text": "Seleccione una fecha",
+        "disabled": false
+      },
+      {
+        "text": "Registrar",
+        "disabled": false
+      },
+      {
+        "text": "Cancelar",
+        "disabled": false
+      }
+    ],
+    "features": {
+      "exportExcel": 0,
+      "exportPDF": 0,
+      "pagination": true,
+      "columnFilters": 0,
+      "checkboxSelection": 0
+    }
+  },
+  "modals": [],
+  "validations": [
+    {
+      "text": "Trabajador *Sueldo básicoAsignación familiar Promedio gratificación Promedia con última gratificación recibidaFecha de ingreso Fecha de cese *Seleccione una fechaTipo de cese *RenunciaRenuncia con incentivosDespido o destituciónCese colectivoJubilaciónCTS truncaGratificación truncaOtros beneficiosVacaciones truncasBonificación especialDescuentos remunerativosTotal a pagarDar de baja al trabajadorSíNoEl trabajador de inactivará al guardar la liquidaciónEstadoObservaciones",
+      "type": "validation"
+    },
+    {
+      "text": "RenunciaRenuncia con incentivosDespido o destituciónCese colectivoJubilación",
+      "type": "validation"
+    }
+  ],
+  "navigation": {
+    "navigatedAway": false,
+    "targetUrl": "",
+    "hasLinks": false
+  }
+}

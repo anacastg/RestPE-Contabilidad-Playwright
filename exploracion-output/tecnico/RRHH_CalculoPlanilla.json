@@ -1,0 +1,211 @@
+{
+  "module": "RRHH",
+  "screen": "CalculoPlanilla",
+  "route": "/rrhh/procesos-de-nomina/calculo-planillas",
+  "actualUrl": "/rrhh/procesos-de-nomina/calculo-planillas",
+  "title": "Restaurant Contabilidad",
+  "timestamp": "2026-07-04T21:42:24.860Z",
+  "fields": [
+    {
+      "tag": "ion-input",
+      "formControlName": null,
+      "label": "",
+      "type": "text",
+      "placeholder": "Buscar configuraciones por código o nombre",
+      "disabled": false,
+      "readonly": false,
+      "required": false,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "autocomplete": "off",
+      "value": "",
+      "selector": "input[placeholder=\"Buscar configuraciones por código o nombre\"]",
+      "stability": "MEDIA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": null,
+      "label": "Perú",
+      "placeholder": "País",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Perú",
+        "Colombia",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "selector": "ion-select:nth-child(2)",
+      "stability": "BAJA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "tipoPlanilla",
+      "label": "Selecciona un tipo",
+      "placeholder": "Selecciona un tipo",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Sueldo",
+        "CTS",
+        "Gratificación"
+      ],
+      "selector": "ion-select[formcontrolname=\"tipoPlanilla\"]",
+      "stability": "ALTA"
+    },
+    {
+      "tag": "ion-select",
+      "formControlName": "periodicidadPago",
+      "label": "Selecciona una periodicidad",
+      "placeholder": "Selecciona una periodicidad",
+      "disabled": false,
+      "value": "",
+      "options": [
+        "Diaria",
+        "Semanal",
+        "Quincenal",
+        "Mensual"
+      ],
+      "selector": "ion-select[formcontrolname=\"periodicidadPago\"]",
+      "stability": "ALTA"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Exportar",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Exportar\"), ion-button:has-text(\"Exportar\")"
+    },
+    {
+      "text": "Nuevo calculo",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Nuevo calculo\"), ion-button:has-text(\"Nuevo calculo\")"
+    },
+    {
+      "text": "Seleccione una fecha",
+      "type": "button",
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Seleccione una fecha\"), ion-button:has-text(\"Seleccione una fecha\")"
+    },
+    {
+      "text": "Seleccione una fecha",
+      "type": "button",
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Seleccione una fecha\"), ion-button:has-text(\"Seleccione una fecha\")"
+    },
+    {
+      "text": "Calcular planilla",
+      "type": null,
+      "disabled": false,
+      "color": null,
+      "fill": null,
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Calcular planilla\"), ion-button:has-text(\"Calcular planilla\")"
+    },
+    {
+      "text": "Cancelar",
+      "type": null,
+      "disabled": false,
+      "color": "medium",
+      "fill": "outline",
+      "hasIcon": false,
+      "formAction": null,
+      "selector": "button:has-text(\"Cancelar\"), ion-button:has-text(\"Cancelar\")"
+    }
+  ],
+  "tabs": [],
+  "grid": {
+    "type": "AG Grid",
+    "columns": [
+      {
+        "index": 0,
+        "name": "Código",
+        "sortable": true
+      },
+      {
+        "index": 1,
+        "name": "Periodo",
+        "sortable": true
+      },
+      {
+        "index": 2,
+        "name": "Tipo de planilla",
+        "sortable": true
+      },
+      {
+        "index": 3,
+        "name": "Fecha registro",
+        "sortable": true
+      },
+      {
+        "index": 4,
+        "name": "Sucursal",
+        "sortable": true
+      },
+      {
+        "index": 5,
+        "name": "Cálculo desde",
+        "sortable": true
+      },
+      {
+        "index": 6,
+        "name": "Cálculo hasta",
+        "sortable": true
+      },
+      {
+        "index": 7,
+        "name": "N° trabajadores",
+        "sortable": true
+      },
+      {
+        "index": 8,
+        "name": "Estado",
+        "sortable": true
+      }
+    ],
+    "rows": 0,
+    "features": {
+      "export": true,
+      "pagination": true,
+      "filters": true,
+      "selection": false
+    },
+    "rowActions": []
+  },
+  "modals": [],
+  "validations": [],
+  "patterns": {
+    "app-base-calendar-new": {
+      "type": "reusable",
+      "desc": "Componente calendario"
+    },
+    "app-sidebar": {
+      "type": "layout",
+      "desc": "Sidebar de navegación"
+    },
+    "app-header": {
+      "type": "layout",
+      "desc": "Header con selector país/empresa/sucursal"
+    }
+  }
+}
