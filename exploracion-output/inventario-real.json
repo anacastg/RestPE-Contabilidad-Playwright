@@ -1,0 +1,1982 @@
+{
+  "screens": [
+    {
+      "module": "Compras",
+      "screen": "Gestión Proveedores",
+      "route": "/compras/tabla/gestion-proveedores",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/compras/tabla/gestion-proveedores",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Selecciona el paísPerúColombiaEcuadorGuatemalaAyudaPESQUERA CANTABRIA S.A.PAOLA CASTILLOAlmacénComprasVentasFinanzasContabilidadActivos fijosRR.HHProducciónConfiguraciónLista de proveedores (Selecciona un proveedor de tu lista para visualizarlo o editarlo)TodosActivosInactivosAccionesNuevo proveedor:where(.ag-theme-params-1) {\n\t--ag-accent-color: var(--ag-inherited-accent-color, #2196f3);\n\t--ag-advanced-filter-builder-button-bar-border: var(--ag-inherited-advanced-filter-builder-button-bar-bo",
+      "components": {
+        "buttons": [
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar proveedor código o por razón social",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar proveedor código o por razón social",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "tipoIdentificacion"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": "identfiscal"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Proveedor ejemplo S.A.C",
+            "formcontrolname": "razonSocial"
+          },
+          {
+            "type": "text",
+            "placeholder": "Proveedor ejemplo S.A.C",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Proveedor ejemplo",
+            "formcontrolname": "nombreComercial"
+          },
+          {
+            "type": "text",
+            "placeholder": "Proveedor ejemplo",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingresar dirección fiscal",
+            "formcontrolname": "direccionFiscal"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingresar dirección fiscal",
+            "formcontrolname": ""
+          },
+          {
+            "type": "email",
+            "placeholder": "Ingresa un correo electrónico",
+            "formcontrolname": "email"
+          },
+          {
+            "type": "email",
+            "placeholder": "Ingresa un correo electrónico",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingresa un número",
+            "formcontrolname": "telefono"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingresa un número",
+            "formcontrolname": ""
+          }
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "ActivoInactivo",
+          "NacionalExtranjero"
+        ],
+        "tabs": [
+          "General",
+          "Bancaria",
+          "Comercial"
+        ],
+        "tableColumns": [
+          "Código",
+          "Razón social",
+          "Documento fiscal",
+          "Cargo",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar proveedor código o por razón social",
+          "Buscar proveedor código o por razón social"
+        ],
+        "links": [
+          {
+            "text": "",
+            "href": "/inicio"
+          }
+        ]
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Compras_Gesti_n_Proveedores.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Compras_Gesti_n_Proveedores.html"
+    },
+    {
+      "module": "Compras",
+      "screen": "Generar OC",
+      "route": "/compras/operaciones/ordenes-compra",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/compras/operaciones/ordenes-compra",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Selecciona el paísPerúColombiaEcuadorGuatemalaAyudaPESQUERA CANTABRIA S.A.PAOLA CASTILLOAlmacénComprasVentasFinanzasContabilidadActivos fijosRR.HHProducciónConfiguraciónLista de órdenes de compra (Selecciona una orden de tu lista para visualizarla o editarla)De registroDe entrega 01/07/2026 - 03/07/2026AccionesNueva orden de compra:where(.ag-theme-params-1) {\n\t--ag-accent-color: var(--ag-inherited-accent-color, #2196f3);\n\t--ag-advanced-filter-builder-button-bar-border: var(--ag-inherited-adva",
+      "components": {
+        "buttons": [
+          "01/07/2026 - 03/07/2026",
+          "Seleccione una fecha",
+          "Nuevo producto",
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por n° de orden de compra o proveedor",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por n° de orden de compra o proveedor",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese documento",
+            "formcontrolname": "documentoproveedorinput"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese documento",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Proveeedor Ejemplo",
+            "formcontrolname": "proveedor"
+          },
+          {
+            "type": "text",
+            "placeholder": "Proveeedor Ejemplo",
+            "formcontrolname": ""
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": "fechaRegistro"
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Seleccionar almacén",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar sucursal...",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "direccionEntrega"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar centro de costos",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "tipoCambio"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "estado"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar producto por nombre o código...",
+            "formcontrolname": ""
+          }
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "De registroDe entrega",
+          "SolesDolares AmericanosPeso ColombianoQuetzal Guatemalteco"
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Nº Órden de compra",
+          "Fecha registro",
+          "Fecha entrega",
+          "Proveedor",
+          "Almacen",
+          "Sucursal",
+          "Moneda",
+          "Total",
+          "Estado",
+          "PDF",
+          "Código",
+          "Descripción",
+          "Cantidad",
+          "Unidad",
+          "Precio unitario"
+        ],
+        "filters": [
+          "Buscar por n° de orden de compra o proveedor",
+          "Buscar por n° de orden de compra o proveedor",
+          "Buscar sucursal...",
+          "Buscar centro de costos",
+          "Buscar producto por nombre o código..."
+        ],
+        "links": [
+          {
+            "text": "",
+            "href": "/inicio"
+          }
+        ]
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Compras_Generar_OC.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Compras_Generar_OC.html"
+    },
+    {
+      "module": "Compras",
+      "screen": "Aprobar OC",
+      "route": "/compras/operaciones/aprobar-compra",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/compras/operaciones/aprobar-compra",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Selecciona el paísPerúColombiaEcuadorGuatemalaAyudaPESQUERA CANTABRIA S.A.PAOLA CASTILLOAlmacénComprasVentasFinanzasContabilidadActivos fijosRR.HHProducciónConfiguraciónLista de órdenes de compra (Selecciona una orden de tu lista para visualizarla o editarla)De registroDe entrega 01/07/2026 - 03/07/2026AccionesAprobar:where(.ag-theme-params-1) {\n\t--ag-accent-color: var(--ag-inherited-accent-color, #2196f3);\n\t--ag-advanced-filter-builder-button-bar-border: var(--ag-inherited-advanced-filter-bu",
+      "components": {
+        "buttons": [
+          "01/07/2026 - 03/07/2026"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar órdenes de compra",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar órdenes de compra",
+            "formcontrolname": ""
+          },
+          {
+            "type": "checkbox",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "checkbox",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "documentoproveedorinput"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "proveedor"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "direccionFiscal"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "almacen"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "centroCosto"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": "fechaRegistro"
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": "fechaEntrega"
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "direccionEntrega"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "moneda"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "tipoCambio"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "condicionPago"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "estado"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Buscar producto por nombre o código...",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar producto por nombre o código...",
+            "formcontrolname": ""
+          }
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "De registroDe entrega"
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Nº. Órden de compra",
+          "Fecha registro",
+          "Fecha entrega",
+          "Razón social",
+          "Almacén",
+          "Sucursal",
+          "Moneda",
+          "Total",
+          "Estado",
+          "Código",
+          "Cantidad",
+          "Unidad",
+          "Centro de costos"
+        ],
+        "filters": [
+          "Buscar órdenes de compra",
+          "Buscar órdenes de compra",
+          "Buscar producto por nombre o código...",
+          "Buscar producto por nombre o código..."
+        ],
+        "links": [
+          {
+            "text": "",
+            "href": "/inicio"
+          }
+        ]
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Compras_Aprobar_OC.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Compras_Aprobar_OC.html"
+    },
+    {
+      "module": "Compras",
+      "screen": "Registro Comprobantes",
+      "route": "/compras/operaciones/registro-comprobantes",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/compras/operaciones/registro-comprobantes",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Compras_Registro_Comprobantes.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Compras_Registro_Comprobantes.html"
+    },
+    {
+      "module": "Compras",
+      "screen": "Gestión Compras",
+      "route": "/compras/reportes/gestion-compras",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/compras/reportes/gestion-compras",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Selecciona el paísPerúColombiaEcuadorGuatemalaAyudaPESQUERA CANTABRIA S.A.PAOLA CASTILLOAlmacénComprasVentasFinanzasContabilidadActivos fijosRR.HHProducciónConfiguraciónDetalle y análisis de compras realizadas 01/07/2026 - 03/07/2026ExportarTotal compras (Por periodo)12Promedio monto x proveedorS/ 999,999.00N.º documentos x condición8% compras contado vs crédito40:where(.ag-theme-params-1) {\n\t--ag-accent-color: var(--ag-inherited-accent-color, #2196f3);\n\t--ag-advanced-filter-builder-button-ba",
+      "components": {
+        "buttons": [],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por n° de orden, Nombre del producto o razón social",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por n° de orden, Nombre del producto o razón social",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "nombreProducto"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "precioPorUnidad"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "diasCredito"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "fechaVencimiento"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "razonSoc"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "moneda"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "sucursalAlmacen"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "estadoPago"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Buscar producto",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar producto",
+            "formcontrolname": ""
+          }
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala"
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Fecha compra",
+          "Nº orden",
+          "Documento fiscal",
+          "Razón social",
+          "Producto",
+          "Categoría de producto",
+          "Unidad de medida",
+          "Cantidad comprada",
+          "Precio venta",
+          "Código",
+          "Cantidad comprada",
+          "Producto",
+          "Monto acumulado"
+        ],
+        "filters": [
+          "Buscar por n° de orden, Nombre del producto o razón social",
+          "Buscar por n° de orden, Nombre del producto o razón social",
+          "Buscar producto",
+          "Buscar producto"
+        ],
+        "links": [
+          {
+            "text": "",
+            "href": "/inicio"
+          }
+        ]
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Compras_Gesti_n_Compras.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Compras_Gesti_n_Compras.html"
+    },
+    {
+      "module": "Ventas",
+      "screen": "Facturación Regalías",
+      "route": "/ventas/facturacion-de-regalias",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/ventas/facturacion-de-regalias",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Selecciona el paísPerúColombiaEcuadorGuatemalaAyudaPESQUERA CANTABRIA S.A.PAOLA CASTILLOAlmacénComprasVentasFinanzasContabilidadActivos fijosRR.HHProducciónConfiguraciónLista de facturaciones de regalías (Selecciona una factura para visualizarla o editarla)ExportarNueva facturación:where(.ag-theme-params-1) {\n\t--ag-accent-color: var(--ag-inherited-accent-color, #2196f3);\n\t--ag-advanced-filter-builder-button-bar-border: var(--ag-inherited-advanced-filter-builder-button-bar-border, solid var(--",
+      "components": {
+        "buttons": [
+          "Seleccione una fecha",
+          "Cancelar",
+          "Anular",
+          "Registrar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar franquicias",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar franquicias",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "fechaRegistro"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "20606467479",
+            "formcontrolname": "rucfranquicia"
+          },
+          {
+            "type": "text",
+            "placeholder": "20606467479",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": "razonSocial"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": "baseCalculo"
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": "porcentajeRegalias"
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": "montoBase"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": "montoRegualia"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": "montoImpuestos"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": "totalFactura"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          }
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala"
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Código",
+          "Franquicia",
+          "Periodo facturación",
+          "Monto regalía",
+          "Moneda",
+          "Impuestos",
+          "Importe",
+          "Monto Factura",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar franquicias",
+          "Buscar franquicias"
+        ],
+        "links": [
+          {
+            "text": "",
+            "href": "/inicio"
+          }
+        ]
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Ventas_Facturaci_n_Regal_as.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Ventas_Facturaci_n_Regal_as.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Consulta Saldos",
+      "route": "/finanzas/consultas/consultas-saldos-caja-bancos",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/finanzas/consultas/consultas-saldos-caja-bancos",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Selecciona el paísPerúColombiaEcuadorGuatemalaAyudaPESQUERA CANTABRIA S.A.PAOLA CASTILLOAlmacénComprasVentasFinanzasContabilidadActivos fijosRR.HHProducciónConfiguraciónConsultar saldos de caja y banco (Seleccione al menos un filtro)Entidad financieraInterbankScotiabankCaja PiuraCaja SullanaBanco de la NaciónTipo de cuentaCorrienteAhorrosLínea de créditoOtrosMonedaSolesDólaresSucursalEstadoActivoInactivoExportarBuscarDetalle de Saldo de Cajas y BancosTotal saldo contableS/ 0.00Total saldo dis",
+      "components": {
+        "buttons": [
+          "Exportar",
+          "Buscar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Selecciona un tipo",
+            "formcontrolname": ""
+          }
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "InterbankScotiabankCaja PiuraCaja SullanaBanco de la Nación",
+          "CorrienteAhorrosLínea de créditoOtros",
+          "SolesDólares",
+          "ActivoInactivo"
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Entidad financiera",
+          "Tipo de cuenta",
+          "N° de cuenta",
+          "Moneda",
+          "Saldo contable",
+          "Saldo disponible",
+          "Sucursal",
+          "Estado"
+        ],
+        "filters": [],
+        "links": [
+          {
+            "text": "",
+            "href": "/inicio"
+          }
+        ]
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Finanzas_Consulta_Saldos.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Finanzas_Consulta_Saldos.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Mov Cuentas",
+      "route": "/finanzas/tesoreria/mov-cuentas-banc-y-cajas",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/finanzas/tesoreria/mov-cuentas-banc-y-cajas",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Selecciona el paísPerúColombiaEcuadorGuatemalaAyudaPESQUERA CANTABRIA S.A.PAOLA CASTILLOAlmacénComprasVentasFinanzasContabilidadActivos fijosRR.HHProducciónConfiguraciónLista de movimiento entre cuentas bancarias y cajas (Selecciona un movimiento para visualizarlo o editarlo)De registroDe transferencia 01/07/2026 - 03/07/2026ExportarRegistrar mov.Transferencia en periodo: 0Total transferido entre bancos y cajas en periodo: 202607S/ 0.00:where(.ag-theme-params-1) {\n\t--ag-accent-color: var(--ag",
+      "components": {
+        "buttons": [
+          "03/07/2026",
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por código o usuario ejecutor",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por código o usuario ejecutor",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "DD/MM/YYYY",
+            "formcontrolname": "fechaRegistro"
+          },
+          {
+            "type": "text",
+            "placeholder": "DD/MM/YYYY",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Selecciona una cuenta",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Selecciona una cuenta",
+            "formcontrolname": ""
+          }
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "Banco a BancoCaja a BancoBanco a CajaCaja a Caja",
+          "PendienteConfirmado"
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Código",
+          "Fecha de registro",
+          "Fecha de transferencia",
+          "Tipo movimiento",
+          "Cuenta de origen",
+          "Cuenta de destino",
+          "Monto transferido",
+          "Medio",
+          "N° comprobante"
+        ],
+        "filters": [
+          "Buscar por código o usuario ejecutor",
+          "Buscar por código o usuario ejecutor"
+        ],
+        "links": [
+          {
+            "text": "",
+            "href": "/inicio"
+          }
+        ]
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Finanzas_Mov_Cuentas.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Finanzas_Mov_Cuentas.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Tipos Documento",
+      "route": "/finanzas/documentos/tipos-documentos",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/finanzas/documentos/tipos-documentos",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Finanzas_Tipos_Documento.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Finanzas_Tipos_Documento.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Conceptos Financieros",
+      "route": "/finanzas/concepto-financiero",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/finanzas/concepto-financiero",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Finanzas_Conceptos_Financieros.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Finanzas_Conceptos_Financieros.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Flujo de Caja",
+      "route": "/finanzas/flujo-caja",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/finanzas/flujo-caja",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Finanzas_Flujo_de_Caja.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Finanzas_Flujo_de_Caja.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Solicitud Adelantos",
+      "route": "/finanzas/solicitud-adelantos",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/finanzas/solicitud-adelantos",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Finanzas_Solicitud_Adelantos.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Finanzas_Solicitud_Adelantos.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Cartera Pagos",
+      "route": "/finanzas/tesoreria/cartera-pagos",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/finanzas/tesoreria/cartera-pagos",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Selecciona el paísPerúColombiaEcuadorGuatemalaAyudaPESQUERA CANTABRIA S.A.PAOLA CASTILLOAlmacénComprasVentasFinanzasContabilidadActivos fijosRR.HHProducciónConfiguraciónLista de cartera de pagos (Selecciona un documento para visualizarlo o editarlo)Pago de documentoPago de planilla 01/07/2026 - 03/07/2026ExportarNuevo anticipoTotal pagos1Total de anticipoS/ 0.00:where(.ag-theme-params-1) {\n\t--ag-accent-color: var(--ag-inherited-accent-color, #2196f3);\n\t--ag-advanced-filter-builder-button-bar-",
+      "components": {
+        "buttons": [
+          "Registrar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por código",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por código",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Selecciona un tipo",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Selecciona un proveedor",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Selecciona un tipo",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Selecciona un doc.",
+            "formcontrolname": ""
+          }
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala"
+        ],
+        "tabs": [
+          "Pago de documento",
+          "Pago de planilla"
+        ],
+        "tableColumns": [
+          "Proveedor",
+          "Tipo registro",
+          "Tipo de comprobante",
+          "Serie/N° comprobante",
+          "Fecha programada",
+          "Monto total pagado",
+          "Medio pago",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar por código",
+          "Buscar por código"
+        ],
+        "links": [
+          {
+            "text": "",
+            "href": "/inicio"
+          }
+        ]
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Finanzas_Cartera_Pagos.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Finanzas_Cartera_Pagos.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Transferencias",
+      "route": "/finanzas/transferencias",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/finanzas/transferencias",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Finanzas_Transferencias.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Finanzas_Transferencias.html"
+    },
+    {
+      "module": "Contabilidad",
+      "screen": "Plan Contable",
+      "route": "/contabilidad/plan-contable",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/contabilidad/plan-contable",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Contabilidad_Plan_Contable.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Contabilidad_Plan_Contable.html"
+    },
+    {
+      "module": "Contabilidad",
+      "screen": "Centros Costo",
+      "route": "/contabilidad/centros-costo",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/contabilidad/centros-costo",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Contabilidad_Centros_Costo.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Contabilidad_Centros_Costo.html"
+    },
+    {
+      "module": "Contabilidad",
+      "screen": "Tipo Cambio",
+      "route": "/contabilidad/tipo-cambio",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/contabilidad/tipo-cambio",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Contabilidad_Tipo_Cambio.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Contabilidad_Tipo_Cambio.html"
+    },
+    {
+      "module": "Contabilidad",
+      "screen": "Formatos SUNAT",
+      "route": "/contabilidad/formatos-sunat",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/contabilidad/formatos-sunat",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Contabilidad_Formatos_SUNAT.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Contabilidad_Formatos_SUNAT.html"
+    },
+    {
+      "module": "Contabilidad",
+      "screen": "Libros Electrónicos",
+      "route": "/contabilidad/libros-electronicos",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/contabilidad/libros-electronicos",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Contabilidad_Libros_Electr_nicos.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Contabilidad_Libros_Electr_nicos.html"
+    },
+    {
+      "module": "Activos Fijos",
+      "screen": "Maestro AF",
+      "route": "/activos/maestro",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/activos/maestro",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Activos_Fijos_Maestro_AF.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Activos_Fijos_Maestro_AF.html"
+    },
+    {
+      "module": "Activos Fijos",
+      "screen": "Parámetros AF",
+      "route": "/activos/parametros",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/activos/parametros",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Activos_Fijos_Par_metros_AF.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Activos_Fijos_Par_metros_AF.html"
+    },
+    {
+      "module": "Activos Fijos",
+      "screen": "Operaciones AF",
+      "route": "/activos/operaciones",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/activos/operaciones",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Activos_Fijos_Operaciones_AF.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Activos_Fijos_Operaciones_AF.html"
+    },
+    {
+      "module": "Activos Fijos",
+      "screen": "Procesos AF",
+      "route": "/activos/procesos",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/activos/procesos",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Activos_Fijos_Procesos_AF.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Activos_Fijos_Procesos_AF.html"
+    },
+    {
+      "module": "RRHH",
+      "screen": "Datos Personal",
+      "route": "/rrhh/maestro-personal/datos-contacto",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Selecciona el paísPerúColombiaEcuadorGuatemalaAyudaPESQUERA CANTABRIA S.A.PAOLA CASTILLOAlmacénComprasVentasFinanzasContabilidadActivos fijosRR.HHProducciónConfiguraciónLista de empleados (Selecciona un empleado para visualizarlo) 01/07/2026 - 03/07/2026ExportarNuevo empleado:where(.ag-theme-params-1) {\n\t--ag-accent-color: var(--ag-inherited-accent-color, #2196f3);\n\t--ag-advanced-filter-builder-button-bar-border: var(--ag-inherited-advanced-filter-builder-button-bar-border, solid var(--ag-bor",
+      "components": {
+        "buttons": [
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por código o nombre de empleado",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por código o nombre de empleado",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese documento",
+            "formcontrolname": "empleado_documento"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese documento",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingrese nombres y apellidos",
+            "formcontrolname": "empleado_nombres_apellidos"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese nombres y apellidos",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingrese dirección",
+            "formcontrolname": "empleado_direccion"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese dirección",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingrese celular principal",
+            "formcontrolname": "empleado_celular1"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese celular principal",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingrese celular alterno",
+            "formcontrolname": "empleado_celular2"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese celular alterno",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingrese teléfono fijo",
+            "formcontrolname": "empleado_telefono_fijo"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese teléfono fijo",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ej. 043",
+            "formcontrolname": "empleado_codigo_tel_ciudad"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ej. 043",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingrese correo",
+            "formcontrolname": "empleado_correo_privado"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese correo",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingrese nombre de contacto",
+            "formcontrolname": "empleado_contacto_emergencia_nombre"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese nombre de contacto",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingrese teléfono",
+            "formcontrolname": "empleado_contacto_emergencia_telefono"
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingrese teléfono",
+            "formcontrolname": ""
+          }
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala"
+        ],
+        "tabs": [
+          "Datos generales del trabajador",
+          "Información laboral",
+          "Equipamiento"
+        ],
+        "tableColumns": [
+          "Cód. de empleado",
+          "Apellido paterno",
+          "Apellido materno",
+          "Nombre 1",
+          "Nombre 2",
+          "Tipo de documento",
+          "Documento",
+          "Fecha de inicio",
+          "Tipo de trabajador",
+          "AFP",
+          "Fecha inicio afiliación"
+        ],
+        "filters": [
+          "Buscar por código o nombre de empleado",
+          "Buscar por código o nombre de empleado"
+        ],
+        "links": [
+          {
+            "text": "",
+            "href": "/inicio"
+          }
+        ]
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\RRHH_Datos_Personal.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\RRHH_Datos_Personal.html"
+    },
+    {
+      "module": "RRHH",
+      "screen": "Cargos",
+      "route": "/rrhh/maestro-personal/definicion-cargos",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/rrhh/maestro-personal/definicion-cargos",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Selecciona el paísPerúColombiaEcuadorGuatemalaAyudaPESQUERA CANTABRIA S.A.PAOLA CASTILLOAlmacénComprasVentasFinanzasContabilidadActivos fijosRR.HHProducciónConfiguraciónCatálogo de Cargos, MOF, y Bandas Salariales (Selecciona un cargo para visualizarlo)Rango salarialS/ - S/ 01/07/2026 - 03/07/2026ExportarNuevo cargo:where(.ag-theme-params-1) {\n\t--ag-accent-color: var(--ag-inherited-accent-color, #2196f3);\n\t--ag-advanced-filter-builder-button-bar-border: var(--ag-inherited-advanced-filter-buil",
+      "components": {
+        "buttons": [
+          "Exportar",
+          "Nuevo cargo",
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar cargos por código o descripción",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar cargos por código o descripción",
+            "formcontrolname": ""
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": "fechaCreacion"
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingresa un nombre",
+            "formcontrolname": "nombres"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingresa un nombre",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingresa un monto",
+            "formcontrolname": "SalarialMin"
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingresa un monto",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingresa un monto",
+            "formcontrolname": "SalarialProm"
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingresa un monto",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingresa un monto",
+            "formcontrolname": "SalarialMax"
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingresa un monto",
+            "formcontrolname": ""
+          }
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "OperativoSupervicionGerenciaDirección",
+          "ActivoInactivo"
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Código",
+          "Nombres de cargo",
+          "Nivel",
+          "B. salarial mínimo",
+          "B. salarial promedio",
+          "B. salarial máximo",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar cargos por código o descripción",
+          "Buscar cargos por código o descripción"
+        ],
+        "links": [
+          {
+            "text": "",
+            "href": "/inicio"
+          }
+        ]
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\RRHH_Cargos.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\RRHH_Cargos.html"
+    },
+    {
+      "module": "RRHH",
+      "screen": "Tipo Contrato",
+      "route": "/rrhh/parametros/tipo-contrato",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/rrhh/parametros/tipo-contrato",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Selecciona el paísPerúColombiaEcuadorGuatemalaAyudaPESQUERA CANTABRIA S.A.PAOLA CASTILLOAlmacénComprasVentasFinanzasContabilidadActivos fijosRR.HHProducciónConfiguraciónLista de tipos de contratos (Selecciona un tipo de contrato de tu lista para visualizarlo)ExportarNuevo tipo de contrato:where(.ag-theme-params-1) {\n\t--ag-accent-color: var(--ag-inherited-accent-color, #2196f3);\n\t--ag-advanced-filter-builder-button-bar-border: var(--ag-inherited-advanced-filter-builder-button-bar-border, solid",
+      "components": {
+        "buttons": [
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por código",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por código",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingrese un nombre",
+            "formcontrolname": "nombre"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese un nombre",
+            "formcontrolname": ""
+          }
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "ActivoInactivo"
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Código",
+          "Nombre",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar por código",
+          "Buscar por código"
+        ],
+        "links": [
+          {
+            "text": "",
+            "href": "/inicio"
+          }
+        ]
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\RRHH_Tipo_Contrato.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\RRHH_Tipo_Contrato.html"
+    },
+    {
+      "module": "RRHH",
+      "screen": "Asistencias",
+      "route": "/rrhh/asistencias-jornadas/asistencias-HE",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/rrhh/asistencias-jornadas/asistencias-HE",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Selecciona el paísPerúColombiaEcuadorGuatemalaAyudaPESQUERA CANTABRIA S.A.PAOLA CASTILLOAlmacénComprasVentasFinanzasContabilidadActivos fijosRR.HHProducciónConfiguraciónLista de asistencias (Selecciona una asistencia para visualizarlo o editarlo)ExportarSincronizar:where(.ag-theme-params-1) {\n\t--ag-accent-color: var(--ag-inherited-accent-color, #2196f3);\n\t--ag-advanced-filter-builder-button-bar-border: var(--ag-inherited-advanced-filter-builder-button-bar-border, solid var(--ag-border-width) ",
+      "components": {
+        "buttons": [],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar ",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar ",
+            "formcontrolname": ""
+          }
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala"
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Nombre colaborador",
+          "Sucursal",
+          "Tipo de turno",
+          "Descripción",
+          "Días trabajados",
+          "Días ausentes",
+          "Días tardanza",
+          "Días horas faltantes",
+          "Cantidad horas laborales totales",
+          "AVG horas laboradas al día",
+          "Total de horas faltantes",
+          "Descuento por horas faltantes",
+          "Remuneración por horas asistidas"
+        ],
+        "filters": [
+          "Buscar ",
+          "Buscar "
+        ],
+        "links": [
+          {
+            "text": "",
+            "href": "/inicio"
+          }
+        ]
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\RRHH_Asistencias.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\RRHH_Asistencias.html"
+    },
+    {
+      "module": "RRHH",
+      "screen": "Cálculo Planilla",
+      "route": "/rrhh/calculo-planilla",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/rrhh/calculo-planilla",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\RRHH_C_lculo_Planilla.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\RRHH_C_lculo_Planilla.html"
+    },
+    {
+      "module": "RRHH",
+      "screen": "Liquidaciones",
+      "route": "/rrhh/liquidaciones",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/rrhh/liquidaciones",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Error 404!Página no encontrada No se encontró la página solicitada. Por favor, verifica la dirección y vuelve a intentarlo. \n\n\n\n",
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "selects": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": []
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\RRHH_Liquidaciones.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\RRHH_Liquidaciones.html"
+    },
+    {
+      "module": "Dashboard",
+      "screen": "Inicio",
+      "route": "/inicio",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/inicio",
+      "title": "Restaurant Contabilidad",
+      "accessed": true,
+      "bodyPreview": "\n  Selecciona el paísPerúColombiaEcuadorGuatemalaAyudaPESQUERA CANTABRIA S.A.PAOLA CASTILLOAlmacénComprasVentasFinanzasContabilidadActivos fijosRR.HHProducciónConfiguraciónDashboard indicadores clave por sedeSucursal: TodasSucursal NorteSucursal SurSucursal CentroSucursal EsteSucursal OesteCanal: SalónDeliveryRango de fechas: 01/07/2026 - 03/07/2026ExportarAccesos rápidosVentasRegistro de facturasComprasRegistro de facturasEstados financierosBalance y resultadosConciliación bancariaCuentas de ba",
+      "components": {
+        "buttons": [
+          "Exportar",
+          "VentasRegistro de facturas",
+          "ComprasRegistro de facturas",
+          "Estados financierosBalance y resultados",
+          "Conciliación bancariaCuentas de bancos"
+        ],
+        "inputs": [],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala"
+        ],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "links": [
+          {
+            "text": "",
+            "href": "/inicio"
+          },
+          {
+            "text": "VentasRegistro de facturas",
+            "href": "/ventas/facturacion-de-regalias"
+          },
+          {
+            "text": "ComprasRegistro de facturas",
+            "href": "/compras/operaciones/facturas-proveedores"
+          },
+          {
+            "text": "Estados financierosBalance y resultados",
+            "href": "/finanzas/consultas/consultas-saldos-caja-bancos"
+          },
+          {
+            "text": "Conciliación bancariaCuentas de bancos",
+            "href": "/finanzas/tesoreria/mov-cuentas-banc-y-cajas"
+          }
+        ]
+      },
+      "apiCalls": [],
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\Dashboard_Inicio.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\Dashboard_Inicio.html"
+    }
+  ],
+  "apis": [
+    "/api/auth/login",
+    "/api/auth/empresas",
+    "/api/core/empresas/2/sucursales/mias",
+    "/api/auth/seleccionar-empresa",
+    "/api/notificaciones",
+    "/api/notificaciones",
+    "/api/notificaciones",
+    "/api/core/relaciones-comerciales?esProveedor=true&page=0&size=1000",
+    "/api/core/formas-pago?page=0&size=1000",
+    "/api/core/monedas",
+    "/api/core/relaciones-comerciales/6",
+    "/api/core/relaciones-comerciales/13",
+    "/api/core/relaciones-comerciales/9",
+    "/api/core/relaciones-comerciales/8",
+    "/api/core/relaciones-comerciales/7",
+    "/api/core/relaciones-comerciales/14",
+    "/api/core/relaciones-comerciales/12",
+    "/api/core/relaciones-comerciales/10",
+    "/api/core/relaciones-comerciales/11",
+    "/api/core/relaciones-comerciales/1",
+    "/api/core/relaciones-comerciales/4",
+    "/api/notificaciones",
+    "/api/core/monedas?page=0&size=1000",
+    "/api/core/formas-pago?page=0&size=1000",
+    "/api/core/impuestos?page=0&size=1000",
+    "/api/core/articulos?page=0&size=1000",
+    "/api/core/empresas/2/sucursales?page=0&size=1000",
+    "/api/contabilidad/centros-costo?page=0&size=1000",
+    "/api/almacen/almacenes?page=0&size=1000",
+    "/api/compras/ordenes-compra?page=0&size=1000&sort=id,desc",
+    "/api/core/formas-pago?page=0&size=1000",
+    "/api/core/empresas/2/sucursales?page=0&size=1000",
+    "/api/core/formas-pago?page=0&size=1000",
+    "/api/compras/ordenes-compra?page=0&size=1000&sort=id,desc",
+    "/api/almacen/almacenes?page=0&size=1000",
+    "/api/core/empresas/2/sucursales?page=0&size=1000",
+    "/api/almacen/almacenes?page=0&size=1000",
+    "/api/compras/ordenes-compra/5",
+    "/api/compras/ordenes-compra/4",
+    "/api/compras/ordenes-compra/3",
+    "/api/compras/ordenes-compra/1",
+    "/api/almacen/almacenes?page=0&size=1000",
+    "/api/compras/ordenes-compra/5",
+    "/api/compras/ordenes-compra/1",
+    "/api/compras/ordenes-compra/3",
+    "/api/compras/ordenes-compra/4",
+    "/api/notificaciones",
+    "/api/contabilidad/centros-costo?page=0&size=1000",
+    "/api/core/formas-pago?page=0&size=1000",
+    "/api/almacen/almacenes?page=0&size=1000",
+    "/api/compras/ordenes-compra/pendientes-aprobacion?page=0&size=1000&sort=id,desc",
+    "/api/core/empresas/2/sucursales?page=0&size=1000",
+    "/api/core/formas-pago?page=0&size=1000",
+    "/api/compras/ordenes-compra/4",
+    "/api/notificaciones",
+    "/api/compras/reportes/gestion-compras?page=0&size=2000",
+    "/api/compras/reportes/gestion-compras?page=0&size=2000",
+    "/api/notificaciones",
+    "/api/notificaciones",
+    "/api/notificaciones",
+    "/api/core/formas-pago?page=0&size=200",
+    "/api/core/sucursales?page=0&size=1000",
+    "/api/finanzas/caja-bancos?flagTipoTransaccion=T&size=100",
+    "/api/finanzas/cuentas-bancarias?page=0&size=1000",
+    "/api/notificaciones",
+    "/api/core/tipos-documento",
+    "/api/core/relaciones-comerciales?esProveedor=true&activo=true&page=0&size=1000",
+    "/api/finanzas/cuentas-pagar?page=0&size=1000",
+    "/api/finanzas/caja-bancos?flagTipoTransaccion=P&size=100",
+    "/api/core/monedas",
+    "/api/core/relaciones-comerciales/6",
+    "/api/core/relaciones-comerciales/7",
+    "/api/core/relaciones-comerciales/8",
+    "/api/core/relaciones-comerciales/1",
+    "/api/core/relaciones-comerciales/12",
+    "/api/core/relaciones-comerciales/13",
+    "/api/core/relaciones-comerciales/14",
+    "/api/core/relaciones-comerciales/4",
+    "/api/notificaciones",
+    "/api/core/geografia/paises?size=100",
+    "/api/core/tipos-documento-identidad",
+    "/api/core/sucursales?size=1000",
+    "/api/core/monedas?size=100",
+    "/api/contabilidad/centros-costo?size=1000",
+    "/api/finanzas/bancos?size=1000",
+    "/api/rrhh/tipos-contrato/activos",
+    "/api/rrhh/cargos?size=1000&sort=nombre,asc",
+    "/api/rrhh/tipos-via?size=1000&sort=nombre,asc",
+    "/api/rrhh/tipos-vivienda?size=1000&sort=nombre,asc",
+    "/api/rrhh/areas?size=1000&sort=nombre,asc",
+    "/api/rrhh/motivos-cese?size=1000&sort=nombre,asc",
+    "/api/rrhh/tipos-zona?size=1000&sort=nombre,asc",
+    "/api/rrhh/pensiones-rtps?size=1000&sort=nombre,asc",
+    "/api/rrhh/tipos-sangre?size=1000&sort=nombre,asc",
+    "/api/rrhh/regimenes-pensionario?size=1000&sort=nombre,asc",
+    "/api/rrhh/secciones?size=1000&sort=nombre,asc",
+    "/api/rrhh/ocupaciones-rtps?size=1000&sort=nombre,asc",
+    "/api/rrhh/tipos-trabajador-rtps?size=1000&sort=nombre,asc",
+    "/api/rrhh/sexos?size=100",
+    "/api/rrhh/tipos-trabajador?size=1000&sort=nombre,asc",
+    "/api/rrhh/admin-afp/activos",
+    "/api/rrhh/regimenes-laborales?size=1000&sort=codigo,asc",
+    "/api/rrhh/estados-civiles/activos",
+    "/api/rrhh/trabajadores?size=1000&sort=codigoTrabajador,asc",
+    "/api/notificaciones",
+    "/api/rrhh/cargos?size=1000&sort=nombre,asc",
+    "/api/rrhh/areas?size=1000&sort=nombre,asc",
+    "/api/rrhh/regimenes-laborales?size=1000&sort=codigo,asc",
+    "/api/contabilidad/centros-costo?page=0&size=1000",
+    "/api/notificaciones",
+    "/api/rrhh/tipos-contrato?size=1000&sort=nombre,asc",
+    "/api/notificaciones",
+    "/api/rrhh/asistencias?size=1000",
+    "/api/notificaciones"
+  ],
+  "navigation": {
+    "sidebar": [
+      {
+        "text": "Almacén",
+        "href": ""
+      },
+      {
+        "text": "Compras",
+        "href": ""
+      },
+      {
+        "text": "Ventas",
+        "href": ""
+      },
+      {
+        "text": "Finanzas",
+        "href": ""
+      },
+      {
+        "text": "Contabilidad",
+        "href": ""
+      },
+      {
+        "text": "Activos fijos",
+        "href": ""
+      },
+      {
+        "text": "RR.HH",
+        "href": ""
+      },
+      {
+        "text": "Producción",
+        "href": ""
+      },
+      {
+        "text": "Configuración",
+        "href": ""
+      }
+    ]
+  }
+}

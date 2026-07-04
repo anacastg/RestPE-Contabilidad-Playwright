@@ -1,0 +1,3418 @@
+{
+  "screens": [
+    {
+      "module": "Compras",
+      "screen": "Registro Comprobantes",
+      "route": "/compras/operaciones/facturas-proveedores",
+      "actualUrl": "/compras/operaciones/facturas-proveedores",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "01/07/2026 - 03/07/2026",
+          "Seleccione una fecha",
+          "Seleccione una fecha",
+          "Nuevo",
+          "Registrar",
+          "Cancelar",
+          "Anular"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar facturas de proveedores",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar facturas de proveedores",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "serie"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "numero"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": "documentoproveedorinput"
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "proveedor"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar centro de costo",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar el producto o servicio por nombre o código",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [
+          "Registro",
+          "Referencias",
+          "Impuestos",
+          "Asientos"
+        ],
+        "tableColumns": [
+          "Nº comprobante",
+          "Tipo",
+          "Razón social",
+          "Fecha de emisión",
+          "Fecha de vencimiento",
+          "Monto total",
+          "Moneda",
+          "Orden asociada",
+          "Estado",
+          "Código",
+          "Cantidad",
+          "Descripción",
+          "Concepto financiero",
+          "Precio unitario"
+        ],
+        "filters": [
+          "Buscar facturas de proveedores",
+          "Buscar facturas de proveedores",
+          "Buscar centro de costo",
+          "Buscar el producto o servicio por nombre o código"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "De emisiónDe vencimiento",
+          "SolesDólaresEuros"
+        ],
+        "gridRows": 19,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Compras_Registro_Comprobantes.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Compras_Registro_Comprobantes.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Tipos Documento",
+      "route": "/finanzas/tabla/tipos-documento",
+      "actualUrl": "/finanzas/tabla/tipos-documento",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por código o nombre",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por código o nombre",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingrese un nombre",
+            "formcontrolname": "nombreD"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese un nombre",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Código",
+          "Nombre de documento",
+          "Codigo",
+          "Nombre",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar por código o nombre",
+          "Buscar por código o nombre"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "OtrosFacturaRecibo por HonorariosBoleta de VentaLiquidación ",
+          "ActivoInactivo"
+        ],
+        "gridRows": 20,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Finanzas_Tipos_Documento.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Finanzas_Tipos_Documento.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Conceptos Financieros",
+      "route": "/finanzas/tabla/conceptos-financieros",
+      "actualUrl": "/finanzas/tabla/conceptos-financieros",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por código o nombre",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por código o nombre",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": "fechaCreacion"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingresar un nombre",
+            "formcontrolname": "nombre"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingresar un nombre",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Código",
+          "Nombre",
+          "Matriz Contable Codigo",
+          "Matriz Contable Nombre",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar por código o nombre",
+          "Buscar por código o nombre"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "Pago a ProveedoresCobro a ClientesTransferencia BancariaApli",
+          "ActivoInactivo"
+        ],
+        "gridRows": 20,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Finanzas_Conceptos_Financieros.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Finanzas_Conceptos_Financieros.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Consulta Flujo Caja",
+      "route": "/finanzas/consultas/consultas-flujo-caja",
+      "actualUrl": "/finanzas/consultas/consultas-flujo-caja",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "Selecciona un periodo",
+          "Actualizar proyección",
+          "Exportar",
+          "Buscar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Selecciona un tipo",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Razón social",
+          "Entidad financiera",
+          "Tipo de cuenta",
+          "Moneda",
+          "Saldo actual",
+          "Ingresos programados",
+          "Egresos programados",
+          "Flujo neto",
+          "Saldo proyectado",
+          "Fecha de proyección",
+          "Sucursal",
+          "Estado"
+        ],
+        "filters": [],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "InterbankScotiabankCaja PiuraCaja SullanaBanco de la Nación",
+          "CorrienteAhorrosCajaFijaCaja Principal",
+          "SolesDólares",
+          "ActivoInactivo"
+        ],
+        "gridRows": 0,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Finanzas_Consulta_Flujo_Caja.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Finanzas_Consulta_Flujo_Caja.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Códigos Flujo Caja",
+      "route": "/finanzas/tabla/gestion-codigos-flujo-caja",
+      "actualUrl": "/finanzas/tabla/gestion-codigos-flujo-caja",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "Registrar código",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por código o descripción",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por código o descripción",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": "nombre"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Estructura Flujo de Caja",
+          "Código",
+          "Tipo",
+          "Fecha Creación",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar por código o descripción",
+          "Buscar por código o descripción"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "Seleccionar tipo...  EGRESO  INGRESO",
+          "Selecciona un grupo... INVERSIONES  FINANCIAMIENTO  INGRESOS"
+        ],
+        "gridRows": 7,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Finanzas_C_digos_Flujo_Caja.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Finanzas_C_digos_Flujo_Caja.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Actividades Flujo Caja",
+      "route": "/finanzas/tabla/gestion-actividades-flujo-caja",
+      "actualUrl": "/finanzas/tabla/gestion-actividades-flujo-caja",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "Registrar actividad"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por código o descripción",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por código o descripción",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": "codigo"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": "nombre"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": "orden"
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Codigo",
+          "Nombre",
+          "Orden",
+          "Tipo Flujo",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar por código o descripción",
+          "Buscar por código o descripción"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "Seleccionar...  Económico  Financiero"
+        ],
+        "gridRows": 7,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Finanzas_Actividades_Flujo_Caja.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Finanzas_Actividades_Flujo_Caja.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Órdenes de Giro",
+      "route": "/finanzas/adelantos/ordenes-giro",
+      "actualUrl": "/finanzas/adelantos/ordenes-giro",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "01/07/2026 - 03/07/2026",
+          "Nueva orden de giro",
+          "Registrar",
+          "Cancelar",
+          "Anular"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por número, monto, motivo o estado",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por número, monto, motivo o estado",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar OC aprobada con anticipo",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Se autollena desde la OC",
+            "formcontrolname": "referenciaSolicitudAdelanto"
+          },
+          {
+            "type": "text",
+            "placeholder": "Se autollena desde la OC",
+            "formcontrolname": ""
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": "fecha"
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar sucursal",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "estado"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar centro de costo",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "0.00",
+            "formcontrolname": "monto"
+          },
+          {
+            "type": "number",
+            "placeholder": "0.00",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "N° de orden de giro",
+          "N° Solicitud de adelanto/Orden de Compra",
+          "Fecha de emisión",
+          "Monto",
+          "Estado",
+          "Tipo de solicitud",
+          "Sucursal",
+          "Centro de costo"
+        ],
+        "filters": [
+          "Buscar por número, monto, motivo o estado",
+          "Buscar por número, monto, motivo o estado",
+          "Buscar OC aprobada con anticipo",
+          "Buscar OC aprobada con anticipo",
+          "Buscar sucursal",
+          "Buscar sucursal",
+          "Buscar centro de costo",
+          "Buscar centro de costo"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "Todos los estadosPendienteAprobadaRechazadaAnulada",
+          "Orden de GiroFondo Fijo"
+        ],
+        "gridRows": 7,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Finanzas__rdenes_de_Giro.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Finanzas__rdenes_de_Giro.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Aprobar Giro",
+      "route": "/finanzas/adelantos/aprobar-giro",
+      "actualUrl": "/finanzas/adelantos/aprobar-giro",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "01/07/2026 - 03/07/2026",
+          "Aprobar ordenes de giro",
+          "Rechazar",
+          "Aprobar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por código o póliza",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por código o póliza",
+            "formcontrolname": ""
+          },
+          {
+            "type": "checkbox",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "checkbox",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "checkbox",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "checkbox",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "checkbox",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "checkbox",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "checkbox",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "checkbox",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "fechaEmision"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "solicitante"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "monto"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "estado"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "N° orden de giro",
+          "Fecha de solicitud",
+          "Solicitante (ID)",
+          "Motivo",
+          "Monto",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar por código o póliza",
+          "Buscar por código o póliza"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "De solicitudDe aprobación"
+        ],
+        "gridRows": 14,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Finanzas_Aprobar_Giro.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Finanzas_Aprobar_Giro.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Rendición Gastos",
+      "route": "/finanzas/adelantos/rendicion-gastos",
+      "actualUrl": "/finanzas/adelantos/rendicion-gastos",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "Agregar línea",
+          "Quitar línea",
+          "Guardar borrador",
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por N° liquidación, importe o estado",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por N° liquidación, importe o estado",
+            "formcontrolname": ""
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": "fechaLiquidacion"
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": "tasaCambio"
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "estado"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "Importe",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "Importe",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "N° liquidación",
+          "Fecha",
+          "Importe neto",
+          "Saldo",
+          "Moneda",
+          "Libro contable",
+          "Estado",
+          "Fecha",
+          "Concepto financiero",
+          "Cuenta por pagar",
+          "Importe"
+        ],
+        "filters": [
+          "Buscar por N° liquidación, importe o estado",
+          "Buscar por N° liquidación, importe o estado"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "ColaboradorProveedor",
+          "CF001 - Cobro por ventasCC-001 - FACTURA POR SERVICIO DE PES",
+          "S/ SolesS/ SolesUS$ Dolares AmericanosE. Euros$ Peso Colombi",
+          "APERTURACAJA - INGRESOSCAJA - EGRESOSREGISTRO DE COMPRASREGI",
+          "CF001 - Cobro por ventasCC-001 - FACTURA POR SERVICIO DE PES",
+          "F001-00001002 · Proveedor 12F001-00001076 · Proveedor 3F001-"
+        ],
+        "gridRows": 0,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Finanzas_Rendici_n_Gastos.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Finanzas_Rendici_n_Gastos.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Aprobar Rendición",
+      "route": "/finanzas/adelantos/aprobar-rendicion-gastos",
+      "actualUrl": "/finanzas/adelantos/aprobar-rendicion-gastos",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "03/07/2026 - 03/07/2026",
+          "Observar",
+          "Aprobar",
+          "Rechazar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por liquidación o beneficiario",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por liquidación o beneficiario",
+            "formcontrolname": ""
+          },
+          {
+            "type": "checkbox",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": "fechaDesembolso"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "centroCosto"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "montoAdelantado"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": "tipoCambio"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "totalGastado"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "saldoDevolver"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "saldoRegularizar"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Pendiente",
+            "formcontrolname": "estado"
+          },
+          {
+            "type": "text",
+            "placeholder": "Pendiente",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Codigo",
+          "Beneficiario",
+          "Tipo de gasto",
+          "Centro de costo",
+          "Monto adelantado",
+          "Monto gastado",
+          "Moneda",
+          "Estado",
+          "Fecha",
+          "Concepto / Descripción",
+          "Cuenta por pagar",
+          "Importe"
+        ],
+        "filters": [
+          "Buscar por liquidación o beneficiario",
+          "Buscar por liquidación o beneficiario"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "ProveedorColaborador",
+          "SolesDólares",
+          "AlimentaciónTransporteHospedajeMaterialesServicios"
+        ],
+        "gridRows": 0,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Finanzas_Aprobar_Rendici_n.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Finanzas_Aprobar_Rendici_n.html"
+    },
+    {
+      "module": "Finanzas",
+      "screen": "Cerrar Liq Adelantos",
+      "route": "/finanzas/adelantos/cerrar-liq-adelantos",
+      "actualUrl": "/finanzas/adelantos/cerrar-liq-adelantos",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "03/07/2026 - 03/07/2026",
+          "Cerrar liquidación",
+          "Revertir cierre"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por liquidación o beneficiario",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por liquidación o beneficiario",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": "fechaDesembolso"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "centroCosto"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "montoAdelantado"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": "tipoCambio"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "totalGastado"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "saldoDevolver"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "saldoRegularizar"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Pendiente",
+            "formcontrolname": "estado"
+          },
+          {
+            "type": "text",
+            "placeholder": "Pendiente",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "N° liquidación",
+          "Fecha aprobación",
+          "Moneda",
+          "Monto adelanto",
+          "Total gastado",
+          "Observación",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar por liquidación o beneficiario",
+          "Buscar por liquidación o beneficiario"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "De aprobaciónDe cierre",
+          "ProveedorColaborador",
+          "SolesDólares",
+          "AlimentaciónTransporteHospedajeMaterialesServicios"
+        ],
+        "gridRows": 0,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Finanzas_Cerrar_Liq_Adelantos.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Finanzas_Cerrar_Liq_Adelantos.html"
+    },
+    {
+      "module": "Contabilidad",
+      "screen": "Plan Contable",
+      "route": "/contabilidad/tabla/plan-contable",
+      "actualUrl": "/contabilidad/tabla/plan-contable",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "01/07/2026 - 03/07/2026",
+          "Siguiente",
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por código o nombre",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por código o nombre",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingresar cuenta contable",
+            "formcontrolname": "codigo"
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingresar cuenta contable",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingresar nombre o descripción",
+            "formcontrolname": "nombreD"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingresar nombre o descripción",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [
+          "Identificación Cuenta",
+          "Clasificación",
+          "Parametrización operativa",
+          "Normativa/Plantilla"
+        ],
+        "tableColumns": [
+          "Código",
+          "Nombre del plan",
+          "Año",
+          "Vigente desde",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar por código o nombre",
+          "Buscar por código o nombre"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "0102030405"
+        ],
+        "gridRows": 2,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Contabilidad_Plan_Contable.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Contabilidad_Plan_Contable.html"
+    },
+    {
+      "module": "Contabilidad",
+      "screen": "Centros Costo",
+      "route": "/contabilidad/tabla/plan-centro-costo",
+      "actualUrl": "/contabilidad/tabla/plan-centro-costo",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "Acciones",
+          "Nuevo centro de costo",
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por código, nombre o usuario que registra",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por código, nombre o usuario que registra",
+            "formcontrolname": ""
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": "fechaC"
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingresa un nombre",
+            "formcontrolname": "nombre"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingresa un nombre",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Selecciona una cuenta",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Selecciona una cuenta",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": "factor"
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Código",
+          "Nombre",
+          "Factor (%)",
+          "Tipo",
+          "Usuario que registra",
+          "Fecha de creación",
+          "Última modificación",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar por código, nombre o usuario que registra",
+          "Buscar por código, nombre o usuario que registra"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "AdministrativoOperativoSucursalProyectoOtro",
+          "ActivoInactivo"
+        ],
+        "gridRows": 20,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Contabilidad_Centros_Costo.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Contabilidad_Centros_Costo.html"
+    },
+    {
+      "module": "Contabilidad",
+      "screen": "Tipo de Cambio",
+      "route": "/contabilidad/tabla/tipo-de-cambio",
+      "actualUrl": "/contabilidad/tabla/tipo-de-cambio",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "01/07/2026 - 03/07/2026",
+          "Seleccione una fecha",
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por moneda, fecha, monto o estado",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por moneda, fecha, monto o estado",
+            "formcontrolname": ""
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": "fechaCreacion"
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": "tcCompra"
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": "tcVenta"
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Fecha registro",
+          "Fecha vigencia",
+          "Moneda",
+          "Tipo de cambio compra",
+          "Tipo de cambio venta",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar por moneda, fecha, monto o estado",
+          "Buscar por moneda, fecha, monto o estado"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "DólarEuro",
+          "Externa",
+          "ActivoInactivo"
+        ],
+        "gridRows": 20,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Contabilidad_Tipo_de_Cambio.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Contabilidad_Tipo_de_Cambio.html"
+    },
+    {
+      "module": "RRHH",
+      "screen": "Cálculo Planilla",
+      "route": "/rrhh/procesos-de-nomina/calculo-planillas",
+      "actualUrl": "/rrhh/procesos-de-nomina/calculo-planillas",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "Exportar",
+          "Nuevo calculo",
+          "Seleccione una fecha",
+          "Seleccione una fecha",
+          "Calcular planilla",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar configuraciones por código o nombre",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar configuraciones por código o nombre",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Código",
+          "Periodo",
+          "Tipo de planilla",
+          "Fecha registro",
+          "Sucursal",
+          "Cálculo desde",
+          "Cálculo hasta",
+          "N° trabajadores",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar configuraciones por código o nombre",
+          "Buscar configuraciones por código o nombre"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "SueldoCTSGratificación",
+          "DiariaSemanalQuincenalMensual"
+        ],
+        "gridRows": 0,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_RRHH_C_lculo_Planilla.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_RRHH_C_lculo_Planilla.html"
+    },
+    {
+      "module": "RRHH",
+      "screen": "Registrar Liquidación",
+      "route": "/rrhh/procesos-de-nomina/registrar-liquidacion",
+      "actualUrl": "/rrhh/procesos-de-nomina/registrar-liquidacion",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "Seleccione una fecha",
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por código",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por código",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Selecciona un trabajador",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": "liquidacion_sueldo_basico"
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": "liquidacion_asignacion_familiar"
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": "liquidacion_promedio_gratificacion"
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": ""
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": "liquidacion_fecha_inicio"
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": "liquidacion_cts_total"
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": "liquidacion_gratificacion_total"
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": "liquidacion_otros_beneficios"
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": "liquidacion_vacaciones_total"
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": "liquidacion_bonificacion_extraordinaria"
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": "liquidacion_descuento_rr"
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": "liquidacion_total_pagar"
+          },
+          {
+            "type": "text",
+            "placeholder": "0.00",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "liquidacion_estado"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Cód. de liquidación",
+          "Fecha de ingreso",
+          "Fecha de cese",
+          "Trabajador",
+          "Tipo de cese",
+          "Total a pagar",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar por código",
+          "Buscar por código"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "SíNo"
+        ],
+        "gridRows": 0,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_RRHH_Registrar_Liquidaci_n.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_RRHH_Registrar_Liquidaci_n.html"
+    },
+    {
+      "module": "RRHH",
+      "screen": "Aprobar Liquidación",
+      "route": "/rrhh/procesos-de-nomina/aprobar-liquidacion",
+      "actualUrl": "/rrhh/procesos-de-nomina/aprobar-liquidacion",
+      "accessed": true,
+      "components": {
+        "buttons": [],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por código",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por código",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "liquidacion_trabajador"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "liquidacion_sueldo_basico"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "liquidacion_asignacion_familiar"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "liquidacion_promedio_gratificacion"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": "liquidacion_fecha_inicio"
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": "liquidacion_fecha_cese"
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "liquidacion_tipo_cese"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": "liquidacion_cts_total"
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": "liquidacion_gratificacion_total"
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": "liquidacion_otros_beneficios"
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": "liquidacion_vacaciones_total"
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": "liquidacion_bonificacion_extraordinaria"
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": "liquidacion_descuento_rr"
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": "liquidacion_total_pagar"
+          },
+          {
+            "type": "number",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "liquidacion_estado"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Cód. de liquidación",
+          "Fecha de ingreso",
+          "Fecha de cese",
+          "Trabajador",
+          "Tipo de cese",
+          "Total a pagar",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar por código",
+          "Buscar por código"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala"
+        ],
+        "gridRows": 0,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_RRHH_Aprobar_Liquidaci_n.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_RRHH_Aprobar_Liquidaci_n.html"
+    },
+    {
+      "module": "RRHH",
+      "screen": "Datos Personales Trab",
+      "route": "/rrhh/maestro-personal/datos-contacto",
+      "actualUrl": "/",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por código o nombre de empleado",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por código o nombre de empleado",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese documento",
+            "formcontrolname": "empleado_documento"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese documento",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingrese nombres y apellidos",
+            "formcontrolname": "empleado_nombres_apellidos"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese nombres y apellidos",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingrese dirección",
+            "formcontrolname": "empleado_direccion"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese dirección",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingrese celular principal",
+            "formcontrolname": "empleado_celular1"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese celular principal",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingrese celular alterno",
+            "formcontrolname": "empleado_celular2"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese celular alterno",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingrese teléfono fijo",
+            "formcontrolname": "empleado_telefono_fijo"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese teléfono fijo",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ej. 043",
+            "formcontrolname": "empleado_codigo_tel_ciudad"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ej. 043",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingrese correo",
+            "formcontrolname": "empleado_correo_privado"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese correo",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingrese nombre de contacto",
+            "formcontrolname": "empleado_contacto_emergencia_nombre"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese nombre de contacto",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingrese teléfono",
+            "formcontrolname": "empleado_contacto_emergencia_telefono"
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingrese teléfono",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [
+          "Datos generales del trabajador",
+          "Información laboral",
+          "Equipamiento"
+        ],
+        "tableColumns": [
+          "Cód. de empleado",
+          "Apellido paterno",
+          "Apellido materno",
+          "Nombre 1",
+          "Nombre 2",
+          "Tipo de documento",
+          "Documento",
+          "Fecha de inicio",
+          "Tipo de trabajador",
+          "AFP",
+          "Fecha inicio afiliación"
+        ],
+        "filters": [
+          "Buscar por código o nombre de empleado",
+          "Buscar por código o nombre de empleado"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala"
+        ],
+        "gridRows": 20,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_RRHH_Datos_Personales_Trab.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_RRHH_Datos_Personales_Trab.html"
+    },
+    {
+      "module": "Compras",
+      "screen": "Gestión Proveedores",
+      "route": "/compras/tabla/gestion-proveedores",
+      "actualUrl": "/compras/tabla/gestion-proveedores",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar proveedor código o por razón social",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar proveedor código o por razón social",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "tipoIdentificacion"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": "identfiscal"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Proveedor ejemplo S.A.C",
+            "formcontrolname": "razonSocial"
+          },
+          {
+            "type": "text",
+            "placeholder": "Proveedor ejemplo S.A.C",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Proveedor ejemplo",
+            "formcontrolname": "nombreComercial"
+          },
+          {
+            "type": "text",
+            "placeholder": "Proveedor ejemplo",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingresar dirección fiscal",
+            "formcontrolname": "direccionFiscal"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingresar dirección fiscal",
+            "formcontrolname": ""
+          },
+          {
+            "type": "email",
+            "placeholder": "Ingresa un correo electrónico",
+            "formcontrolname": "email"
+          },
+          {
+            "type": "email",
+            "placeholder": "Ingresa un correo electrónico",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingresa un número",
+            "formcontrolname": "telefono"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingresa un número",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [
+          "General",
+          "Bancaria",
+          "Comercial"
+        ],
+        "tableColumns": [
+          "Código",
+          "Razón social",
+          "Documento fiscal",
+          "Cargo",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar proveedor código o por razón social",
+          "Buscar proveedor código o por razón social"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "ActivoInactivo",
+          "NacionalExtranjero"
+        ],
+        "gridRows": 11,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Compras_Gesti_n_Proveedores.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Compras_Gesti_n_Proveedores.html"
+    },
+    {
+      "module": "Compras",
+      "screen": "Generar OC",
+      "route": "/compras/operaciones/ordenes-compra",
+      "actualUrl": "/compras/operaciones/ordenes-compra",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "01/07/2026 - 03/07/2026",
+          "Seleccione una fecha",
+          "Nuevo producto",
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar por n° de orden de compra o proveedor",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar por n° de orden de compra o proveedor",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese documento",
+            "formcontrolname": "documentoproveedorinput"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingrese documento",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Proveeedor Ejemplo",
+            "formcontrolname": "proveedor"
+          },
+          {
+            "type": "text",
+            "placeholder": "Proveeedor Ejemplo",
+            "formcontrolname": ""
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": "fechaRegistro"
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Seleccionar almacén",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar sucursal...",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "direccionEntrega"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar centro de costos",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "tipoCambio"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "estado"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar producto por nombre o código...",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Nº Órden de compra",
+          "Fecha registro",
+          "Fecha entrega",
+          "Proveedor",
+          "Almacen",
+          "Sucursal",
+          "Moneda",
+          "Total",
+          "Estado",
+          "PDF",
+          "Código",
+          "Descripción",
+          "Cantidad",
+          "Unidad",
+          "Precio unitario"
+        ],
+        "filters": [
+          "Buscar por n° de orden de compra o proveedor",
+          "Buscar por n° de orden de compra o proveedor",
+          "Buscar sucursal...",
+          "Buscar centro de costos",
+          "Buscar producto por nombre o código..."
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "De registroDe entrega",
+          "SolesDolares AmericanosPeso ColombianoQuetzal Guatemalteco"
+        ],
+        "gridRows": 4,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Compras_Generar_OC.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Compras_Generar_OC.html"
+    },
+    {
+      "module": "Compras",
+      "screen": "Aprobar OC",
+      "route": "/compras/operaciones/aprobar-compra",
+      "actualUrl": "/compras/operaciones/aprobar-compra",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "01/07/2026 - 03/07/2026"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar órdenes de compra",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar órdenes de compra",
+            "formcontrolname": ""
+          },
+          {
+            "type": "checkbox",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "checkbox",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "documentoproveedorinput"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "proveedor"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "direccionFiscal"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "almacen"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "centroCosto"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": "fechaRegistro"
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": "fechaEntrega"
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "direccionEntrega"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "moneda"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "tipoCambio"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "condicionPago"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "",
+            "formcontrolname": "estado"
+          },
+          {
+            "type": "text",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Buscar producto por nombre o código...",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar producto por nombre o código...",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Nº. Órden de compra",
+          "Fecha registro",
+          "Fecha entrega",
+          "Razón social",
+          "Almacén",
+          "Sucursal",
+          "Moneda",
+          "Total",
+          "Estado",
+          "Código",
+          "Cantidad",
+          "Unidad",
+          "Centro de costos"
+        ],
+        "filters": [
+          "Buscar órdenes de compra",
+          "Buscar órdenes de compra",
+          "Buscar producto por nombre o código...",
+          "Buscar producto por nombre o código..."
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "De registroDe entrega"
+        ],
+        "gridRows": 2,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Compras_Aprobar_OC.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Compras_Aprobar_OC.html"
+    },
+    {
+      "module": "RRHH",
+      "screen": "Cargos",
+      "route": "/rrhh/maestro-personal/definicion-cargos",
+      "actualUrl": "/rrhh/maestro-personal/definicion-cargos",
+      "accessed": true,
+      "components": {
+        "buttons": [
+          "Exportar",
+          "Nuevo cargo",
+          "Registrar",
+          "Cancelar"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "Buscar cargos por código o descripción",
+            "formcontrolname": ""
+          },
+          {
+            "type": "text",
+            "placeholder": "Buscar cargos por código o descripción",
+            "formcontrolname": ""
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": "fechaCreacion"
+          },
+          {
+            "type": "date",
+            "placeholder": "",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "Ingresa un nombre",
+            "formcontrolname": "nombres"
+          },
+          {
+            "type": "text",
+            "placeholder": "Ingresa un nombre",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingresa un monto",
+            "formcontrolname": "SalarialMin"
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingresa un monto",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingresa un monto",
+            "formcontrolname": "SalarialProm"
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingresa un monto",
+            "formcontrolname": ""
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingresa un monto",
+            "formcontrolname": "SalarialMax"
+          },
+          {
+            "type": "number",
+            "placeholder": "Ingresa un monto",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [
+          "Código",
+          "Nombres de cargo",
+          "Nivel",
+          "B. salarial mínimo",
+          "B. salarial promedio",
+          "B. salarial máximo",
+          "Estado"
+        ],
+        "filters": [
+          "Buscar cargos por código o descripción",
+          "Buscar cargos por código o descripción"
+        ],
+        "selects": [
+          "PerúColombiaEcuadorGuatemala",
+          "OperativoSupervicionGerenciaDirección",
+          "ActivoInactivo"
+        ],
+        "gridRows": 1,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_RRHH_Cargos.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_RRHH_Cargos.html"
+    },
+    {
+      "module": "RRHH",
+      "screen": "Tipo Contrato",
+      "route": "/rrhh/parametros/tipo-contrato",
+      "actualUrl": "/auth/signin",
+      "accessed": false,
+      "components": {
+        "buttons": [
+          "¿Olvidaste tu contraseña?",
+          "Iniciar Sesión"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "usuario@empresa.com",
+            "formcontrolname": "usuario_nombre"
+          },
+          {
+            "type": "text",
+            "placeholder": "usuario@empresa.com",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "**********",
+            "formcontrolname": "usuario_clave"
+          },
+          {
+            "type": "password",
+            "placeholder": "**********",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "selects": [],
+        "gridRows": 0,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_RRHH_Tipo_Contrato.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_RRHH_Tipo_Contrato.html"
+    },
+    {
+      "module": "RRHH",
+      "screen": "Asistencias",
+      "route": "/rrhh/asistencias-jornadas/asistencias-HE",
+      "actualUrl": "/auth/signin",
+      "accessed": false,
+      "components": {
+        "buttons": [
+          "¿Olvidaste tu contraseña?",
+          "Iniciar Sesión"
+        ],
+        "inputs": [
+          {
+            "type": null,
+            "placeholder": "usuario@empresa.com",
+            "formcontrolname": "usuario_nombre"
+          },
+          {
+            "type": "text",
+            "placeholder": "usuario@empresa.com",
+            "formcontrolname": ""
+          },
+          {
+            "type": null,
+            "placeholder": "**********",
+            "formcontrolname": "usuario_clave"
+          },
+          {
+            "type": "password",
+            "placeholder": "**********",
+            "formcontrolname": ""
+          }
+        ],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "selects": [],
+        "gridRows": 0,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_RRHH_Asistencias.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_RRHH_Asistencias.html"
+    },
+    {
+      "module": "Contabilidad",
+      "screen": "Formatos SUNAT",
+      "route": "/contabilidad/reportes/formatos-sunat",
+      "actualUrl": "/contabilidad/reportes/formatos-sunat",
+      "accessed": true,
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "selects": [],
+        "gridRows": 0,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Contabilidad_Formatos_SUNAT.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Contabilidad_Formatos_SUNAT.html"
+    },
+    {
+      "module": "Contabilidad",
+      "screen": "Libros Electrónicos",
+      "route": "/contabilidad/reportes/libros-electronicos",
+      "actualUrl": "/contabilidad/reportes/libros-electronicos",
+      "accessed": true,
+      "components": {
+        "buttons": [],
+        "inputs": [],
+        "tabs": [],
+        "tableColumns": [],
+        "filters": [],
+        "selects": [],
+        "gridRows": 0,
+        "modals": 0
+      },
+      "screenshot": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\screenshots\\v2_Contabilidad_Libros_Electr_nicos.png",
+      "html": "C:\\Users\\paola\\Documents\\GitHub\\Restpe-contabilidad-playwright\\exploracion-output\\html\\v2_Contabilidad_Libros_Electr_nicos.html"
+    }
+  ],
+  "apis": [
+    {
+      "method": "POST",
+      "url": "/api/auth/login",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/auth/empresas",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/empresas/2/sucursales/mias",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "/api/auth/seleccionar-empresa",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/tipos-documento",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/articulos?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/impuestos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/cuentas-pagar?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/contabilidad/libros-contables?page=0&size=200",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/contabilidad/centros-costo?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/conceptos-financieros?page=0&size=200",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/tipos-documento",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/monedas?page=0&size=100",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/relaciones-comerciales?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/tipos-documento",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/catalogos-sunat/detalles?catalogoSunatId=12&size=1000&flagEstado=1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/tipos-documento",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/contabilidad/matriz-contable?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/conceptos-financieros?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/grupos-flujo-caja?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/codigos-flujo-caja?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/flujo-caja/arbol",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/grupos-flujo-caja?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/actividades-flujo-caja?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/ordenes-giro?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/auth/seguridad/empresas/2/usuarios",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/contabilidad/centros-costo?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/sucursales?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/compras/ordenes-compra?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/ordenes-giro?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/ordenes-giro/aprobacion/pendientes?size=1000&sort=id,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/ordenes-giro/aprobacion/pendientes?size=1000&sort=id,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/monedas?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/relaciones-comerciales?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/contabilidad/libros-contables?flagEstado=1&size=100",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/liquidaciones?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/conceptos-financieros?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/solicitudes-giro?estado=1&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/cuentas-pagar/pendientes/simple",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/contabilidad/libros-contables?flagEstado=1&size=100",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/liquidaciones?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/solicitudes-giro?estado=1&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/conceptos-financieros?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/cuentas-pagar/pendientes/simple",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/contabilidad/centros-costo?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/liquidaciones?size=1000&sort=id,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/solicitudes-giro?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/contabilidad/centros-costo?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/liquidaciones?size=1000&sort=id,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/solicitudes-giro?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/monedas?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/liquidaciones?size=1000&sort=id,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/monedas?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/liquidaciones?size=1000&sort=id,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/contabilidad/plan-contable?flagEstado=1&page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/contabilidad/centros-costo?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/monedas?size=100",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/tipos-cambio?size=1000&sort=fecha,desc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/sucursales?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/calculos?size=1000",
+      "status": 500
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/trabajadores?size=1000&sort=codigoTrabajador,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/liquidaciones?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/trabajadores?size=1000&sort=codigoTrabajador,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/liquidaciones?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/trabajadores?size=1000&sort=codigoTrabajador,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/cargos?size=1000&sort=nombre,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/tipos-documento-identidad",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/tipos-sangre?size=1000&sort=nombre,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/tipos-contrato/activos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/geografia/paises?size=100",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/tipos-via?size=1000&sort=nombre,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/tipos-zona?size=1000&sort=nombre,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/areas?size=1000&sort=nombre,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/tipos-vivienda?size=1000&sort=nombre,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/motivos-cese?size=1000&sort=nombre,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/tipos-trabajador?size=1000&sort=nombre,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/regimenes-pensionario?size=1000&sort=nombre,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/tipos-trabajador-rtps?size=1000&sort=nombre,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/secciones?size=1000&sort=nombre,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/ocupaciones-rtps?size=1000&sort=nombre,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/pensiones-rtps?size=1000&sort=nombre,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/estados-civiles/activos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/sucursales?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/monedas?size=100",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/regimenes-laborales?size=1000&sort=codigo,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/sexos?size=100",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/admin-afp/activos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/trabajadores?size=1000&sort=codigoTrabajador,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/contabilidad/centros-costo?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/finanzas/bancos?size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/relaciones-comerciales?esProveedor=true&page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/formas-pago?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/monedas",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/relaciones-comerciales/6",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/relaciones-comerciales/7",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/relaciones-comerciales/11",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/relaciones-comerciales/4",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/relaciones-comerciales/12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/relaciones-comerciales/9",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/relaciones-comerciales/1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/relaciones-comerciales/13",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/relaciones-comerciales/10",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/relaciones-comerciales/14",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/relaciones-comerciales/8",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/monedas?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/formas-pago?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/contabilidad/centros-costo?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/impuestos?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/articulos?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/empresas/2/sucursales?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/compras/ordenes-compra?page=0&size=1000&sort=id,desc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/almacen/almacenes?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/formas-pago?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/formas-pago?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/compras/ordenes-compra?page=0&size=1000&sort=id,desc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/almacen/almacenes?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/empresas/2/sucursales?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/almacen/almacenes?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/compras/ordenes-compra/4",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/compras/ordenes-compra/3",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/compras/ordenes-compra/1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/compras/ordenes-compra/5",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/empresas/2/sucursales?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/almacen/almacenes?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/compras/ordenes-compra/5",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/compras/ordenes-compra/1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/compras/ordenes-compra/3",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/compras/ordenes-compra/4",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/contabilidad/centros-costo?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/formas-pago?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/almacen/almacenes?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/compras/ordenes-compra/pendientes-aprobacion?page=0&size=1000&sort=id,desc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/empresas/2/sucursales?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/core/formas-pago?page=0&size=1000",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/compras/ordenes-compra/4",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/notificaciones",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/cargos?size=1000&sort=nombre,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/regimenes-laborales?size=1000&sort=codigo,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/rrhh/areas?size=1000&sort=nombre,asc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "/api/contabilidad/centros-costo?page=0&size=1000",
+      "status": 200
+    }
+  ]
+}

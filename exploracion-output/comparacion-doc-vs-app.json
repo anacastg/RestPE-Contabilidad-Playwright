@@ -1,0 +1,367 @@
+{
+  "enDocumentacionYAplicacion": [
+    {
+      "screen": "Gestión Proveedores",
+      "module": "Compras",
+      "route": "/compras/tabla/gestion-proveedores",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/compras/tabla/gestion-proveedores",
+      "components": {
+        "buttons": 2,
+        "inputs": 16,
+        "tabs": 3,
+        "tableColumns": 5
+      }
+    },
+    {
+      "screen": "Generar OC",
+      "module": "Compras",
+      "route": "/compras/operaciones/ordenes-compra",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/compras/operaciones/ordenes-compra",
+      "components": {
+        "buttons": 5,
+        "inputs": 22,
+        "tabs": 0,
+        "tableColumns": 15
+      }
+    },
+    {
+      "screen": "Aprobar OC",
+      "module": "Compras",
+      "route": "/compras/operaciones/aprobar-compra",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/compras/operaciones/aprobar-compra",
+      "components": {
+        "buttons": 1,
+        "inputs": 30,
+        "tabs": 0,
+        "tableColumns": 13
+      }
+    },
+    {
+      "screen": "Registro Comprobantes",
+      "module": "Compras",
+      "route": "/compras/operaciones/registro-comprobantes",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/compras/operaciones/registro-comprobantes",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Gestión Compras",
+      "module": "Compras",
+      "route": "/compras/reportes/gestion-compras",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/compras/reportes/gestion-compras",
+      "components": {
+        "buttons": 0,
+        "inputs": 20,
+        "tabs": 0,
+        "tableColumns": 13
+      }
+    },
+    {
+      "screen": "Facturación Regalías",
+      "module": "Ventas",
+      "route": "/ventas/facturacion-de-regalias",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/ventas/facturacion-de-regalias",
+      "components": {
+        "buttons": 4,
+        "inputs": 20,
+        "tabs": 0,
+        "tableColumns": 9
+      }
+    },
+    {
+      "screen": "Consulta Saldos",
+      "module": "Finanzas",
+      "route": "/finanzas/consultas/consultas-saldos-caja-bancos",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/finanzas/consultas/consultas-saldos-caja-bancos",
+      "components": {
+        "buttons": 2,
+        "inputs": 2,
+        "tabs": 0,
+        "tableColumns": 8
+      }
+    },
+    {
+      "screen": "Mov Cuentas",
+      "module": "Finanzas",
+      "route": "/finanzas/tesoreria/mov-cuentas-banc-y-cajas",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/finanzas/tesoreria/mov-cuentas-banc-y-cajas",
+      "components": {
+        "buttons": 3,
+        "inputs": 8,
+        "tabs": 0,
+        "tableColumns": 9
+      }
+    },
+    {
+      "screen": "Tipos Documento",
+      "module": "Finanzas",
+      "route": "/finanzas/documentos/tipos-documentos",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/finanzas/documentos/tipos-documentos",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Conceptos Financieros",
+      "module": "Finanzas",
+      "route": "/finanzas/concepto-financiero",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/finanzas/concepto-financiero",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Flujo de Caja",
+      "module": "Finanzas",
+      "route": "/finanzas/flujo-caja",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/finanzas/flujo-caja",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Solicitud Adelantos",
+      "module": "Finanzas",
+      "route": "/finanzas/solicitud-adelantos",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/finanzas/solicitud-adelantos",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Cartera Pagos",
+      "module": "Finanzas",
+      "route": "/finanzas/tesoreria/cartera-pagos",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/finanzas/tesoreria/cartera-pagos",
+      "components": {
+        "buttons": 1,
+        "inputs": 10,
+        "tabs": 2,
+        "tableColumns": 8
+      }
+    },
+    {
+      "screen": "Transferencias",
+      "module": "Finanzas",
+      "route": "/finanzas/transferencias",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/finanzas/transferencias",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Plan Contable",
+      "module": "Contabilidad",
+      "route": "/contabilidad/plan-contable",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/contabilidad/plan-contable",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Centros Costo",
+      "module": "Contabilidad",
+      "route": "/contabilidad/centros-costo",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/contabilidad/centros-costo",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Tipo Cambio",
+      "module": "Contabilidad",
+      "route": "/contabilidad/tipo-cambio",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/contabilidad/tipo-cambio",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Formatos SUNAT",
+      "module": "Contabilidad",
+      "route": "/contabilidad/formatos-sunat",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/contabilidad/formatos-sunat",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Libros Electrónicos",
+      "module": "Contabilidad",
+      "route": "/contabilidad/libros-electronicos",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/contabilidad/libros-electronicos",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Maestro AF",
+      "module": "Activos Fijos",
+      "route": "/activos/maestro",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/activos/maestro",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Parámetros AF",
+      "module": "Activos Fijos",
+      "route": "/activos/parametros",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/activos/parametros",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Operaciones AF",
+      "module": "Activos Fijos",
+      "route": "/activos/operaciones",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/activos/operaciones",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Procesos AF",
+      "module": "Activos Fijos",
+      "route": "/activos/procesos",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/activos/procesos",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Datos Personal",
+      "module": "RRHH",
+      "route": "/rrhh/maestro-personal/datos-contacto",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/",
+      "components": {
+        "buttons": 2,
+        "inputs": 22,
+        "tabs": 3,
+        "tableColumns": 11
+      }
+    },
+    {
+      "screen": "Cargos",
+      "module": "RRHH",
+      "route": "/rrhh/maestro-personal/definicion-cargos",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/rrhh/maestro-personal/definicion-cargos",
+      "components": {
+        "buttons": 4,
+        "inputs": 12,
+        "tabs": 0,
+        "tableColumns": 7
+      }
+    },
+    {
+      "screen": "Tipo Contrato",
+      "module": "RRHH",
+      "route": "/rrhh/parametros/tipo-contrato",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/rrhh/parametros/tipo-contrato",
+      "components": {
+        "buttons": 2,
+        "inputs": 4,
+        "tabs": 0,
+        "tableColumns": 3
+      }
+    },
+    {
+      "screen": "Asistencias",
+      "module": "RRHH",
+      "route": "/rrhh/asistencias-jornadas/asistencias-HE",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/rrhh/asistencias-jornadas/asistencias-HE",
+      "components": {
+        "buttons": 0,
+        "inputs": 2,
+        "tabs": 0,
+        "tableColumns": 13
+      }
+    },
+    {
+      "screen": "Cálculo Planilla",
+      "module": "RRHH",
+      "route": "/rrhh/calculo-planilla",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/rrhh/calculo-planilla",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Liquidaciones",
+      "module": "RRHH",
+      "route": "/rrhh/liquidaciones",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/rrhh/liquidaciones",
+      "components": {
+        "buttons": 0,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    },
+    {
+      "screen": "Inicio",
+      "module": "Dashboard",
+      "route": "/inicio",
+      "actualUrl": "https://panel.dev.contabilidad.restaurant.pe/inicio",
+      "components": {
+        "buttons": 5,
+        "inputs": 0,
+        "tabs": 0,
+        "tableColumns": 0
+      }
+    }
+  ],
+  "soloEnDocumentacion": [],
+  "soloEnAplicacion": [],
+  "diferencias": []
+}

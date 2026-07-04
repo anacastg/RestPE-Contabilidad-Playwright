@@ -1,0 +1,593 @@
+<!DOCTYPE html><html lang="en" data-beasties-container="" class="plt-tablet plt-desktop md" mode="md"><head>
+  <meta charset="utf-8"><style type="text/css" id="fa-auto-css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 7 Free";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 7 Free";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 7 Pro";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 7 Pro";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 7 Duotone";
+  --fa-font-duotone-regular: normal 400 1em/1 "Font Awesome 7 Duotone";
+  --fa-font-duotone-light: normal 300 1em/1 "Font Awesome 7 Duotone";
+  --fa-font-duotone-thin: normal 100 1em/1 "Font Awesome 7 Duotone";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 7 Brands";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 7 Sharp";
+  --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 7 Sharp";
+  --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 7 Sharp";
+  --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 7 Sharp";
+  --fa-font-sharp-duotone-solid: normal 900 1em/1 "Font Awesome 7 Sharp Duotone";
+  --fa-font-sharp-duotone-regular: normal 400 1em/1 "Font Awesome 7 Sharp Duotone";
+  --fa-font-sharp-duotone-light: normal 300 1em/1 "Font Awesome 7 Sharp Duotone";
+  --fa-font-sharp-duotone-thin: normal 100 1em/1 "Font Awesome 7 Sharp Duotone";
+  --fa-font-slab-regular: normal 400 1em/1 "Font Awesome 7 Slab";
+  --fa-font-slab-press-regular: normal 400 1em/1 "Font Awesome 7 Slab Press";
+  --fa-font-whiteboard-semibold: normal 600 1em/1 "Font Awesome 7 Whiteboard";
+  --fa-font-thumbprint-light: normal 300 1em/1 "Font Awesome 7 Thumbprint";
+  --fa-font-notdog-solid: normal 900 1em/1 "Font Awesome 7 Notdog";
+  --fa-font-notdog-duo-solid: normal 900 1em/1 "Font Awesome 7 Notdog Duo";
+  --fa-font-etch-solid: normal 900 1em/1 "Font Awesome 7 Etch";
+  --fa-font-jelly-regular: normal 400 1em/1 "Font Awesome 7 Jelly";
+  --fa-font-jelly-fill-regular: normal 400 1em/1 "Font Awesome 7 Jelly Fill";
+  --fa-font-jelly-duo-regular: normal 400 1em/1 "Font Awesome 7 Jelly Duo";
+  --fa-font-chisel-regular: normal 400 1em/1 "Font Awesome 7 Chisel";
+  --fa-font-utility-semibold: normal 600 1em/1 "Font Awesome 7 Utility";
+  --fa-font-utility-duo-semibold: normal 600 1em/1 "Font Awesome 7 Utility Duo";
+  --fa-font-utility-fill-semibold: normal 600 1em/1 "Font Awesome 7 Utility Fill";
+}
+
+.svg-inline--fa {
+  box-sizing: content-box;
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+  width: var(--fa-width, 1.25em);
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285714em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left,
+.svg-inline--fa .fa-pull-start {
+  float: inline-start;
+  margin-inline-end: var(--fa-pull-margin, 0.3em);
+}
+.svg-inline--fa.fa-pull-right,
+.svg-inline--fa .fa-pull-end {
+  float: inline-end;
+  margin-inline-start: var(--fa-pull-margin, 0.3em);
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  inset-inline-start: calc(-1 * var(--fa-li-width, 2em));
+  inset-block-start: 0.25em; /* syncing vertical alignment with Web Font rendering */
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: var(--fa-width, 1.25em);
+}
+.fa-layers .svg-inline--fa {
+  inset: 0;
+  margin: auto;
+  position: absolute;
+  transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  transform: scale(var(--fa-counter-scale, 0.25));
+  transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: calc(10 / 16 * 1em); /* converts a 10px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 10 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 10 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-xs {
+  font-size: calc(12 / 16 * 1em); /* converts a 12px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 12 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 12 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-sm {
+  font-size: calc(14 / 16 * 1em); /* converts a 14px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 14 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 14 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-lg {
+  font-size: calc(20 / 16 * 1em); /* converts a 20px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 20 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 20 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-xl {
+  font-size: calc(24 / 16 * 1em); /* converts a 24px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 24 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 24 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-2xl {
+  font-size: calc(32 / 16 * 1em); /* converts a 32px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 32 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 32 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-width-auto {
+  --fa-width: auto;
+}
+
+.fa-fw,
+.fa-width-fixed {
+  --fa-width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-inline-start: var(--fa-li-margin, 2.5em);
+  padding-inline-start: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  inset-inline-start: calc(-1 * var(--fa-li-width, 2em));
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+/* Heads Up: Bordered Icons will not be supported in the future!
+  - This feature will be deprecated in the next major release of Font Awesome (v8)!
+  - You may continue to use it in this version *v7), but it will not be supported in Font Awesome v8.
+*/
+/* Notes:
+* --@{v.$css-prefix}-border-width = 1/16 by default (to render as ~1px based on a 16px default font-size)
+* --@{v.$css-prefix}-border-padding =
+  ** 3/16 for vertical padding (to give ~2px of vertical whitespace around an icon considering it's vertical alignment)
+  ** 4/16 for horizontal padding (to give ~4px of horizontal whitespace around an icon)
+*/
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.0625em);
+  box-sizing: var(--fa-border-box-sizing, content-box);
+  padding: var(--fa-border-padding, 0.1875em 0.25em);
+}
+
+.fa-pull-left,
+.fa-pull-start {
+  float: inline-start;
+  margin-inline-end: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right,
+.fa-pull-end {
+  float: inline-end;
+  margin-inline-start: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  animation-name: fa-beat;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  animation-name: fa-bounce;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  animation-name: fa-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  animation-name: fa-beat-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  animation-name: fa-flip;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  animation-name: fa-shake;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  animation-name: fa-spin;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 2s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  animation-name: fa-spin;
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+  .fa-bounce,
+  .fa-fade,
+  .fa-beat-fade,
+  .fa-flip,
+  .fa-pulse,
+  .fa-shake,
+  .fa-spin,
+  .fa-spin-pulse {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-shake {
+  0% {
+    transform: rotate(-15deg);
+  }
+  4% {
+    transform: rotate(15deg);
+  }
+  8%, 24% {
+    transform: rotate(-18deg);
+  }
+  12%, 28% {
+    transform: rotate(18deg);
+  }
+  16% {
+    transform: rotate(-22deg);
+  }
+  20% {
+    transform: rotate(22deg);
+  }
+  32% {
+    transform: rotate(-12deg);
+  }
+  36% {
+    transform: rotate(12deg);
+  }
+  40%, 100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  transform: rotate(var(--fa-rotate-angle, 0));
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.svg-inline--fa.fa-inverse {
+  fill: var(--fa-inverse, #fff);
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  --fa-width: 1.25em;
+  height: 1em;
+  width: var(--fa-width);
+}
+.svg-inline--fa.fa-stack-2x {
+  --fa-width: 2.5em;
+  height: 2em;
+  width: var(--fa-width);
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  inset: 0;
+  margin: auto;
+  position: absolute;
+  z-index: var(--fa-stack-z-index, auto);
+}</style><style data-styles="">slot-fb{display:contents}slot-fb[hidden]{display:none}ion-accordion,ion-accordion-group,ion-action-sheet,ion-alert,ion-app,ion-avatar,ion-back-button,ion-backdrop,ion-badge,ion-breadcrumb,ion-breadcrumbs,ion-button,ion-buttons,ion-card,ion-card-content,ion-card-header,ion-card-subtitle,ion-card-title,ion-checkbox,ion-chip,ion-col,ion-content,ion-datetime,ion-datetime-button,ion-fab,ion-fab-button,ion-fab-list,ion-footer,ion-grid,ion-header,ion-icon,ion-img,ion-infinite-scroll,ion-infinite-scroll-content,ion-input,ion-input-otp,ion-input-password-toggle,ion-item,ion-item-divider,ion-item-group,ion-item-option,ion-item-options,ion-item-sliding,ion-label,ion-list,ion-list-header,ion-loading,ion-menu,ion-menu-button,ion-menu-toggle,ion-modal,ion-nav,ion-nav-link,ion-note,ion-picker,ion-picker-column,ion-picker-column-option,ion-picker-legacy,ion-picker-legacy-column,ion-popover,ion-progress-bar,ion-radio,ion-radio-group,ion-range,ion-refresher,ion-refresher-content,ion-reorder,ion-reorder-group,ion-ripple-effect,ion-route,ion-route-redirect,ion-router,ion-router-link,ion-router-outlet,ion-row,ion-searchbar,ion-segment,ion-segment-button,ion-segment-content,ion-segment-view,ion-select,ion-select-modal,ion-select-option,ion-select-popover,ion-skeleton-text,ion-spinner,ion-split-pane,ion-tab,ion-tab-bar,ion-tab-button,ion-text,ion-textarea,ion-thumbnail,ion-title,ion-toast,ion-toggle,ion-toolbar{visibility:hidden}.hydrated{visibility:inherit}</style>
+  <title>Restaurant Contabilidad</title>
+
+  <base href="/">
+
+  <meta name="color-scheme" content="light">
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="icon" type="image/ico" href="assets/icon/ollalogo.ico">
+
+  <!-- Google Fonts - Roboto con todos los pesos -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><style>html.plt-mobile ion-app{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}html.plt-mobile ion-app [contenteditable]{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}ion-app.force-statusbar-padding{--ion-safe-area-top:20px}</style>
+  <style>@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:300;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t4R-tCKQ.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:300;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7txR-tCKQ.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:300;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t6R-tCKQ.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:300;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t7R-tCKQ.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:300;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t4R-tCKQ.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7txR-tCKQ.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t6R-tCKQ.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t7R-tCKQ.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:600;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t4R-tCKQ.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:600;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7txR-tCKQ.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:600;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t6R-tCKQ.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:600;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t7R-tCKQ.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:600;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t4R-tCKQ.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7txR-tCKQ.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t6R-tCKQ.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t7R-tCKQ.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:800;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t4R-tCKQ.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:800;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7txR-tCKQ.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:800;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t6R-tCKQ.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:800;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t7R-tCKQ.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:800;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+
+  <!-- add to homescreen for ios -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<style>:root{--ion-color-primary:#0054e9;--ion-color-primary-rgb:0, 84, 233;--ion-color-primary-contrast:#fff;--ion-color-primary-contrast-rgb:255, 255, 255;--ion-color-primary-shade:#004acd;--ion-color-primary-tint:#1a65eb;--ion-color-secondary:#0163aa;--ion-color-secondary-rgb:1, 99, 170;--ion-color-secondary-contrast:#fff;--ion-color-secondary-contrast-rgb:255, 255, 255;--ion-color-secondary-shade:#015796;--ion-color-secondary-tint:#1a73b3;--ion-color-tertiary:#6030ff;--ion-color-tertiary-rgb:96, 48, 255;--ion-color-tertiary-contrast:#fff;--ion-color-tertiary-contrast-rgb:255, 255, 255;--ion-color-tertiary-shade:#542ae0;--ion-color-tertiary-tint:#7045ff;--ion-color-success:#2dd55b;--ion-color-success-rgb:45, 213, 91;--ion-color-success-contrast:#000;--ion-color-success-contrast-rgb:0, 0, 0;--ion-color-success-shade:#28bb50;--ion-color-success-tint:#42d96b;--ion-color-warning:#ffc409;--ion-color-warning-rgb:255, 196, 9;--ion-color-warning-contrast:#000;--ion-color-warning-contrast-rgb:0, 0, 0;--ion-color-warning-shade:#e0ac08;--ion-color-warning-tint:#ffca22;--ion-color-danger:#c5000f;--ion-color-danger-rgb:197, 0, 15;--ion-color-danger-contrast:#fff;--ion-color-danger-contrast-rgb:255, 255, 255;--ion-color-danger-shade:#ad000d;--ion-color-danger-tint:#cb1a27;--ion-color-light:#f4f5f8;--ion-color-light-rgb:244, 245, 248;--ion-color-light-contrast:#000;--ion-color-light-contrast-rgb:0, 0, 0;--ion-color-light-shade:#d7d8da;--ion-color-light-tint:#f5f6f9;--ion-color-medium:#636469;--ion-color-medium-rgb:99, 100, 105;--ion-color-medium-contrast:#fff;--ion-color-medium-contrast-rgb:255, 255, 255;--ion-color-medium-shade:#57585c;--ion-color-medium-tint:#737478;--ion-color-dark:#222428;--ion-color-dark-rgb:34, 36, 40;--ion-color-dark-contrast:#fff;--ion-color-dark-contrast-rgb:255, 255, 255;--ion-color-dark-shade:#1e2023;--ion-color-dark-tint:#383a3e}html{--ion-dynamic-font:-apple-system-body;--ion-font-family:var(--ion-default-font)}body{background:var(--ion-background-color);color:var(--ion-text-color)}@supports (padding-top: 20px){html{--ion-safe-area-top:var(--ion-statusbar-padding)}}@supports (padding-top: env(safe-area-inset-top)){html{--ion-safe-area-top:env(safe-area-inset-top);--ion-safe-area-bottom:env(safe-area-inset-bottom);--ion-safe-area-left:env(safe-area-inset-left);--ion-safe-area-right:env(safe-area-inset-right)}}*{box-sizing:border-box;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}html{width:100%;height:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%}body{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;margin:0;padding:0;position:fixed;width:100%;max-width:100%;height:100%;max-height:100%;transform:translateZ(0);text-rendering:optimizeLegibility;overflow:hidden;touch-action:manipulation;-webkit-user-drag:none;-ms-content-zooming:none;word-wrap:break-word;overscroll-behavior-y:none;-webkit-text-size-adjust:none;text-size-adjust:none}html{font-family:var(--ion-font-family)}@supports (-webkit-touch-callout: none){html{font:var(--ion-dynamic-font, 16px var(--ion-font-family))}}@media (prefers-color-scheme: dark){:root{--ion-color-primary:#4d8dff;--ion-color-primary-rgb:77, 141, 255;--ion-color-primary-contrast:#000;--ion-color-primary-contrast-rgb:0, 0, 0;--ion-color-primary-shade:#447ce0;--ion-color-primary-tint:#5f98ff;--ion-color-secondary:#46b1ff;--ion-color-secondary-rgb:70, 177, 255;--ion-color-secondary-contrast:#000;--ion-color-secondary-contrast-rgb:0, 0, 0;--ion-color-secondary-shade:#3e9ce0;--ion-color-secondary-tint:#59b9ff;--ion-color-tertiary:#8482fb;--ion-color-tertiary-rgb:132, 130, 251;--ion-color-tertiary-contrast:#000;--ion-color-tertiary-contrast-rgb:0, 0, 0;--ion-color-tertiary-shade:#7472dd;--ion-color-tertiary-tint:#908ffb;--ion-color-success:#2dd55b;--ion-color-success-rgb:45, 213, 91;--ion-color-success-contrast:#000;--ion-color-success-contrast-rgb:0, 0, 0;--ion-color-success-shade:#28bb50;--ion-color-success-tint:#42d96b;--ion-color-warning:#ffce31;--ion-color-warning-rgb:255, 206, 49;--ion-color-warning-contrast:#000;--ion-color-warning-contrast-rgb:0, 0, 0;--ion-color-warning-shade:#e0b52b;--ion-color-warning-tint:#ffd346;--ion-color-danger:#f24c58;--ion-color-danger-rgb:242, 76, 88;--ion-color-danger-contrast:#000;--ion-color-danger-contrast-rgb:0, 0, 0;--ion-color-danger-shade:#d5434d;--ion-color-danger-tint:#f35e69;--ion-color-light:#222428;--ion-color-light-rgb:34, 36, 40;--ion-color-light-contrast:#fff;--ion-color-light-contrast-rgb:255, 255, 255;--ion-color-light-shade:#1e2023;--ion-color-light-tint:#383a3e;--ion-color-medium:#989aa2;--ion-color-medium-rgb:152, 154, 162;--ion-color-medium-contrast:#000;--ion-color-medium-contrast-rgb:0, 0, 0;--ion-color-medium-shade:#86888f;--ion-color-medium-tint:#a2a4ab;--ion-color-dark:#f4f5f8;--ion-color-dark-rgb:244, 245, 248;--ion-color-dark-contrast:#000;--ion-color-dark-contrast-rgb:0, 0, 0;--ion-color-dark-shade:#d7d8da;--ion-color-dark-tint:#f5f6f9}}:root{letter-spacing:0!important}*,:before,:after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / .5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content:""}html{line-height:1.5;-webkit-text-size-adjust:100%;tab-size:4;font-family:Nunito Sans,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}*{font-family:Nunito Sans,sans-serif!important}:root{--ion-font-family:'"Nunito Sans"', sans-serif !important;--ion-default-font:var(--ion-font-family) !important;--background:white !important;--ion-background-color:white;--ion-color-primary:#3B82F6;--ion-color-primary-rgb:59, 130, 246;--ion-color-primary-contrast:#ffffff;--ion-color-primary-contrast-rgb:255, 255, 255;--ion-color-primary-shade:#3171e0;--ion-color-primary-tint:#4c8dff;--ion-color-secondary:#3dc2ff;--ion-color-secondary-rgb:61, 194, 255;--ion-color-secondary-contrast:#ffffff;--ion-color-secondary-contrast-rgb:255, 255, 255;--ion-color-secondary-shade:#36abe0;--ion-color-secondary-tint:#50c8ff;--ion-color-tertiary:#5260ff;--ion-color-tertiary-rgb:82, 96, 255;--ion-color-tertiary-contrast:#ffffff;--ion-color-tertiary-contrast-rgb:255, 255, 255;--ion-color-tertiary-shade:#4854e0;--ion-color-tertiary-tint:#6370ff;--ion-color-success:#2dd36f;--ion-color-success-rgb:45, 211, 111;--ion-color-success-contrast:#ffffff;--ion-color-success-contrast-rgb:255, 255, 255;--ion-color-success-shade:#28ba62;--ion-color-success-tint:#42d77d;--ion-color-warning:#ffc409;--ion-color-warning-rgb:255, 196, 9;--ion-color-warning-contrast:#000000;--ion-color-warning-contrast-rgb:0, 0, 0;--ion-color-warning-shade:#e0ac08;--ion-color-warning-tint:#ffca22;--ion-color-danger:#EF4444;--ion-color-danger-rgb:235, 68, 90;--ion-color-danger-contrast:#ffffff;--ion-color-danger-contrast-rgb:255, 255, 255;--ion-color-danger-shade:#cf3c4f;--ion-color-danger-tint:#ed576b;--ion-color-dark:#222428;--ion-color-dark-rgb:34, 36, 40;--ion-color-dark-contrast:#ffffff;--ion-color-dark-contrast-rgb:255, 255, 255;--ion-color-dark-shade:#1e2023;--ion-color-dark-tint:#383a3e;--ion-color-medium:#92949c;--ion-color-medium-rgb:146, 148, 156;--ion-color-medium-contrast:#ffffff;--ion-color-medium-contrast-rgb:255, 255, 255;--ion-color-medium-shade:#808289;--ion-color-medium-tint:#9d9fa6;--ion-color-light:#f4f5f8;--ion-color-light-rgb:244, 245, 248;--ion-color-light-contrast:#000000;--ion-color-light-contrast-rgb:0, 0, 0;--ion-color-light-shade:#d7d8da;--ion-color-light-tint:#f5f6f9}@media (prefers-color-scheme: dark){body{--background:white !important;--ion-background-color:white;--ion-color-primary:#3B82F6;--ion-color-primary-rgb:66,140,255;--ion-color-primary-contrast:#ffffff;--ion-color-primary-contrast-rgb:255,255,255;--ion-color-primary-shade:#3a7be0;--ion-color-primary-tint:#5598ff;--ion-color-secondary:#50c8ff;--ion-color-secondary-rgb:80,200,255;--ion-color-secondary-contrast:#ffffff;--ion-color-secondary-contrast-rgb:255,255,255;--ion-color-secondary-shade:#46b0e0;--ion-color-secondary-tint:#62ceff;--ion-color-tertiary:#6a64ff;--ion-color-tertiary-rgb:106,100,255;--ion-color-tertiary-contrast:#ffffff;--ion-color-tertiary-contrast-rgb:255,255,255;--ion-color-tertiary-shade:#5d58e0;--ion-color-tertiary-tint:#7974ff;--ion-color-success:#2fdf75;--ion-color-success-rgb:47,223,117;--ion-color-success-contrast:#000000;--ion-color-success-contrast-rgb:0,0,0;--ion-color-success-shade:#29c467;--ion-color-success-tint:#44e283;--ion-color-warning:#ffd534;--ion-color-warning-rgb:255,213,52;--ion-color-warning-contrast:#000000;--ion-color-warning-contrast-rgb:0,0,0;--ion-color-warning-shade:#e0bb2e;--ion-color-warning-tint:#ffd948;--ion-color-danger:#ff4961;--ion-color-danger-rgb:255,73,97;--ion-color-danger-contrast:#ffffff;--ion-color-danger-contrast-rgb:255,255,255;--ion-color-danger-shade:#e04055;--ion-color-danger-tint:#ff5b71;--ion-color-dark:#f4f5f8;--ion-color-dark-rgb:244,245,248;--ion-color-dark-contrast:#000000;--ion-color-dark-contrast-rgb:0,0,0;--ion-color-dark-shade:#d7d8da;--ion-color-dark-tint:#f5f6f9;--ion-color-medium:#989aa2;--ion-color-medium-rgb:152,154,162;--ion-color-medium-contrast:#000000;--ion-color-medium-contrast-rgb:0,0,0;--ion-color-medium-shade:#86888f;--ion-color-medium-tint:#a2a4ab;--ion-color-light:#222428;--ion-color-light-rgb:34,36,40;--ion-color-light-contrast:#ffffff;--ion-color-light-contrast-rgb:255,255,255;--ion-color-light-shade:#1e2023;--ion-color-light-tint:#383a3e}}</style><link rel="stylesheet" href="styles.7bf53f36947a0b4f.css" media="all" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.7bf53f36947a0b4f.css"></noscript><script src="https://connect.facebook.net/signals/config/637815388706877?v=2.9.349&amp;r=stable&amp;domain=panel.dev.contabilidad.restaurant.pe&amp;hme=f29d86973612db0f0627890a64bdc8c47b471189050b33f2680b7d76997afc9a&amp;ex_m=107%2C208%2C158%2C22%2C73%2C74%2C149%2C69%2C68%2C11%2C167%2C93%2C16%2C141%2C130%2C39%2C76%2C81%2C137%2C163%2C169%2C8%2C4%2C5%2C7%2C6%2C3%2C94%2C104%2C170%2C175%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C106%2C61%2C10%2C64%2C100%2C101%2C102%2C108%2C133%2C31%2C29%2C135%2C136%2C132%2C131%2C159%2C77%2C162%2C160%2C161%2C50%2C60%2C126%2C15%2C166%2C45%2C279%2C280%2C278%2C26%2C27%2C28%2C48%2C150%2C78%2C115%2C18%2C20%2C44%2C40%2C42%2C41%2C86%2C95%2C99%2C113%2C148%2C151%2C46%2C114%2C24%2C21%2C122%2C70%2C36%2C153%2C152%2C154%2C145%2C143%2C25%2C35%2C59%2C112%2C165%2C71%2C17%2C156%2C117%2C84%2C67%2C19%2C88%2C89%2C119%2C87%2C139%2C138%2C142%2C164%2C34%2C293%2C309%2C215%2C204%2C62%2C205%2C203%2C312%2C303%2C52%2C216%2C110%2C134%2C83%2C124%2C54%2C47%2C49%2C116%2C123%2C129%2C128%2C58%2C65%2C63%2C155%2C79%2C80%2C118%2C37%2C32%2C53%2C56%2C103%2C168%2C1%2C127%2C14%2C125%2C12%2C2%2C57%2C96%2C66%2C121%2C92%2C91%2C171%2C172%2C97%2C98%2C9%2C105%2C51%2C146%2C90%2C82%2C72%2C120%2C109%2C43%2C147%2C0%2C85%2C140%2C144%2C157%2C38%2C111%2C13%2C173" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><style>@keyframes _ngcontent-ng-c26313095_slideInRight{0%{transform:translate(100%);opacity:0}to{transform:translate(0);opacity:1}}@keyframes _ngcontent-ng-c26313095_slideOutRight{0%{transform:translate(0);opacity:1}to{transform:translate(100%);opacity:0}}.toast-enter[_ngcontent-ng-c26313095]{animation:_ngcontent-ng-c26313095_slideInRight .3s ease-out}.toast-leave[_ngcontent-ng-c26313095]{animation:_ngcontent-ng-c26313095_slideOutRight .3s ease-in}.toast-container[_ngcontent-ng-c26313095]{font-family:Montserrat,sans-serif}button[_ngcontent-ng-c26313095]:hover   fa-icon[_ngcontent-ng-c26313095]{transform:scale(1.1);transition:transform .2s ease}.sombra[_ngcontent-ng-c26313095]{box-shadow:0 4px 8px #0000001f}</style><script>
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '637815388706877');
+          fbq('track', 'PageView');
+          </script><style>.help-popover{--width: 300px;--max-height: 50vh}  .help-popover .popover-content{border-radius:12px}  .help-popover-content{--background: #ffffff;--padding-start: 0;--padding-end: 0;--padding-top: 0;--padding-bottom: 0}  .user-popover{--width: 240px}  .user-popover .popover-content{border-radius:8px;box-shadow:0 4px 16px #0000001f}  .user-popover-content{--background: #ffffff;--padding-start: 0;--padding-end: 0;--padding-top: 0;--padding-bottom: 0}  .empresa-popover{--width: 220px}  .empresa-popover .popover-content{border-radius:8px;box-shadow:0 4px 16px #0000001f}  .empresa-popover-content{--background: #ffffff;--padding-start: 0;--padding-end: 0;--padding-top: 0;--padding-bottom: 0}.cont-img-perfil[_ngcontent-ng-c205947115]{display:flex;height:30px;width:30px;align-items:center;justify-content:center;overflow:hidden;border-radius:9999px;--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.cont-img-perfil[_ngcontent-ng-c205947115]   img[_ngcontent-ng-c205947115]{height:100%;width:100%;object-fit:cover}.cont-empresas[_ngcontent-ng-c205947115]{display:flex;max-height:260px;flex-direction:column;overflow:auto;padding:.125rem .25rem}.btn-empresa[_ngcontent-ng-c205947115]{display:flex;cursor:pointer;gap:.25rem;border-radius:.25rem;padding:.25rem .5rem;font-size:.75rem;line-height:1rem}.btn-empresa[_ngcontent-ng-c205947115]:hover{font-weight:600;--tw-text-opacity: 1;color:rgb(59 130 246 / var(--tw-text-opacity, 1))}.btn-empresa.active[_ngcontent-ng-c205947115]{--tw-bg-opacity: 1;background-color:rgb(250 252 254 / var(--tw-bg-opacity, 1));--tw-text-opacity: 1;color:rgb(59 130 246 / var(--tw-text-opacity, 1))}.btn-empresa[_ngcontent-ng-c205947115]:active{--tw-bg-opacity: 1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1));--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.btn-empresa[_ngcontent-ng-c205947115]   .cont-icono[_ngcontent-ng-c205947115]{display:flex;align-items:flex-start;padding-top:.125rem;font-size:.75rem;line-height:1rem}.btn-empresa[_ngcontent-ng-c205947115]   .detalle[_ngcontent-ng-c205947115]{display:flex;flex-direction:column}.btn-empresa[_ngcontent-ng-c205947115]   .detalle[_ngcontent-ng-c205947115]   .empresa[_ngcontent-ng-c205947115]{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;font-size:.875rem;line-height:1.25rem}.btn-empresa[_ngcontent-ng-c205947115]   .detalle[_ngcontent-ng-c205947115]   .ruc[_ngcontent-ng-c205947115]{font-size:10px;line-height:1}</style><style>.grind-mansory[_ngcontent-ng-c4208631578]{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem}</style><style>.animacion-chat[_ngcontent-ng-c2367364755]{position:absolute;right:1.25rem;bottom:65px;z-index:50;display:flex;height:428px;width:270px;flex-direction:column;gap:.5rem;overflow:hidden;border-radius:16px;--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1));padding:.625rem .5rem;--tw-shadow: 0 25px 50px -12px rgb(0 0 0 / .25);--tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);animation:_ngcontent-ng-c2367364755_animacion-chat .3s ease-in-out}.animacion-esconder-chat[_ngcontent-ng-c2367364755]{position:absolute;right:1.25rem;bottom:65px;z-index:50;display:flex;height:428px;width:270px;flex-direction:column;gap:.5rem;overflow:hidden;border-radius:16px;--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1));padding:.625rem .5rem;--tw-shadow: 0 25px 50px -12px rgb(0 0 0 / .25);--tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);animation:_ngcontent-ng-c2367364755_animacion-esconder-chat .3s ease-in forwards}ion-textarea[_ngcontent-ng-c2367364755]{--padding-start: 8px !important;--padding-end: 50px !important;--padding-top: 16px !important;--padding-bottom: 16px !important;--border-radius: 4px !important;background-color:#fff!important;height:45px!important;opacity:1!important}ion-button[_ngcontent-ng-c2367364755]{min-height:30px!important;letter-spacing:normal;height:30px!important;font-family:NunitoSans,helvetica,sans-serif;text-transform:none;--border-width: 1px;margin:0;--border-radius: 8px !important;--box-shadow: none !important;--padding-start: 10px !important;--padding-end: 10px !important}@keyframes _ngcontent-ng-c2367364755_animacion-chat{0%{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}@keyframes _ngcontent-ng-c2367364755_animacion-esconder-chat{0%{transform:translateY(0);opacity:1}to{transform:translateY(20px);opacity:0;display:none}}</style><style>.date-picker-container[_ngcontent-ng-c775131496]{border:1px solid #E4E4E4;border-radius:2px}@media (max-width: 1279px){.input-calendar[_ngcontent-ng-c775131496]{font-size:10px}.input-calendar[_ngcontent-ng-c775131496]   fa-icon[_ngcontent-ng-c775131496]{font-size:10px}}@media (min-width: 1280px){.input-calendar[_ngcontent-ng-c775131496]{font-size:12px}.input-calendar[_ngcontent-ng-c775131496]   fa-icon[_ngcontent-ng-c775131496]{font-size:12px}}.fondo-calendar[_ngcontent-ng-c775131496]{display:flex;border-radius:.125rem;--tw-bg-opacity: 1;background-color:rgb(231 231 231 / var(--tw-bg-opacity, 1));padding:.375rem}</style></head>
+
+<body>
+  <app-root ng-version="20.3.10"><ion-app color="light" class="md ion-page hydrated"><ion-router-outlet class="hydrated"><app-layout class="ng-star-inserted ion-page" style="z-index: 101;"><ion-app class="md ion-page hydrated"><div class="relative flex h-screen flex-col overflow-auto"><app-header class="h-[50px]" _nghost-ng-c205947115=""><div _ngcontent-ng-c205947115="" class="flex items-center justify-between h-full bg-primary pl-[15px]"><div _ngcontent-ng-c205947115="" class="flex items-center gap-5 py-[13px]"><div _ngcontent-ng-c205947115="" class="flex flex-row gap-2.5 items-center cursor-pointer"><img _ngcontent-ng-c205947115="" src="assets/imagenes/auth/svg-logo-restaurant-contabilidad.svg" alt="" routerlink="/inicio" class="w-[122px] h-[28px] object-contain object-left" tabindex="0"><div _ngcontent-ng-c205947115="" class="bg-white w-px h-8"></div></div></div><div _ngcontent-ng-c205947115="" class="flex items-center text-sm gap-4 pr-3"><div _ngcontent-ng-c205947115="" class="flex flex-row items-center gap-2"><span _ngcontent-ng-c205947115="" class="text-white">Selecciona el país</span><ion-select _ngcontent-ng-c205947115="" placeholder="País" toggleicon="chevron-down" expandedicon="chevron-up" interface="popover" fill="outline" class="w-[100px] bg-white text-primary rounded-md ng-untouched ng-pristine ng-valid ion-untouched ion-pristine ion-valid md has-expanded-icon has-placeholder ion-focusable select-ltr select-fill-outline select-label-placement-start hydrated"><ion-select-option _ngcontent-ng-c205947115="" class="ng-star-inserted md hydrated" role="option" id="ion-selopt-0">Perú</ion-select-option><ion-select-option _ngcontent-ng-c205947115="" class="ng-star-inserted md hydrated" role="option" id="ion-selopt-1">Colombia</ion-select-option><ion-select-option _ngcontent-ng-c205947115="" class="ng-star-inserted md hydrated" role="option" id="ion-selopt-2">Ecuador</ion-select-option><ion-select-option _ngcontent-ng-c205947115="" class="ng-star-inserted md hydrated" role="option" id="ion-selopt-3">Guatemala</ion-select-option><!----><input type="hidden" class="aux-input" name="ion-sel-0" value="CL" style=""></ion-select></div><div _ngcontent-ng-c205947115="" class="px-2.5 text-text-85 flex gap-1.5 items-center rounded-md cursor-pointer h-6 bg-[#F5F7FC]"><fa-icon _ngcontent-ng-c205947115="" class="ng-fa-icon text-primary text-sm flex items-center"><svg data-prefix="far" data-icon="circle-question" class="svg-inline--fa fa-circle-question fa-undefined fa-pull-undefined" role="img" viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M464 256a208 208 0 1 0 -416 0 208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0zm256-80c-17.7 0-32 14.3-32 32 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-44.2 35.8-80 80-80s80 35.8 80 80c0 47.2-36 67.2-56 74.5l0 3.8c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-8.1c0-20.5 14.8-35.2 30.1-40.2 6.4-2.1 13.2-5.5 18.2-10.3 4.3-4.2 7.7-10 7.7-19.6 0-17.7-14.3-32-32-32zM224 368a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"></path></svg></fa-icon><span _ngcontent-ng-c205947115="" class="text-[#636E95] text-xs font-medium">Ayuda</span></div><app-notificaciones _ngcontent-ng-c205947115=""><div class="relative"><!----><button class="btn-icon"><fa-icon class="ng-fa-icon"><svg data-prefix="fas" data-icon="bell" class="svg-inline--fa fa-bell fa-undefined fa-pull-undefined" role="img" viewBox="0 0 448 512" aria-hidden="true"><path fill="currentColor" d="M224 0c-17.7 0-32 14.3-32 32l0 3.2C119 50 64 114.6 64 192l0 21.7c0 48.1-16.4 94.8-46.4 132.4L7.8 358.3C2.7 364.6 0 372.4 0 380.5 0 400.1 15.9 416 35.5 416l376.9 0c19.6 0 35.5-15.9 35.5-35.5 0-8.1-2.7-15.9-7.8-22.2l-9.8-12.2C400.4 308.5 384 261.8 384 213.7l0-21.7c0-77.4-55-142-128-156.8l0-3.2c0-17.7-14.3-32-32-32zM162 464c7.1 27.6 32.2 48 62 48s54.9-20.4 62-48l-124 0z"></path></svg></fa-icon></button><!----></div></app-notificaciones><div _ngcontent-ng-c205947115="" class="flex items-center gap-4"><div _ngcontent-ng-c205947115="" class="bg-white w-px h-6"></div><div _ngcontent-ng-c205947115="" class="flex flex-row gap-2 items-center cursor-pointer"><div _ngcontent-ng-c205947115="" class="cont-img-perfil"><!----><img _ngcontent-ng-c205947115="" src="assets/shapes.svg" alt="" class="ng-star-inserted"><!----></div><div _ngcontent-ng-c205947115="" class="flex flex-col text-white"><span _ngcontent-ng-c205947115="" class="text-sm font-bold line-clamp-1 leading-tight">PESQUERA CANTABRIA S.A.</span><div _ngcontent-ng-c205947115="" class="flex items-center"><fa-icon _ngcontent-ng-c205947115="" class="ng-fa-icon text-[9px] leading-none"><svg data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user fa-undefined fa-pull-undefined" role="img" viewBox="0 0 448 512" aria-hidden="true"><path fill="currentColor" d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z"></path></svg></fa-icon><span _ngcontent-ng-c205947115="" class="text-xxs line-clamp-1 leading-none">PAOLA CASTILLO</span></div></div><fa-icon _ngcontent-ng-c205947115="" class="ng-fa-icon text-white text-xs"><svg data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down fa-undefined fa-pull-undefined" role="img" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M169.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 306.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg></fa-icon></div><ion-popover _ngcontent-ng-c205947115="" side="bottom" alignment="end" class="user-popover md overlay-hidden popover-desktop popover-side-bottom hydrated" style="--max-width: 240px; z-index: 20001;" id="ion-overlay-1" aria-modal="true" no-router="" tabindex="-1"><!----></ion-popover></div></div></div></app-header><app-sidebar class="w-full overflow-auto border-r border-text-5 no-scroll z-40" _nghost-ng-c4208631578=""><div _ngcontent-ng-c4208631578="" class="flex flex-row h-full"><div _ngcontent-ng-c4208631578="" class="relative h-full ng-star-inserted"><a _ngcontent-ng-c4208631578="" routerdirection="root" routerlinkactive="__active" class="button_sidebar text-[#1F1F1F]"><span _ngcontent-ng-c4208631578="">Almacén</span><fa-icon _ngcontent-ng-c4208631578="" class="ng-fa-icon ng-star-inserted"><svg data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down fa-undefined fa-pull-undefined" role="img" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M169.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 306.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg></fa-icon><!----><!----></a><!----></div><div _ngcontent-ng-c4208631578="" class="relative h-full ng-star-inserted"><a _ngcontent-ng-c4208631578="" routerdirection="root" routerlinkactive="__active" class="button_sidebar text-[#1F1F1F]"><span _ngcontent-ng-c4208631578="">Compras</span><fa-icon _ngcontent-ng-c4208631578="" class="ng-fa-icon ng-star-inserted"><svg data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down fa-undefined fa-pull-undefined" role="img" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M169.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 306.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg></fa-icon><!----><!----></a><!----></div><div _ngcontent-ng-c4208631578="" class="relative h-full ng-star-inserted"><a _ngcontent-ng-c4208631578="" routerdirection="root" routerlinkactive="__active" class="button_sidebar text-[#1F1F1F]"><span _ngcontent-ng-c4208631578="">Ventas</span><fa-icon _ngcontent-ng-c4208631578="" class="ng-fa-icon ng-star-inserted"><svg data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down fa-undefined fa-pull-undefined" role="img" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M169.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 306.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg></fa-icon><!----><!----></a><!----></div><div _ngcontent-ng-c4208631578="" class="relative h-full ng-star-inserted"><a _ngcontent-ng-c4208631578="" routerdirection="root" routerlinkactive="__active" class="button_sidebar text-[#1F1F1F]"><span _ngcontent-ng-c4208631578="">Finanzas</span><fa-icon _ngcontent-ng-c4208631578="" class="ng-fa-icon ng-star-inserted"><svg data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down fa-undefined fa-pull-undefined" role="img" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M169.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 306.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg></fa-icon><!----><!----></a><!----></div><div _ngcontent-ng-c4208631578="" class="relative h-full ng-star-inserted"><a _ngcontent-ng-c4208631578="" routerdirection="root" routerlinkactive="__active" class="button_sidebar text-[#1F1F1F]"><span _ngcontent-ng-c4208631578="">Contabilidad</span><fa-icon _ngcontent-ng-c4208631578="" class="ng-fa-icon ng-star-inserted"><svg data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down fa-undefined fa-pull-undefined" role="img" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M169.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 306.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg></fa-icon><!----><!----></a><!----></div><div _ngcontent-ng-c4208631578="" class="relative h-full ng-star-inserted"><a _ngcontent-ng-c4208631578="" routerdirection="root" routerlinkactive="__active" class="button_sidebar text-[#1F1F1F]"><span _ngcontent-ng-c4208631578="">Activos fijos</span><fa-icon _ngcontent-ng-c4208631578="" class="ng-fa-icon ng-star-inserted"><svg data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down fa-undefined fa-pull-undefined" role="img" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M169.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 306.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg></fa-icon><!----><!----></a><!----></div><div _ngcontent-ng-c4208631578="" class="relative h-full ng-star-inserted"><a _ngcontent-ng-c4208631578="" routerdirection="root" routerlinkactive="__active" class="button_sidebar text-[#1F1F1F]"><span _ngcontent-ng-c4208631578="">RR.HH</span><fa-icon _ngcontent-ng-c4208631578="" class="ng-fa-icon ng-star-inserted"><svg data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down fa-undefined fa-pull-undefined" role="img" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M169.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 306.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg></fa-icon><!----><!----></a><!----></div><div _ngcontent-ng-c4208631578="" class="relative h-full ng-star-inserted"><a _ngcontent-ng-c4208631578="" routerdirection="root" routerlinkactive="__active" class="button_sidebar text-[#1F1F1F]"><span _ngcontent-ng-c4208631578="">Producción</span><fa-icon _ngcontent-ng-c4208631578="" class="ng-fa-icon ng-star-inserted"><svg data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down fa-undefined fa-pull-undefined" role="img" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M169.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 306.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg></fa-icon><!----><!----></a><!----></div><div _ngcontent-ng-c4208631578="" class="relative h-full ng-star-inserted"><a _ngcontent-ng-c4208631578="" routerdirection="root" routerlinkactive="__active" class="button_sidebar text-[#1F1F1F]"><span _ngcontent-ng-c4208631578="">Configuración</span><fa-icon _ngcontent-ng-c4208631578="" class="ng-fa-icon ng-star-inserted"><svg data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down fa-undefined fa-pull-undefined" role="img" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M169.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 306.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg></fa-icon><!----><!----></a><!----></div><!----></div></app-sidebar><div class="flex flex-grow overflow-auto z-10"><ion-content class="flex-1 overflow-auto md content-ltr hydrated" role="main" style="--offset-top: 0px; --offset-bottom: 0px;"><ion-router-outlet class="hydrated"><app-dashboard class="ng-star-inserted ion-page" style="z-index: 101;"><div class="contenedor-principal-col !overflow-auto"><div class="cont-title"><span>Dashboard indicadores clave por sede</span></div><div class="contenedor-filtros justify-between"><div class="filtros-absolutos" style="display: none;"><ion-select placeholder="Seleccione una sucursal" toggleicon="chevron-down" expandedicon="chevron-up" interface="popover" fill="outline" class="w-[180px] ng-untouched ng-pristine ng-valid ion-untouched ion-pristine ion-valid md has-expanded-icon has-value has-placeholder ion-focusable select-ltr select-fill-outline select-label-placement-start hydrated"><span slot="start" class="!mx-1 font-bold text-xxs">Sucursal: </span><ion-select-option class="ng-star-inserted md hydrated" role="option" id="ion-selopt-4">Todas</ion-select-option><ion-select-option class="ng-star-inserted md hydrated" role="option" id="ion-selopt-5">Sucursal Norte</ion-select-option><ion-select-option class="ng-star-inserted md hydrated" role="option" id="ion-selopt-6">Sucursal Sur</ion-select-option><ion-select-option class="ng-star-inserted md hydrated" role="option" id="ion-selopt-7">Sucursal Centro</ion-select-option><ion-select-option class="ng-star-inserted md hydrated" role="option" id="ion-selopt-8">Sucursal Este</ion-select-option><ion-select-option class="ng-star-inserted md hydrated" role="option" id="ion-selopt-9">Sucursal Oeste</ion-select-option><!----><input type="hidden" class="aux-input" name="ion-sel-1" value="0" style=""></ion-select><ion-select placeholder="Seleccione un canal" toggleicon="chevron-down" expandedicon="chevron-up" interface="popover" fill="outline" class="w-[180px] ng-untouched ng-pristine ng-valid ion-untouched ion-pristine ion-valid md has-expanded-icon has-value has-placeholder ion-focusable select-ltr select-fill-outline select-label-placement-start hydrated"><span slot="start" class="!mx-1 font-bold text-xxs">Canal: </span><ion-select-option class="ng-star-inserted md hydrated" role="option" id="ion-selopt-10">Salón</ion-select-option><ion-select-option class="ng-star-inserted md hydrated" role="option" id="ion-selopt-11">Delivery</ion-select-option><!----><input type="hidden" class="aux-input" name="ion-sel-2" value="salon" style=""></ion-select><div class="relative"><span class="font-bold text-xxs absolute top-[7px] left-[8px] z-10">Rango de fechas:</span><app-base-calendar-new mode="range" position="right" class="moverpaddingcalendar" _nghost-ng-c775131496=""><div _ngcontent-ng-c775131496="" class="relative w-full date-picker-container !h-[28px]"><button _ngcontent-ng-c775131496="" type="button" class="input-calendar flex items-center flex-none h-full leading-none w-full pr-8 pl-2 pt-1 pb-1 borderselect"><!----><!----><span _ngcontent-ng-c775131496="" class="ng-star-inserted"> 01/07/2026 </span><span _ngcontent-ng-c775131496="" class="ng-star-inserted">-</span><span _ngcontent-ng-c775131496="" class="ng-star-inserted"> 03/07/2026</span><!----><!----><div _ngcontent-ng-c775131496="" class="absolute right-2 cursor-pointer"><fa-icon _ngcontent-ng-c775131496="" class="ng-fa-icon"><svg data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-undefined fa-pull-undefined" role="img" viewBox="0 0 448 512" aria-hidden="true"><path fill="currentColor" d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg></fa-icon></div></button><!----></div></app-base-calendar-new></div></div><div class="filtros-absolutos"><ion-button fill="outline" id="dashboard" class="w-[115px] md button button-outline ion-activatable ion-focusable hydrated" data-ion-popover-trigger="true"><fa-icon class="ng-fa-icon mr-1"><svg data-prefix="fas" data-icon="download" class="svg-inline--fa fa-download fa-undefined fa-pull-undefined" role="img" viewBox="0 0 448 512" aria-hidden="true"><path fill="currentColor" d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 210.7-41.4-41.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 242.7 256 32zM64 320c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-46.9 0-56.6 56.6c-31.2 31.2-81.9 31.2-113.1 0L110.9 320 64 320zm304 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg></fa-icon><span>Exportar</span><fa-icon class="ng-fa-icon ml-1"><svg data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down fa-undefined fa-pull-undefined" role="img" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M169.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 306.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg></fa-icon></ion-button><ion-popover trigger="dashboard" triggeraction="click" class="popoverCustomButtonUbicacionActivos dezplegableAcciones2 md overlay-hidden popover-desktop popover-side-bottom hydrated" id="ion-overlay-2" aria-modal="true" no-router="" tabindex="-1" style="z-index: 20002;"><!----></ion-popover></div></div><div class="contenedor-dashboard pb-2 !overflow-auto"><div class="cont-card-dashboard"><div class="contenedor-charts !gap-1"><div class="cont-title-chart"><span class="title">Accesos rápidos</span></div><div class="cont-btn-accrapido flex-col"><div class="cont-btn-accrapido"><button routerlink="/ventas/facturacion-de-regalias" class="btn-accrapido" tabindex="0"><div class="icon"><fa-icon class="ng-fa-icon"><svg data-prefix="fas" data-icon="dollar-sign" class="svg-inline--fa fa-dollar-sign fa-undefined fa-pull-undefined" role="img" viewBox="0 0 320 512" aria-hidden="true"><path fill="currentColor" d="M136 24c0-13.3 10.7-24 24-24s24 10.7 24 24l0 40 56 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-114.9 0c-24.9 0-45.1 20.2-45.1 45.1 0 22.5 16.5 41.5 38.7 44.7l91.6 13.1c53.8 7.7 93.7 53.7 93.7 108 0 60.3-48.9 109.1-109.1 109.1l-10.9 0 0 40c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-40-72 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l130.9 0c24.9 0 45.1-20.2 45.1-45.1 0-22.5-16.5-41.5-38.7-44.7l-91.6-13.1C55.9 273.5 16 227.4 16 173.1 16 112.9 64.9 64 125.1 64l10.9 0 0-40z"></path></svg></fa-icon></div><span class="btn-title">Ventas</span><span class="btn-subtitle">Registro de facturas</span></button><button routerlink="/compras/operaciones/facturas-proveedores" class="btn-accrapido" tabindex="0"><div class="icon"><fa-icon class="ng-fa-icon"><svg data-prefix="far" data-icon="file" class="svg-inline--fa fa-file fa-undefined fa-pull-undefined" role="img" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M176 48L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16l0-240-88 0c-39.8 0-72-32.2-72-72l0-88zM316.1 160L224 67.9 224 136c0 13.3 10.7 24 24 24l68.1 0zM0 64C0 28.7 28.7 0 64 0L197.5 0c17 0 33.3 6.7 45.3 18.7L365.3 141.3c12 12 18.7 28.3 18.7 45.3L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64z"></path></svg></fa-icon></div><span class="btn-title">Compras</span><span class="btn-subtitle">Registro de facturas</span></button></div><div class="cont-btn-accrapido"><button routerlink="/finanzas/consultas/consultas-saldos-caja-bancos" class="btn-accrapido" tabindex="0"><div class="icon"><fa-icon class="ng-fa-icon"><svg data-prefix="far" data-icon="file-invoice-dollar" class="svg-inline--fa fa-file-invoice-dollar fa-undefined fa-pull-undefined" role="img" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M176 48L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16l0-240-88 0c-39.8 0-72-32.2-72-72l0-88zM316.1 160L224 67.9 224 136c0 13.3 10.7 24 24 24l68.1 0zM0 64C0 28.7 28.7 0 64 0L197.5 0c17 0 33.3 6.7 45.3 18.7L365.3 141.3c12 12 18.7 28.3 18.7 45.3L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm80 40c0-13.3 10.7-24 24-24l16 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-16 0c-13.3 0-24-10.7-24-24zm0 80c0-13.3 10.7-24 24-24l16 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-16 0c-13.3 0-24-10.7-24-24zm116 48c11 0 20 9 20 20l0 4 8 0c11 0 20 9 20 20s-9 20-20 20l-43.4 0c-4.7 0-8.6 3.8-8.6 8.6 0 4.1 2.9 7.6 6.9 8.4l34.1 6.8c22.7 4.5 39 24.5 39 47.6 0 22.5-15.3 41.4-36 46.9l0 5.6c0 11-9 20-20 20s-20-9-20-20l0-4-16 0c-11 0-20-9-20-20s9-20 20-20l43.4 0c4.7 0 8.6-3.8 8.6-8.6 0-4.1-2.9-7.6-6.9-8.4L171 352.2c-22.7-4.5-39-24.5-39-47.6 0-25.3 19.3-46.1 44-48.4l0-4.2c0-11 9-20 20-20z"></path></svg></fa-icon></div><span class="btn-title">Estados financieros</span><span class="btn-subtitle">Balance y resultados</span></button><button routerlink="/finanzas/tesoreria/mov-cuentas-banc-y-cajas" class="btn-accrapido" tabindex="0"><div class="icon"><fa-icon class="ng-fa-icon"><svg data-prefix="far" data-icon="building-columns" class="svg-inline--fa fa-building-columns fa-undefined fa-pull-undefined" role="img" viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M269.2 11.9c-8-5.2-18.3-5.2-26.3 0l-232 152C2 169.7-2 180.7 1 190.9S13.4 208 24 208l40 0 0 160-8 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l400 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-8 0 0-160 40 0c10.6 0 20-7 23-17.1s-1-21.1-9.8-26.9l-232-152zM176 368l-64 0 0-160 64 0 0 160zm112 0l-64 0 0-160 64 0 0 160zm112 0l-64 0 0-160 64 0 0 160zM228.3 160L104.4 160 256 60.7 407.6 160 283.7 160c2.7-4.7 4.3-10.2 4.3-16 0-17.7-14.3-32-32-32s-32 14.3-32 32c0 5.8 1.6 11.3 4.3 16zM0 488c0 13.3 10.7 24 24 24l464 0c13.3 0 24-10.7 24-24s-10.7-24-24-24L24 464c-13.3 0-24 10.7-24 24z"></path></svg></fa-icon></div><span class="btn-title">Conciliación bancaria</span><span class="btn-subtitle">Cuentas de bancos</span></button></div></div></div><div class="contenedor-charts !gap-1"><div class="cont-title-chart"><span class="title">Estado contable</span></div><div class="cont-btn-accrapido flex-col !gap-2.5"><div class="card-estados success"><div class="icon"><fa-icon class="ng-fa-icon"><svg data-prefix="fas" data-icon="file-check" class="svg-inline--fa fa-file-check fa-undefined fa-pull-undefined" role="img" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M213.5 0c17 0 33.2 6.8 45.2 18.8L365.3 125.2c12 12 18.7 28.3 18.7 45.2L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L213.5 0zm69.4 260.6c-10.7-7.8-25.7-5.4-33.5 5.3l-85.6 117.7-26.5-27.4c-9.2-9.5-24.4-9.8-33.9-.6s-9.8 24.4-.6 33.9l46.4 48c4.9 5.1 11.8 7.8 18.9 7.3s13.6-4.1 17.8-9.8L288.2 294.1c7.8-10.7 5.4-25.7-5.3-33.5zM208 152c0 13.3 10.7 24 24 24l93.5 0-117.5-117.5 0 93.5z"></path></svg></fa-icon></div><div class="card-detalle"><span class="title">Asientos del periodo registrados</span><span class="subtitle">136 de 142 asientos contabilizados</span></div></div><div class="card-estados warning"><div class="icon"><fa-icon class="ng-fa-icon"><svg data-prefix="fas" data-icon="triangle-exclamation" class="svg-inline--fa fa-triangle-exclamation fa-undefined fa-pull-undefined" role="img" viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M256 0c14.7 0 28.2 8.1 35.2 21l216 400c6.7 12.4 6.4 27.4-.8 39.5S486.1 480 472 480L40 480c-14.1 0-27.2-7.4-34.4-19.5s-7.5-27.1-.8-39.5l216-400c7-12.9 20.5-21 35.2-21zm0 352a32 32 0 1 0 0 64 32 32 0 1 0 0-64zm0-192c-18.2 0-32.7 15.5-31.4 33.7l7.4 104c.9 12.5 11.4 22.3 23.9 22.3 12.6 0 23-9.7 23.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z"></path></svg></fa-icon></div><div class="card-detalle"><span class="title">Balance de comprobación cuadrado</span><span class="subtitle">1 diferencia detectada por S/ 245.00</span></div></div><div class="card-estados danger"><div class="icon"><fa-icon class="ng-fa-icon"><svg data-prefix="fas" data-icon="building-columns" class="svg-inline--fa fa-building-columns fa-undefined fa-pull-undefined" role="img" viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M271.9 20.2c-9.8-5.6-21.9-5.6-31.8 0l-224 128c-12.6 7.2-18.8 22-15.1 36S17.5 208 32 208l32 0 0 208 0 0-51.2 38.4C4.7 460.4 0 469.9 0 480 0 497.7 14.3 512 32 512l448 0c17.7 0 32-14.3 32-32 0-10.1-4.7-19.6-12.8-25.6l-51.2-38.4 0-208 32 0c14.5 0 27.2-9.8 30.9-23.8s-2.5-28.8-15.1-36l-224-128zM400 208l0 208-64 0 0-208 64 0zm-112 0l0 208-64 0 0-208 64 0zm-112 0l0 208-64 0 0-208 64 0zM256 96a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg></fa-icon></div><div class="card-detalle"><span class="title">Conciliación bancaria</span><span class="subtitle">2 cuentas por conciliar</span></div></div><div class="card-estados primary"><div class="icon"><fa-icon class="ng-fa-icon"><svg data-prefix="fas" data-icon="list" class="svg-inline--fa fa-list fa-undefined fa-pull-undefined" role="img" viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M40 48C26.7 48 16 58.7 16 72l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24L40 48zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L192 64zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-288 0zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-288 0zM16 232l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24l-48 0c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24l-48 0z"></path></svg></fa-icon></div><div class="card-detalle"><span class="title">Cierre de periodo</span><span class="subtitle">Pendiente de aprobación</span></div></div></div></div><div class="contenedor-charts !gap-1"><div class="cont-title-chart"><span class="title">Informacion de planilla</span></div><div class="chart"><canvas height="250" style="display: block; box-sizing: border-box; height: 250px; width: 393px;" width="393"></canvas></div></div></div><div class="cont-card-dashboard"><div class="contenedor-charts !h-[288px]"><div class="cont-title-chart"><span class="title">Comparativo de cuentas por cobrar vs pagar</span></div><div class="chart"><canvas height="221" style="display: block; box-sizing: border-box; height: 221px; width: 609.1px;" width="609"></canvas></div></div><div class="cont-card-dashboard w-full flex-col"><div class="contenedor-charts !h-[140px] !gap-1"><div class="cont-title-chart"><span class="title">Cuentas por cobrar</span></div><div class="flex items-center gap-2 w-full"><div class="flex flex-col border-l-4 border-solid border-primary pl-3 py-2 w-full"><span class="text-sm font-bold">TOTAL</span><span class="text-lg font-bold">S/ 126,000.00</span><span class="text-xs font-medium">23 documentos</span></div><div class="flex flex-col border-l-4 border-solid border-success pl-3 py-2 w-full"><span class="text-sm font-bold">Vigentes</span><span class="text-lg font-bold">S/ 124,000.00</span><span class="text-xs font-medium">20 documentos</span></div><div class="flex flex-col border-l-4 border-solid border-danger pl-3 py-2 w-full"><span class="text-sm font-bold">Vencidas</span><span class="text-lg font-bold">S/ 1,230.00</span><span class="text-xs font-medium">3 documentos</span></div></div></div><div class="contenedor-charts !h-[140px] !gap-1"><div class="cont-title-chart"><span class="title">Cuentas por pagar</span></div><div class="flex items-center gap-2 w-full"><div class="flex flex-col border-l-4 border-solid border-primary pl-3 py-2 w-full"><span class="text-sm font-bold">TOTAL</span><span class="text-lg font-bold">S/ 126,000.00</span><span class="text-xs font-medium">23 documentos</span></div><div class="flex flex-col border-l-4 border-solid border-success pl-3 py-2 w-full"><span class="text-sm font-bold">Vigentes</span><span class="text-lg font-bold">S/ 124,000.00</span><span class="text-xs font-medium">20 documentos</span></div><div class="flex flex-col border-l-4 border-solid border-danger pl-3 py-2 w-full"><span class="text-sm font-bold">Vencidas</span><span class="text-lg font-bold">S/ 1,230.00</span><span class="text-xs font-medium">3 documentos</span></div></div></div></div></div><div class="contenedor-charts !h-[164px]"><div class="cont-title-chart"><span class="title">IVA del periodo</span></div><div class="cont-cards !p-0"><div class="cardv2"><div class="cont-tituloc"><div class="icon"><fa-icon class="ng-fa-icon"><svg data-prefix="far" data-icon="cart-shopping" class="svg-inline--fa fa-cart-shopping fa-undefined fa-pull-undefined" role="img" viewBox="0 0 640 512" aria-hidden="true"><path fill="currentColor" d="M0 8C0-5.3 10.7-16 24-16l45.3 0c27.1 0 50.3 19.4 55.1 46l.4 2 399.9 0c25.1 0 44 22.9 39.3 47.6L537.6 216.6c-8 41.4-44.2 71.4-86.4 71.4l-279.8 0 5.1 28.3c2.1 11.4 12 19.7 23.6 19.7L456 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-255.9 0c-34.8 0-64.6-24.9-70.8-59.1L77.2 38.6c-.7-3.8-4-6.6-7.9-6.6L24 32C10.7 32 0 21.3 0 8zM162.6 240l288.6 0c19.2 0 35.7-13.6 39.3-32.4L514.9 80 133.5 80 162.6 240zM208 416a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm224 0a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg></fa-icon></div><span class="tituloc">IVA de Ventas</span></div><span class="cantidad">S/ 485</span><span class="text-xs text-danger"><!----> -3.3% vs anterior</span></div><div class="cardv2"><div class="cont-tituloc"><div class="icon"><fa-icon class="ng-fa-icon"><svg data-prefix="fas" data-icon="dollar-sign" class="svg-inline--fa fa-dollar-sign fa-undefined fa-pull-undefined" role="img" viewBox="0 0 320 512" aria-hidden="true"><path fill="currentColor" d="M136 24c0-13.3 10.7-24 24-24s24 10.7 24 24l0 40 56 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-114.9 0c-24.9 0-45.1 20.2-45.1 45.1 0 22.5 16.5 41.5 38.7 44.7l91.6 13.1c53.8 7.7 93.7 53.7 93.7 108 0 60.3-48.9 109.1-109.1 109.1l-10.9 0 0 40c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-40-72 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l130.9 0c24.9 0 45.1-20.2 45.1-45.1 0-22.5-16.5-41.5-38.7-44.7l-91.6-13.1C55.9 273.5 16 227.4 16 173.1 16 112.9 64.9 64 125.1 64l10.9 0 0-40z"></path></svg></fa-icon></div><span class="tituloc">IVA de Compras</span></div><span class="cantidad">S/ 1500</span><span class="text-xs text-success"><span class="ng-star-inserted">+</span><!----> 4.8% vs anterior</span></div><div class="cardv2"><div class="cont-tituloc"><div class="icon"><fa-icon class="ng-fa-icon"><svg data-prefix="fas" data-icon="calculator" class="svg-inline--fa fa-calculator fa-undefined fa-pull-undefined" role="img" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-384c0-35.3-28.7-64-64-64L64 0zM96 64l192 0c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32L96 160c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32zm16 168a24 24 0 1 1 -48 0 24 24 0 1 1 48 0zm80 24a24 24 0 1 1 0-48 24 24 0 1 1 0 48zm128-24a24 24 0 1 1 -48 0 24 24 0 1 1 48 0zM88 352a24 24 0 1 1 0-48 24 24 0 1 1 0 48zm128-24a24 24 0 1 1 -48 0 24 24 0 1 1 48 0zm80 24a24 24 0 1 1 0-48 24 24 0 1 1 0 48zM64 424c0-13.3 10.7-24 24-24l112 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L88 448c-13.3 0-24-10.7-24-24zm232-24c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24z"></path></svg></fa-icon></div><span class="tituloc">IVA del período</span></div><span class="cantidad">S/ 1015</span><!----><span class="text-xs text-success ng-star-inserted">Crédito fiscal</span><!----></div></div></div></div></div></app-dashboard><!----></ion-router-outlet><!----></ion-content></div><app-chat-ia _nghost-ng-c2367364755="" class="ng-star-inserted"></app-chat-ia><!----></div></ion-app></app-layout><!----></ion-router-outlet><!----><app-toast-container _nghost-ng-c26313095="" class="ng-tns-c26313095-0 ng-star-inserted"><div _ngcontent-ng-c26313095="" class="toast-container-wrapper fixed bottom-4 right-4 z-[50000] space-y-3 ng-tns-c26313095-0"><!----></div></app-toast-container></ion-app></app-root>
+<script src="runtime.8b52d262daf6a6a3.js" type="module"></script><script src="polyfills.9eb694441a79001f.js" type="module"></script><script src="main.3555a39790198eb1.js" type="module"></script>
+
+
+</body></html>
