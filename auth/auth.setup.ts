@@ -4,60 +4,79 @@
  * Los proyectos de test cargan auth.json y omiten el login.
  */
 import { test as setup } from '@playwright/test';
-import { getEnv } from '@config/ambientes';
 import { Logger } from '@utils/logger';
-import { SHARED_SELECTORS as S } from '@selectors/compartidos';
 
 const AUTH_FILE = 'auth/auth.json';
 
 setup('authenticate', async ({ page }) => {
-  const env = getEnv();
+  // Credenciales — mismo valor que el smoke test funcional
+  const username = process.env.DEV_USER || 'pcastillo';
+  const password = process.env.DEV_PASS || 'Julienzoe1429*';
+  const empresa = process.env.TEST_EMPRESA || 'PESQUERA CANTABRIA S.A.';
+  const sucursal = process.env.TEST_SUCURSAL || 'LIMA';
+
   Logger.suite('Auth Setup');
-  Logger.step(`Login: ${env.credentials.username} @ ${env.baseURL}`);
+  Logger.step(`Login: ${username}`);
+
+  const BASE = process.env.BASE_URL || 'https://panel.dev.contabilidad.restaurant.pe';
 
   // 1. Navegar al login
-  await page.goto(env.baseURL + '/auth/signin', { waitUntil: 'networkidle', timeout: 30_000 });
+  await page.goto(BASE + '/auth/signin', { waitUntil: 'networkidle', timeout: 30_000 });
   await page.waitForTimeout(3_000);
 
-  // 2. Credenciales
-  await page.locator(S.loginUser).fill(env.credentials.username);
-  await page.locator(S.loginPass).fill(env.credentials.password);
-  await page.locator(S.loginBtn).click();
-  Logger.action('Login', true);
+  // 2. Credenciales — mismo patrón que el smoke test funcional
+  await page.locator('input[placeholder="usuario@empresa.com"]').fill(username);
+  await page.locator('input[placeholder="**********"]').fill(password);
+  await page.locator('ion-button.button-login').click();
   await page.waitForTimeout(5_000);
 
+  // Check if login navigated
+  const afterLoginUrl = page.url();
+  const isOnEmpresaPage = afterLoginUrl.includes('seleccion-razon-social');
+  Logger.action(`Login → ${isOnEmpresaPage ? 'navegó a empresa' : `se quedó en ${afterLoginUrl.replace(BASE, '')}`}`, isOnEmpresaPage);
+
+  if (!isOnEmpresaPage) {
+    await page.waitForTimeout(3_000);
+    const stillOnLogin = page.url().includes('signin');
+    if (stillOnLogin) {
+      throw new Error('Login falló: credenciales inválidas o servidor no disponible');
+    }
+  }
+
   // 3. Seleccionar empresa
-  const empresas = page.locator(S.empresaRow);
-  await empresas.first().waitFor({ state: 'visible', timeout: 10_000 });
+  await page.waitForLoadState('networkidle', { timeout: 30_000 }).catch(() => {});
+  await page.waitForTimeout(2_000);
+  const empresas = page.locator('tr.cursor-pointer');
+  await empresas.first().waitFor({ state: 'visible', timeout: 30_000 });
   const empCount = await empresas.count();
   let empresaFound = false;
   for (let i = 0; i < empCount; i++) {
     const text = await empresas.nth(i).textContent();
-    if (text?.toLowerCase().includes(env.empresa.toLowerCase())) {
+    if (text?.toLowerCase().includes(empresa.toLowerCase())) {
       await empresas.nth(i).click();
       empresaFound = true;
       break;
     }
   }
-  if (!empresaFound) throw new Error(`Empresa "${env.empresa}" no encontrada`);
-  Logger.action(`Seleccionar empresa: ${env.empresa}`, true);
+  if (!empresaFound) throw new Error(`Empresa "${empresa}" no encontrada`);
+  Logger.action(`Seleccionar empresa: ${empresa}`, true);
   await page.waitForTimeout(3_000);
 
   // 4. Seleccionar sucursal
-  const sucursales = page.locator(S.empresaRow);
+  const sucursales = page.locator('tr.cursor-pointer');
   await sucursales.first().waitFor({ state: 'visible', timeout: 10_000 });
   const sucCount = await sucursales.count();
   let sucFound = false;
   for (let i = 0; i < sucCount; i++) {
     const text = await sucursales.nth(i).textContent();
-    if (text?.toLowerCase().includes(env.sucursal.toLowerCase())) {
+    if (text?.toLowerCase().includes(sucursal.toLowerCase())) {
       await sucursales.nth(i).click();
       sucFound = true;
       break;
     }
   }
-  if (!sucFound) throw new Error(`Sucursal "${env.sucursal}" no encontrada`);
-  Logger.action(`Seleccionar sucursal: ${env.sucursal}`, true);
+  if (!sucFound) throw new Error(`Sucursal "${sucursal}" no encontrada`);
+  Logger.action(`Seleccionar sucursal: ${sucursal}`, true);
 
   // 5. Esperar dashboard
   await page.waitForURL(/\/inicio/, { timeout: 20_000 });

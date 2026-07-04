@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2022",
     "module": "commonjs",
-    "lib": ["ES2022"],
+    "lib": ["ES2022", "DOM"],
     "outDir": "./dist",
     "rootDir": ".",
     "strict": true,
@@ -22,9 +22,11 @@
       "@components/*": ["components/*"],
       "@data/*": ["data/*"],
       "@fixtures/*": ["fixtures/*"],
-      "@types/*": ["types/*"],
-      "@constants/*": ["constants/*"]
-    }
+      "@tipos/*": ["types/*"],
+      "@constants/*": ["constants/*"],
+      "@selectors/*": ["selectors/*"]
+    },
+    "ignoreDeprecations": "6.0"
   },
   "include": [
     "**/*.ts",

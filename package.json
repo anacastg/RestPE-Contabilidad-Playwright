@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "E2E tests para Restaurante.pe Contabilidad con Playwright",
   "scripts": {
-    "test": "npx playwright test",
-    "test:headed": "npx playwright test --headed",
-    "test:smoke": "npx playwright test --grep @smoke",
-    "test:sprint1": "npx playwright test tests/e2e/sprint-1/",
-    "test:report": "npx playwright show-report"
+    "test": "npx playwright test --project=chromium",
+    "test:headed": "npx playwright test --project=chromium --headed",
+    "test:setup": "npx playwright test --project=setup --headed",
+    "test:ci": "npx playwright test --project=chromium",
+    "test:sprint1": "npx playwright test tests/e2e/sprint-1/ --project=chromium",
+    "test:smoke": "npx playwright test tests/smoke/ --project=chromium-no-auth",
+    "test:report": "npx playwright show-report",
+    "lint": "npx tsc --noEmit",
+    "format": "npx prettier --write .",
+    "clean": "Remove-Item -Recurse -Force playwright-report, test-results -ErrorAction SilentlyContinue"
   },
   "keywords": [
     "playwright",
